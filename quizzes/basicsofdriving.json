@@ -1,0 +1,140 @@
+{
+    "title": "Basics of Driving",
+    "questions": [
+        {
+            "question": "When backing a passenger vehicle to the left, a driver should:",
+            "answers": [
+                { "text": "Look in the inside rear-view mirror and make steering adjustments as necessary", "correct": false },
+                { "text": "Look over the right shoulder with occasional glances to the front", "correct": false },
+                { "text": "Look over the left shoulder with occasional (thỉnh thoảng) glances to the front", "correct": true },
+                { "text": "Without shoulder checking, use the inside and outside rear-view mirrors to ensure the best view to the rear and both sides of the vehicle", "correct": false }
+            ]
+        },
+        {
+            "question": "Shoulder checking means:",
+            "answers": [
+                { "text": "Glancing towards the blind spot in the direction the driver intends to move", "correct": true },
+                { "text": "Glancing into the left outside mirror", "correct": false },
+                { "text": "Glancing into both the inside and outside mirrors", "correct": false },
+                { "text": "Glancing into the right outside mirror", "correct": false }
+            ]
+        },
+        {
+            "question": "When parallel parking, the vehicle's wheels closest to the curb must be within what maximum distance?",
+            "answers": [
+                { "text": "80 centimetres from the curb", "correct": false },
+                { "text": "30 centimetres from the curb", "correct": false },
+                { "text": "10 centimetres from the curb", "correct": false },
+                { "text": "50 centimetres from the curb", "correct": true }
+            ]
+        },
+        {
+            "question": "In a vehicle that does not have anti-lock brakes, threshold braking refers to:",
+            "answers": [
+                { "text": "Applying an even braking force to the point just before the wheels lock, and easing off slightly if the wheels lock", "correct": true },
+                { "text": "Pumping the brake pedal repeatedly until the vehicle comes to a stop", "correct": false },
+                { "text": "Releasing pressure on the brake pedal, then reapplying pressure until the wheels lock", "correct": false },
+                { "text": "Applying enough force to the brake pedal to lock the wheels and keep them locked", "correct": false }
+            ]
+        },
+        {
+            "question": "The recommended braking procedure to bring a vehicle to a normal, smooth stop is:",
+            "answers": [
+                { "text": "Continually increase brake pressure until the wheels lock", "correct": false },
+                { "text": "Shift the vehicle into neutral and apply steady pressure to the brake pedal until the vehicle comes to a stop", "correct": false },
+                { "text": "Pump the brake pedal smoothly until the vehicle stops", "correct": false },
+                { "text": "Apply brake pressure, ease off slightly just before the vehicle stops, then re-apply sufficient pressure to stop", "correct": true }
+            ]
+        },
+        {
+            "question": "Which statement describes the steps required to reverse in a straight line?",
+            "answers": [
+                { "text": "Keep both hands on the steering wheel and constantly use the inside rear-view mirror for guidance", "correct": false },
+                { "text": "Place the right hand at the top of the steering wheel, look over the left shoulder and use the outside left rear-view mirror", "correct": false },
+                { "text": "Place the left hand at the top of the steering wheel and look over the right shoulder through the rear window", "correct": true },
+                { "text": "Place the left hand at the bottom of the steering wheel and use both outside mirrors", "correct": false }
+            ]
+        },
+        {
+            "question": "Which direction should a vehicle's front wheels be turned when parked uphill on a two-way road with a curb?",
+            "answers": [
+                { "text": "Parallel to the curb", "correct": false },
+                { "text": "To the left", "correct": true },
+                { "text": "To the right", "correct": false },
+                { "text": "Straight ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "When a head restraint is raised to the proper position, the centre of the head restraint is:",
+            "answers": [
+                { "text": "Level with the top of the ears", "correct": true },
+                { "text": "Level with the top of the shoulders", "correct": false },
+                { "text": "Level with the neck", "correct": false },
+                { "text": "Level with the top of the head", "correct": false }
+            ]
+        },
+        {
+            "question": "When completing an angle park, the vehicle's front wheel must be within what maximum distance from the nearest curb?",
+            "answers": [
+                { "text": "100 cm", "correct": false },
+                { "text": "50 cm", "correct": true },
+                { "text": "25 cm", "correct": false },
+                { "text": "75 cm", "correct": false }
+            ]
+        },
+        {
+            "question": "What minimum distance from a fire hydrant must a vehicle be parked?",
+            "answers": [
+                { "text": "3 metres", "correct": false },
+                { "text": "4 metres", "correct": false },
+                { "text": "2 metres", "correct": false },
+                { "text": "5 metres", "correct": true }
+            ]
+        },
+        {
+            "question": "The Driver’s Guide says these three things determine how long it takes a vehicle to stop:",
+            "answers": [
+                { "text": "Road conditions, weather conditions and braking time", "correct": false },
+                { "text": "Condition of the brake pads, brake drum and brake fluid", "correct": false },
+                { "text": "Driver’s perception time, reaction time and braking time", "correct": true },
+                { "text": "Speed of the vehicle, inflation of the tires and perception distance", "correct": false }
+            ]
+        },
+        {
+            "question": "When you’re reversing (backing up):",
+            "answers": [
+                { "text": "look behind the vehicle and only drive in reverse when there’s no traffic, pedestrians or obstacles", "correct": true },
+                { "text": "turn your head, look in both blind spots and then back up using your mirrors", "correct": false },
+                { "text": "do a circle check, get into your vehicle, then use your mirrors to back up", "correct": false },
+                { "text": "put the vehicle in neutral, let it roll back, do a 360-vision check and a mirror check", "correct": false }
+            ]
+        },
+        {
+            "question": "It’s illegal to park:",
+            "answers": [
+                { "text": "on a sidewalk", "correct": false },
+                { "text": "on a bridge or underpass", "correct": false },
+                { "text": "on a crosswalk", "correct": false },
+                { "text": "All of the above", "correct": true }
+            ]
+        },
+        {
+            "question": "In the city, are you allowed to back your vehicle into a crosswalk or intersection?",
+            "answers": [
+                { "text": "Yes, but only in residential areas", "correct": false },
+                { "text": "Yes, if there’s no stop sign in the intersection", "correct": false },
+                { "text": "You’re never allowed to do this", "correct": true },
+                { "text": "Yes, if there are no pedestrians or traffic nearby", "correct": false }
+            ]
+        },
+        {
+            "question": "What’s the best way to check if there are vehicles in your blind spot?",
+            "answers": [
+                { "text": "shoulder check", "correct": true },
+                { "text": "check rear-view and side mirrors", "correct": false },
+                { "text": "scan ahead for blind spots", "correct": false },
+                { "text": "Both A and B are correct", "correct": false }
+            ]
+        }
+    ]
+}
