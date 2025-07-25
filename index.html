@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games for Students</title>
+    <style>
+        /* General Styles */
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f5f5;
+            --correct-color: #28a745;
+            --incorrect-color: #dc3545;
+            --text-color: #333;
+            --light-text: #fff;
+            --border-radius: 8px;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--light-text);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        /* Home Page Styles */
+        #home-page {
+            padding: 30px;
+        }
+
+        #home-page h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .game-card h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: var(--primary-color);
+        }
+
+        .game-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Quiz Page Styles */
+        #quiz-page {
+            padding: 30px;
+            display: none; /* Hidden by default */
+        }
+
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        #quiz-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        #question-counter {
+            font-size: 1em;
+            color: #666;
+        }
+
+        #question-container {
+            margin-bottom: 20px;
+        }
+
+        #question-text {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        #answer-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 1em;
+            text-align: left;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            color: var(--text-color);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .btn:hover:not([disabled]) {
+            background-color: var(--secondary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn.correct {
+            background-color: var(--correct-color);
+            color: var(--light-text);
+            border-color: var(--correct-color);
+        }
+
+        .btn.incorrect {
+            background-color: var(--incorrect-color);
+            color: var(--light-text);
+            border-color: var(--incorrect-color);
+        }
+
+        .btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .nav-btn {
+             padding: 10px 20px;
+             font-size: 1em;
+             border: none;
+             background-color: var(--primary-color);
+             color: var(--light-text);
+             border-radius: var(--border-radius);
+             cursor: pointer;
+             transition: background-color 0.2s;
+        }
+        .nav-btn:hover {
+            background-color: #357abd;
+        }
+
+        #next-btn {
+            display: none;
+        }
+        
+        #results-container {
+            text-align: center;
+            padding: 40px 20px;
+            display: none; /* Hidden by default */
+        }
+        
+        #results-container h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #score-text {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div id="home-page">
+            <h1>Game Center</h1>
+            <div class="game-list">
+                
+                <div class="game-card" onclick="startQuiz('vocabularyQuiz1')">
+                    <h2>Vocabulary Quiz 1</h2>
+                    <p>Learn vocabulary related to careers, learning, and personal interests.</p>
+                </div>
+
+                </div>
+        </div>
+
+        <div id="quiz-page">
+            <div id="quiz-proper">
+                <div class="quiz-header">
+                    <div id="quiz-title"></div>
+                    <div id="question-counter"></div>
+                </div>
+    
+                <div id="question-container">
+                    <p id="question-text"></p>
+                    <div id="answer-buttons"></div>
+                </div>
+    
+                <div class="controls">
+                    <button class="nav-btn" id="next-btn">Next</button>
+                </div>
+            </div>
+
+            <div id="results-container">
+                <h2>Quiz Complete!</h2>
+                <p id="score-text">Your score: 18 out of 20</p>
+                <button class="nav-btn" id="restart-btn">Try Again</button>
+                <button class="nav-btn" id="home-btn">Back to Home</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // ===================================================================
+        // ======================= GAME & QUIZ DATA ==========================
+        // ===================================================================
+        // To add a new quiz, copy the 'vocabularyQuiz1' object,
+        // paste it below, and give it a new unique ID.
+        // Then, add a new card on the HTML home page with an onclick
+        // that calls startQuiz('yourNewQuizID').
+        // ===================================================================
+        const quizzes = {
+            'vocabularyQuiz1': {
+                title: 'Vocabulary: Careers & Learning',
+                questions: [
+                    {
+                        question: 'What does “go into” mean in the phrase “go into tourism” or “go into politics”?',
+                        answers: [
+                            { text: 'Travel far away', correct: false },
+                            { text: 'Join a conversation', correct: false },
+                            { text: 'Start a career in a field', correct: true },
+                            { text: 'Talk about a topic', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which phrase means the same as “apply what I learn”?',
+                        answers: [
+                            { text: 'Change my study plan', correct: false },
+                            { text: 'Use my knowledge', correct: true },
+                            { text: 'Share answers with others', correct: false },
+                            { text: 'Forget what I studied', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'What is the meaning of “keen on” something?',
+                        answers: [
+                            { text: 'Good at it', correct: false },
+                            { text: 'Bored of it', correct: false },
+                            { text: 'Very interested in it', correct: true },
+                            { text: 'Angry about it', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which phrase means the same as “more than expected”?',
+                        answers: [
+                            { text: 'Not as exciting', correct: false },
+                            { text: 'Less interesting', correct: false },
+                            { text: 'Better than I thought', correct: true },
+                            { text: 'Almost the same', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'What does “practical learning” involve?',
+                        answers: [
+                            { text: 'Memorizing facts', correct: false },
+                            { text: 'Listening to lectures', correct: false },
+                            { text: 'Real-world experience', correct: true },
+                            { text: 'Doing homework only', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which word is a synonym of “dull”?',
+                        answers: [
+                            { text: 'Exciting', correct: false },
+                            { text: 'Bright', correct: false },
+                            { text: 'Boring', correct: true },
+                            { text: 'Short', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'If something is “entertaining”, it is…',
+                        answers: [
+                            { text: 'Tiring', correct: false },
+                            { text: 'Boring', correct: false },
+                            { text: 'Fun and enjoyable', correct: true },
+                            { text: 'Confusing', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which of the following is closest in meaning to “dream job”?',
+                        answers: [
+                            { text: 'A temporary job', correct: false },
+                            { text: 'A job I hope to have', correct: true },
+                            { text: 'A part-time job', correct: false },
+                            { text: 'A tiring job', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'The phrase “no risk of getting bored” means:',
+                        answers: [
+                            { text: 'You will feel tired', correct: false },
+                            { text: 'You won’t lose interest', correct: true },
+                            { text: 'You should be careful', correct: false },
+                            { text: 'You might fall asleep', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'What does “curious” mean?',
+                        answers: [
+                            { text: 'Angry', correct: false },
+                            { text: 'Not interested', correct: false },
+                            { text: 'Wanting to know more', correct: true },
+                            { text: 'Feeling lazy', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which word is closest in meaning to “fascinating”?',
+                        answers: [
+                            { text: 'Difficult', correct: false },
+                            { text: 'Boring', correct: false },
+                            { text: 'Interesting', correct: true },
+                            { text: 'Expensive', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which verb matches the noun “challenge”?',
+                        answers: [
+                            { text: 'Accept', correct: true },
+                            { text: 'Lie', correct: false },
+                            { text: 'Paint', correct: false },
+                            { text: 'Invite', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which word is a synonym of “relevant”?',
+                        answers: [
+                            { text: 'Connected', correct: true },
+                            { text: 'Repeated', correct: false },
+                            { text: 'Forgotten', correct: false },
+                            { text: 'Impossible', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'If a teacher “pushes” a student, it means the teacher…',
+                        answers: [
+                            { text: 'Ignores the student', correct: false },
+                            { text: 'Gives the student easy tasks', correct: false },
+                            { text: 'Encourages and challenges the student', correct: true },
+                            { text: 'Tells the student to stop', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which of these is a synonym for “appreciate” in this context: “I appreciate the extra help”?',
+                        answers: [
+                            { text: 'Hide', correct: false },
+                            { text: 'Complain', correct: false },
+                            { text: 'Be thankful for', correct: true },
+                            { text: 'Dislike', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which phrase is closest in meaning to “high spot of the week”?',
+                        answers: [
+                            { text: 'The worst time', correct: false },
+                            { text: 'The busiest moment', correct: false },
+                            { text: 'The best or most enjoyable part', correct: true },
+                            { text: 'The longest day', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which phrase means the same as “use” in an academic or career context?',
+                        answers: [
+                            { text: 'Apply', correct: true },
+                            { text: 'Fix', correct: false },
+                            { text: 'Copy', correct: false },
+                            { text: 'Repeat', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'If something is a “benefit”, what is it?',
+                        answers: [
+                            { text: 'A difficulty', correct: false },
+                            { text: 'A reward or advantage', correct: true },
+                            { text: 'A mistake', correct: false },
+                            { text: 'A cost', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which word is related to “learning outside school”?',
+                        answers: [
+                            { text: 'Leisure', correct: true },
+                            { text: 'Risk', correct: false },
+                            { text: 'Trade', correct: false },
+                            { text: 'Delay', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'What does “sector” mean in the phrase “people working in the tourism sector”?',
+                        answers: [
+                            { text: 'A classroom', correct: false },
+                            { text: 'A company office', correct: false },
+                            { text: 'A specific area of work or industry', correct: true },
+                            { text: 'A student group', correct: false }
+                        ]
+                    }
+                ]
+            }
+            // Add new quiz objects here
+        };
+
+
+        // ===================================================================
+        // ======================= QUIZ ENGINE LOGIC =========================
+        // ===================================================================
+        // You don't need to edit this part to add new quizzes.
+        // ===================================================================
+
+        // Page Elements
+        const homePage = document.getElementById('home-page');
+        const quizPage = document.getElementById('quiz-page');
+        const quizProper = document.getElementById('quiz-proper');
+        const quizTitleEl = document.getElementById('quiz-title');
+        const questionCounterEl = document.getElementById('question-counter');
+        const questionTextEl = document.getElementById('question-text');
+        const answerButtonsEl = document.getElementById('answer-buttons');
+        const nextBtn = document.getElementById('next-btn');
+        const resultsContainer = document.getElementById('results-container');
+        const scoreTextEl = document.getElementById('score-text');
+        const restartBtn = document.getElementById('restart-btn');
+        const homeBtn = document.getElementById('home-btn');
+
+        // State
+        let currentQuizId = null;
+        let currentQuizData = {};
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        function startQuiz(quizId) {
+            currentQuizId = quizId;
+            currentQuizData = quizzes[quizId];
+            currentQuestionIndex = 0;
+            score = 0;
+
+            // Switch to quiz view
+            homePage.style.display = 'none';
+            quizPage.style.display = 'block';
+            resultsContainer.style.display = 'none';
+            quizProper.style.display = 'block';
+            nextBtn.style.display = 'none';
+            
+            quizTitleEl.innerText = currentQuizData.title;
+            
+            showNextQuestion();
+        }
+
+        function showNextQuestion() {
+            resetState();
+            if (currentQuestionIndex < currentQuizData.questions.length) {
+                const questionData = currentQuizData.questions[currentQuestionIndex];
+                questionTextEl.innerText = questionData.question;
+                questionCounterEl.innerText = `Question ${currentQuestionIndex + 1}/${currentQuizData.questions.length}`;
+
+                questionData.answers.forEach(answer => {
+                    const button = document.createElement('button');
+                    button.innerText = answer.text;
+                    button.classList.add('btn');
+                    if (answer.correct) {
+                        button.dataset.correct = true;
+                    }
+                    button.addEventListener('click', selectAnswer);
+                    answerButtonsEl.appendChild(button);
+                });
+            } else {
+                showResults();
+            }
+        }
+
+        function resetState() {
+            nextBtn.style.display = 'none';
+            while (answerButtonsEl.firstChild) {
+                answerButtonsEl.removeChild(answerButtonsEl.firstChild);
+            }
+        }
+
+        function selectAnswer(e) {
+            const selectedBtn = e.target;
+            const isCorrect = selectedBtn.dataset.correct === 'true';
+
+            if (isCorrect) {
+                score++;
+                selectedBtn.classList.add('correct');
+            } else {
+                selectedBtn.classList.add('incorrect');
+            }
+
+            Array.from(answerButtonsEl.children).forEach(button => {
+                if (button.dataset.correct === 'true') {
+                    button.classList.add('correct');
+                }
+                button.disabled = true;
+            });
+            
+            nextBtn.style.display = 'block';
+        }
+        
+        function showResults() {
+            quizProper.style.display = 'none';
+            resultsContainer.style.display = 'block';
+            scoreTextEl.innerText = `You scored ${score} out of ${currentQuizData.questions.length}!`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentQuestionIndex++;
+            showNextQuestion();
+        });
+
+        restartBtn.addEventListener('click', () => {
+            startQuiz(currentQuizId);
+        });
+        
+        homeBtn.addEventListener('click', () => {
+            quizPage.style.display = 'none';
+            homePage.style.display = 'block';
+        });
+
+    </script>
+</body>
+</html>
