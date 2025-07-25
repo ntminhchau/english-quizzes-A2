@@ -1,30 +1,230 @@
 {
-                "title": "Vocabulary: Workplace",
-                "questions": [
-                    { question: 'What is a “shift” at work?', answers: [ { text: 'A break', correct: false }, { text: 'A work period during the day or night', correct: true }, { text: 'A uniform style', correct: false }, { text: 'A breakroom schedule', correct: false } ] },
-                    { question: 'The person who hires and pays the workers is the...', answers: [ { text: 'Employee', correct: false }, { text: 'Supervisor', correct: false }, { text: 'Employer', correct: true }, { text: 'Applicant', correct: false } ] },
-                    { question: 'What is the main duty of a “supervisor”?', answers: [ { text: 'Restock shelves', correct: false }, { text: 'Watch and guide workers', correct: true }, { text: 'Deliver goods', correct: false }, { text: 'Serve customers', correct: false } ] },
-                    { question: 'What does it mean to “restock” items?', answers: [ { text: 'Throw them away', correct: false }, { text: 'Move them to a new location', correct: false }, { text: 'Put more items on the shelves', correct: true }, { text: 'Clean them with water', correct: false } ] },
-                    { question: 'Which of the following is a place to keep personal belongings (tư trang) at work?', answers: [ { text: 'Counter', correct: false }, { text: 'Locker', correct: true }, { text: 'Roster', correct: false }, { text: 'Warehouse', correct: false } ] },
-                    { question: 'What is a “roster”?', answers: [ { text: 'A type of uniform', correct: false }, { text: 'A trash bin', correct: false }, { text: 'A list of who works and when', correct: true }, { text: 'A payment receipt', correct: false } ] },
-                    { question: 'Which is someone who only works a few hours a week?', answers: [ { text: 'Full-time worker', correct: false }, { text: 'Manager', correct: false }, { text: 'Part-time worker', correct: true }, { text: 'Employer', correct: false } ] },
-                    { question: 'A large area to store goods is called a...', answers: [ { text: 'Section', correct: false }, { text: 'Warehouse', correct: true }, { text: 'Shift', correct: false }, { text: 'Locker', correct: false } ] },
-                    { question: 'The company has a strict ________, which says no jeans or t-shirts.', answers: [ { text: 'uniform', correct: false }, { text: 'shift', correct: false }, { text: 'dress code', correct: true }, { text: 'schedule', correct: false } ] },
-                    { question: 'If you are “allergic” to something, it means...', answers: [ { text: 'You like it', correct: false }, { text: 'You can’t buy it', correct: false }, { text: 'You are responsible for it', correct: false }, { text: 'It causes a bad reaction in your body', correct: true } ] },
-                    { question: 'A person who works for a company is called ...', answers: [ { text: 'An employer', correct: false }, { text: 'An employee', correct: true }, { text: 'A supervisor', correct: false }, { text: 'An interviewer', correct: false } ] },
-                    { question: 'If you “apply for” a job, you...', answers: [ { text: 'Quit it', correct: false }, { text: 'Refuse it', correct: false }, { text: 'Try to get it', correct: true }, { text: 'Get promoted', correct: false } ] },
-                    { question: 'A good leader has strong ________ skills and works well with others.', answers: [ { text: 'trash', correct: false }, { text: 'computer', correct: false }, { text: 'communication', correct: true }, { text: 'dress', correct: false } ] },
-                    { question: 'A person responsible for a small team or section is called a...', answers: [ { text: 'Leader', correct: true }, { text: 'Locker', correct: false }, { text: 'Employee', correct: false }, { text: 'Employer', correct: false } ] },
-                    { question: 'You can find bread and cakes in the __________ section of a supermarket.', answers: [ { text: 'Vegetables', correct: false }, { text: 'Clothing', correct: false }, { text: 'Bakery', correct: true }, { text: 'Warehouse', correct: false } ] },
-                    { question: 'Please take out the ________ before closing the store.', answers: [ { text: 'spill', correct: false }, { text: 'trash', correct: true }, { text: 'shift', correct: false }, { text: 'label', correct: false } ] },
-                    { question: 'Be sure to keep your area ________ and clean at all times.', answers: [ { text: 'allergic', correct: false }, { text: 'neat', correct: true }, { text: 'restocked', correct: false }, { text: 'scheduled', correct: false } ] },
-                    { question: 'There’s a coffee ________ near the customer counter.', answers: [ { text: 'shift', correct: false }, { text: 'trash', correct: false }, { text: 'spill', correct: true }, { text: 'mop', correct: false } ] },
-                    { question: 'All your work ________ are listed on the whiteboard in the back.', answers: [ { text: 'lockers', correct: false }, { text: 'employers', correct: false }, { text: 'duties', correct: true }, { text: 'bakery', correct: false } ] },
-                    { question: 'You can check the work ________ to see your next shift.', answers: [ { text: 'dress code', correct: false }, { text: 'challenge', correct: false }, { text: 'warehouse', correct: false }, { text: 'schedule', correct: true } ] },
-                    { question: 'The salad bar section needs to be ________ with more vegetables.', answers: [ { text: 'applied', correct: false }, { text: 'restocked', correct: true }, { text: 'supervised', correct: false }, { text: 'scheduled', correct: false } ] },
-                    { question: 'Don’t forget to put a price ________ on each item before shelving it.', answers: [ { text: 'shift', correct: false }, { text: 'locker', correct: false }, { text: 'label', correct: true }, { text: 'duty', correct: false } ] },
-                    { question: 'I can’t eat peanuts — I’m ________ to them.', answers: [ { text: 'neat', correct: false }, { text: 'allergic', correct: true }, { text: 'tidy', correct: false }, { text: 'part-time', correct: false } ] },
-                    { question: 'Keep your ________ clean and free of any trash.', answers: [ { text: 'roster', correct: false }, { text: 'bakery', correct: false }, { text: 'work', correct: false }, { text: 'locker', correct: true } ] },
-                    { question: 'I work in the frozen food ________ of the store.', answers: [ { text: 'section', correct: true }, { text: 'schedule', correct: false }, { text: 'duty', correct: false }, { text: 'warehouse', correct: false } ] }
-                ]
-            }
+    "title": "Vocabulary: Workplace",
+    "questions": [
+        {
+            "question": "What is a “shift” at work?",
+            "answers": [
+                { "text": "A break", "correct": false },
+                { "text": "A work period during the day or night", "correct": true },
+                { "text": "A uniform style", "correct": false },
+                { "text": "A breakroom schedule", "correct": false }
+            ]
+        },
+        {
+            "question": "The person who hires and pays the workers is the...",
+            "answers": [
+                { "text": "Employee", "correct": false },
+                { "text": "Supervisor", "correct": false },
+                { "text": "Employer", "correct": true },
+                { "text": "Applicant", "correct": false }
+            ]
+        },
+        {
+            "question": "What is the main duty of a “supervisor”?",
+            "answers": [
+                { "text": "Restock shelves", "correct": false },
+                { "text": "Watch and guide workers", "correct": true },
+                { "text": "Deliver goods", "correct": false },
+                { "text": "Serve customers", "correct": false }
+            ]
+        },
+        {
+            "question": "What does it mean to “restock” items?",
+            "answers": [
+                { "text": "Throw them away", "correct": false },
+                { "text": "Move them to a new location", "correct": false },
+                { "text": "Put more items on the shelves", "correct": true },
+                { "text": "Clean them with water", "correct": false }
+            ]
+        },
+        {
+            "question": "Which of the following is a place to keep personal belongings (tư trang) at work?",
+            "answers": [
+                { "text": "Counter", "correct": false },
+                { "text": "Locker", "correct": true },
+                { "text": "Roster", "correct": false },
+                { "text": "Warehouse", "correct": false }
+            ]
+        },
+        {
+            "question": "What is a “roster”?",
+            "answers": [
+                { "text": "A type of uniform", "correct": false },
+                { "text": "A trash bin", "correct": false },
+                { "text": "A list of who works and when", "correct": true },
+                { "text": "A payment receipt", "correct": false }
+            ]
+        },
+        {
+            "question": "Which is someone who only works a few hours a week?",
+            "answers": [
+                { "text": "Full-time worker", "correct": false },
+                { "text": "Manager", "correct": false },
+                { "text": "Part-time worker", "correct": true },
+                { "text": "Employer", "correct": false }
+            ]
+        },
+        {
+            "question": "A large area to store goods is called a...",
+            "answers": [
+                { "text": "Section", "correct": false },
+                { "text": "Warehouse", "correct": true },
+                { "text": "Shift", "correct": false },
+                { "text": "Locker", "correct": false }
+            ]
+        },
+        {
+            "question": "The company has a strict ________, which says no jeans or t-shirts.",
+            "answers": [
+                { "text": "uniform", "correct": false },
+                { "text": "shift", "correct": false },
+                { "text": "dress code", "correct": true },
+                { "text": "schedule", "correct": false }
+            ]
+        },
+        {
+            "question": "If you are “allergic” to something, it means...",
+            "answers": [
+                { "text": "You like it", "correct": false },
+                { "text": "You can’t buy it", "correct": false },
+                { "text": "You are responsible for it", "correct": false },
+                { "text": "It causes a bad reaction in your body", "correct": true }
+            ]
+        },
+        {
+            "question": "A person who works for a company is called ...",
+            "answers": [
+                { "text": "An employer", "correct": false },
+                { "text": "An employee", "correct": true },
+                { "text": "A supervisor", "correct": false },
+                { "text": "An interviewer", "correct": false }
+            ]
+        },
+        {
+            "question": "If you “apply for” a job, you...",
+            "answers": [
+                { "text": "Quit it", "correct": false },
+                { "text": "Refuse it", "correct": false },
+                { "text": "Try to get it", "correct": true },
+                { "text": "Get promoted", "correct": false }
+            ]
+        },
+        {
+            "question": "A good leader has strong ________ skills and works well with others.",
+            "answers": [
+                { "text": "trash", "correct": false },
+                { "text": "computer", "correct": false },
+                { "text": "communication", "correct": true },
+                { "text": "dress", "correct": false }
+            ]
+        },
+        {
+            "question": "A person responsible for a small team or section is called a...",
+            "answers": [
+                { "text": "Leader", "correct": true },
+                { "text": "Locker", "correct": false },
+                { "text": "Employee", "correct": false },
+                { "text": "Employer", "correct": false }
+            ]
+        },
+        {
+            "question": "You can find bread and cakes in the __________ section of a supermarket.",
+            "answers": [
+                { "text": "Vegetables", "correct": false },
+                { "text": "Clothing", "correct": false },
+                { "text": "Bakery", "correct": true },
+                { "text": "Warehouse", "correct": false }
+            ]
+        },
+        {
+            "question": "Please take out the ________ before closing the store.",
+            "answers": [
+                { "text": "spill", "correct": false },
+                { "text": "trash", "correct": true },
+                { "text": "shift", "correct": false },
+                { "text": "label", "correct": false }
+            ]
+        },
+        {
+            "question": "Be sure to keep your area ________ and clean at all times.",
+            "answers": [
+                { "text": "allergic", "correct": false },
+                { "text": "neat", "correct": true },
+                { "text": "restocked", "correct": false },
+                { "text": "scheduled", "correct": false }
+            ]
+        },
+        {
+            "question": "There’s a coffee ________ near the customer counter.",
+            "answers": [
+                { "text": "shift", "correct": false },
+                { "text": "trash", "correct": false },
+                { "text": "spill", "correct": true },
+                { "text": "mop", "correct": false }
+            ]
+        },
+        {
+            "question": "All your work ________ are listed on the whiteboard in the back.",
+            "answers": [
+                { "text": "lockers", "correct": false },
+                { "text": "employers", "correct": false },
+                { "text": "duties", "correct": true },
+                { "text": "bakery", "correct": false }
+            ]
+        },
+        {
+            "question": "You can check the work ________ to see your next shift.",
+            "answers": [
+                { "text": "dress code", "correct": false },
+                { "text": "challenge", "correct": false },
+                { "text": "warehouse", "correct": false },
+                { "text": "schedule", "correct": true }
+            ]
+        },
+        {
+            "question": "The salad bar section needs to be ________ with more vegetables.",
+            "answers": [
+                { "text": "applied", "correct": false },
+                { "text": "restocked", "correct": true },
+                { "text": "supervised", "correct": false },
+                { "text": "scheduled", "correct": false }
+            ]
+        },
+        {
+            "question": "Don’t forget to put a price ________ on each item before shelving it.",
+            "answers": [
+                { "text": "shift", "correct": false },
+                { "text": "locker", "correct": false },
+                { "text": "label", "correct": true },
+                { "text": "duty", "correct": false }
+            ]
+        },
+        {
+            "question": "I can’t eat peanuts — I’m ________ to them.",
+            "answers": [
+                { "text": "neat", "correct": false },
+                { "text": "allergic", "correct": true },
+                { "text": "tidy", "correct": false },
+                { "text": "part-time", "correct": false }
+            ]
+        },
+        {
+            "question": "Keep your ________ clean and free of any trash.",
+            "answers": [
+                { "text": "roster", "correct": false },
+                { "text": "bakery", "correct": false },
+                { "text": "work", "correct": false },
+                { "text": "locker", "correct": true }
+            ]
+        },
+        {
+            "question": "I work in the frozen food ________ of the store.",
+            "answers": [
+                { "text": "section", "correct": true },
+                { "text": "schedule", "correct": false },
+                { "text": "duty", "correct": false },
+                { "text": "warehouse", "correct": false }
+            ]
+        }
+    ]
+}
