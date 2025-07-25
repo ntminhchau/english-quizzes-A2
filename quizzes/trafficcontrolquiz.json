@@ -38,7 +38,7 @@
             ]
         },
         {
-            "question": "A traffic-lane control light with an illuminated red \"X\" means:",
+            "question": "A traffic-lane control light with an illuminated red \"X\" means:<br><img src='https://i.ibb.co/fVp9bJ6m/illuminated-x.png' alt='Illuminated X' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Prepare for an emergency vehicle travelling in that lane", "correct": false },
                 { "text": "Reduce speed to below 30 km/h", "correct": false },
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://images.app.goo.gl/M4dtB7FLyjRNoxpk9' alt='Reserved Lane' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/0pPfndx0/reserved-lane.png' alt='Reserved Lane' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Lane is reserved for use by the specified vehicles", "correct": true },
                 { "text": "One-way traffic only", "correct": false },
