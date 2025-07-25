@@ -22,7 +22,6 @@ let currentQuestionIndex = 0;
 let score = 0;
 let currentQuizFile = '';
 
-// --- NEW ---
 // This code runs as soon as the page loads
 window.addEventListener('load', () => {
     // Look for a 'quiz' parameter in the URL
@@ -35,7 +34,6 @@ window.addEventListener('load', () => {
     }
     // Otherwise, the homepage will show by default.
 });
-// --- END NEW ---
 
 
 // Function to shuffle an array (Fisher-Yates Shuffle)
@@ -94,7 +92,12 @@ function showNextQuestion() {
     resetState();
     if (currentQuestionIndex < currentQuizData.questions.length) {
         const questionData = currentQuizData.questions[currentQuestionIndex];
-        questionTextEl.innerText = questionData.question;
+        
+        // --- THIS IS THE FIX ---
+        // Use .innerHTML instead of .innerText to render HTML tags
+        questionTextEl.innerHTML = questionData.question;
+        // --- END FIX ---
+
         questionCounterEl.innerText = `Question ${currentQuestionIndex + 1}/${currentQuizData.questions.length}`;
         
         const shuffledAnswers = [...questionData.answers];
