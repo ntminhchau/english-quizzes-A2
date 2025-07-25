@@ -1,0 +1,185 @@
+{
+    "title": "Vocabulary: Careers & Learning",
+    "questions": [
+        {
+            "question": "What does “go into” mean? For example: “go into tourism” or “go into politics”?",
+            "answers": [
+                { "text": "Travel far away", "correct": false },
+                { "text": "Have a conversation", "correct": false },
+                { "text": "Start a career in a field (lĩnh vực)", "correct": true },
+                { "text": "Talk about a topic", "correct": false }
+            ]
+        },
+        {
+            "question": "Which phrase means the same as “apply what I learn”?",
+            "answers": [
+                { "text": "Change my study plan", "correct": false },
+                { "text": "Use my knowledge", "correct": true },
+                { "text": "Share answers with others", "correct": false },
+                { "text": "Forget what I studied", "correct": false }
+            ]
+        },
+        {
+            "question": "What is the meaning of “keen on” something?",
+            "answers": [
+                { "text": "Good at it", "correct": false },
+                { "text": "Bored of it", "correct": false },
+                { "text": "Very interested in it", "correct": true },
+                { "text": "Angry about it", "correct": false }
+            ]
+        },
+        {
+            "question": "Which phrase means the same as “more than expected”?",
+            "answers": [
+                { "text": "Not as exciting", "correct": false },
+                { "text": "Less interesting", "correct": false },
+                { "text": "Better than I thought", "correct": true },
+                { "text": "Almost the same", "correct": false }
+            ]
+        },
+        {
+            "question": "What does “practical learning” include?",
+            "answers": [
+                { "text": "Memorizing information", "correct": false },
+                { "text": "Listening to lectures", "correct": false },
+                { "text": "Real-world experience", "correct": true },
+                { "text": "Doing homework only", "correct": false }
+            ]
+        },
+        {
+            "question": "What does “dull” mean?",
+            "answers": [
+                { "text": "Exciting", "correct": false },
+                { "text": "Bright", "correct": false },
+                { "text": "Boring", "correct": true },
+                { "text": "Short", "correct": false }
+            ]
+        },
+        {
+            "question": "If something is “entertaining”, it is…",
+            "answers": [
+                { "text": "Tiring", "correct": false },
+                { "text": "Boring", "correct": false },
+                { "text": "Fun and enjoyable", "correct": true },
+                { "text": "Confusing", "correct": false }
+            ]
+        },
+        {
+            "question": "Which of the following is closest in meaning to “dream job”?",
+            "answers": [
+                { "text": "A temporary job", "correct": false },
+                { "text": "A job I hope to have", "correct": true },
+                { "text": "A part-time job", "correct": false },
+                { "text": "A tiring job", "correct": false }
+            ]
+        },
+        {
+            "question": "The phrase “no risk of getting bored” means:",
+            "answers": [
+                { "text": "You will feel tired", "correct": false },
+                { "text": "You won’t lose interest", "correct": true },
+                { "text": "You should be careful", "correct": false },
+                { "text": "You might fall asleep", "correct": false }
+            ]
+        },
+        {
+            "question": "What does “curious” mean?",
+            "answers": [
+                { "text": "Neat", "correct": false },
+                { "text": "Not interested", "correct": false },
+                { "text": "Wanting to know more", "correct": true },
+                { "text": "Feeling lazy", "correct": false }
+            ]
+        },
+        {
+            "question": "Which word is closest in meaning to “fascinating”?",
+            "answers": [
+                { "text": "Difficult", "correct": false },
+                { "text": "Boring", "correct": false },
+                { "text": "Interesting", "correct": true },
+                { "text": "Tidy", "correct": false }
+            ]
+        },
+        {
+            "question": "The art class was better than I expected — it was much more ________.",
+            "answers": [
+                { "text": "dull", "correct": true },
+                { "text": "expensive", "correct": false },
+                { "text": "interesting", "correct": false },
+                { "text": "challenging", "correct": false }
+            ]
+        },
+        {
+            "question": "Which word is a synonym of “relevant”?",
+            "answers": [
+                { "text": "Connected", "correct": true },
+                { "text": "Repeated", "correct": false },
+                { "text": "Forgettable", "correct": false },
+                { "text": "Impossible", "correct": false }
+            ]
+        },
+        {
+            "question": "If a teacher “pushes” a student, it means the teacher…",
+            "answers": [
+                { "text": "Ignores the student", "correct": false },
+                { "text": "Gives the student easy tasks", "correct": false },
+                { "text": "Encourages and challenges the student", "correct": true },
+                { "text": "Tells the student to stop", "correct": false }
+            ]
+        },
+        {
+            "question": "Which is a synonym for “appreciate”?",
+            "answers": [
+                { "text": "Hide", "correct": false },
+                { "text": "Complain", "correct": false },
+                { "text": "Be thankful for", "correct": true },
+                { "text": "Dislike", "correct": false }
+            ]
+        },
+        {
+            "question": "Which phrase is closest in meaning to “high spot of the week”?",
+            "answers": [
+                { "text": "The worst time", "correct": false },
+                { "text": "The busiest moment", "correct": false },
+                { "text": "The best or most enjoyable part", "correct": true },
+                { "text": "The longest day", "correct": false }
+            ]
+        },
+        {
+            "question": "Which word means the same as “use”?",
+            "answers": [
+                { "text": "Apply", "correct": true },
+                { "text": "Fix", "correct": false },
+                { "text": "Copy", "correct": false },
+                { "text": "Repeat", "correct": false }
+            ]
+        },
+        {
+            "question": "One ________ of the course is that we can learn how to work in a team.",
+            "answers": [
+                { "text": "problem", "correct": false },
+                { "text": "benefit", "correct": true },
+                { "text": "reason", "correct": false },
+                { "text": "difficulty", "correct": false }
+            ]
+        },
+        {
+            "question": "Instead of just listening, I prefer a more ________ learning style.",
+            "answers": [
+                { "text": "practical", "correct": true },
+                { "text": "risky", "correct": false },
+                { "text": "challenging", "correct": false },
+                { "text": "noisy", "correct": false }
+            ]
+        },
+        {
+            "question": "What does “sector” mean? For example: “the tourism sector, the service sector”?",
+            "answers": [
+                { "text": "A classroom", "correct": false },
+                { "text": "A company office", "correct": false },
+                { "text": "An area of work or industry", "correct": true },
+                { "text": "A student group", "correct": false }
+            ]
+        }
+    ]
+}
