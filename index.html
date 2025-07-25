@@ -211,6 +211,11 @@
                     <h2>Vocabulary Quiz 1</h2>
                     <p>Learn vocabulary related to careers, learning, and personal interests.</p>
                 </div>
+               
+                <div class="game-card" onclick="startQuiz('workplaceVocab')">
+                    <h2>Vocabulary Quiz 2: Workplace</h2>
+                    <p>Learn essential vocabulary for part-time and entry-level jobs.</p>
+                </div>
 
                 </div>
         </div>
@@ -256,10 +261,10 @@
                 title: 'Vocabulary: Careers & Learning',
                 questions: [
                     {
-                        question: 'What does “go into” mean in the phrase “go into tourism” or “go into politics”?',
+                        question: 'What does “go into” mean? For example: “go into tourism” or “go into politics”?',
                         answers: [
                             { text: 'Travel far away', correct: false },
-                            { text: 'Join a conversation', correct: false },
+                            { text: 'Have a conversation', correct: false },
                             { text: 'Start a career in a field', correct: true },
                             { text: 'Talk about a topic', correct: false }
                         ]
@@ -292,16 +297,16 @@
                         ]
                     },
                     {
-                        question: 'What does “practical learning” involve?',
+                        question: 'What does “practical learning” include?',
                         answers: [
-                            { text: 'Memorizing facts', correct: false },
+                            { text: 'Memorizing information', correct: false },
                             { text: 'Listening to lectures', correct: false },
                             { text: 'Real-world experience', correct: true },
                             { text: 'Doing homework only', correct: false }
                         ]
                     },
                     {
-                        question: 'Which word is a synonym of “dull”?',
+                        question: 'What does “dull” mean?',
                         answers: [
                             { text: 'Exciting', correct: false },
                             { text: 'Bright', correct: false },
@@ -339,7 +344,7 @@
                     {
                         question: 'What does “curious” mean?',
                         answers: [
-                            { text: 'Angry', correct: false },
+                            { text: 'Neat', correct: false },
                             { text: 'Not interested', correct: false },
                             { text: 'Wanting to know more', correct: true },
                             { text: 'Feeling lazy', correct: false }
@@ -351,16 +356,16 @@
                             { text: 'Difficult', correct: false },
                             { text: 'Boring', correct: false },
                             { text: 'Interesting', correct: true },
-                            { text: 'Expensive', correct: false }
+                            { text: 'Tidy', correct: false }
                         ]
                     },
                     {
-                        question: 'Which verb matches the noun “challenge”?',
+                        question: 'The art class was better than I expected — it was much more ________.',
                         answers: [
-                            { text: 'Accept', correct: true },
-                            { text: 'Lie', correct: false },
-                            { text: 'Paint', correct: false },
-                            { text: 'Invite', correct: false }
+                            { text: 'dull', correct: true },
+                            { text: 'expensive', correct: false },
+                            { text: 'interesting', correct: false },
+                            { text: 'challenging', correct: false }
                         ]
                     },
                     {
@@ -368,7 +373,7 @@
                         answers: [
                             { text: 'Connected', correct: true },
                             { text: 'Repeated', correct: false },
-                            { text: 'Forgotten', correct: false },
+                            { text: 'Forgettable', correct: false },
                             { text: 'Impossible', correct: false }
                         ]
                     },
@@ -382,7 +387,7 @@
                         ]
                     },
                     {
-                        question: 'Which of these is a synonym for “appreciate” in this context: “I appreciate the extra help”?',
+                        question: 'Which is a synonym for “appreciate”?',
                         answers: [
                             { text: 'Hide', correct: false },
                             { text: 'Complain', correct: false },
@@ -400,7 +405,7 @@
                         ]
                     },
                     {
-                        question: 'Which phrase means the same as “use” in an academic or career context?',
+                        question: 'Which word means the same as “use”?',
                         answers: [
                             { text: 'Apply', correct: true },
                             { text: 'Fix', correct: false },
@@ -409,30 +414,260 @@
                         ]
                     },
                     {
-                        question: 'If something is a “benefit”, what is it?',
+                        question: 'One ________ of the course is that we can learn how to work in a team.',
                         answers: [
-                            { text: 'A difficulty', correct: false },
-                            { text: 'A reward or advantage', correct: true },
-                            { text: 'A mistake', correct: false },
-                            { text: 'A cost', correct: false }
+                            { text: 'problem', correct: false },
+                            { text: 'benefit', correct: true },
+                            { text: 'reason', correct: false },
+                            { text: 'difficulty', correct: false }
                         ]
                     },
                     {
-                        question: 'Which word is related to “learning outside school”?',
+                        question: 'Instead of just listening, I prefer a more ________ learning style.',
                         answers: [
-                            { text: 'Leisure', correct: true },
+                            { text: 'challenging', correct: true },
                             { text: 'Risk', correct: false },
                             { text: 'Trade', correct: false },
                             { text: 'Delay', correct: false }
                         ]
                     },
                     {
-                        question: 'What does “sector” mean in the phrase “people working in the tourism sector”?',
+                        question: 'What does “sector” mean? For example: “the tourism sector, the service sector”?',
                         answers: [
                             { text: 'A classroom', correct: false },
                             { text: 'A company office', correct: false },
-                            { text: 'A specific area of work or industry', correct: true },
+                            { text: 'An area of work or industry', correct: true },
                             { text: 'A student group', correct: false }
+                        ]
+                    }
+                ]
+            }
+            'workplaceVocab': {
+                title: 'Vocabulary: Workplace',
+                questions: [
+                    {
+                        question: 'What is a “shift” at work?',
+                        answers: [
+                            { text: 'A type of break', correct: false },
+                            { text: 'A work period during the day or night', correct: true },
+                            { text: 'A uniform style', correct: false },
+                            { text: 'A breakroom schedule', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'The person who hires and pays the workers is the...',
+                        answers: [
+                            { text: 'Employee', correct: false },
+                            { text: 'Supervisor', correct: false },
+                            { text: 'Employer', correct: true },
+                            { text: 'Applicant', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'What is the main role of a “supervisor”?',
+                        answers: [
+                            { text: 'Restock shelves', correct: false },
+                            { text: 'Watch and guide workers', correct: true },
+                            { text: 'Deliver packages', correct: false },
+                            { text: 'Serve customers', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'What does it mean to “restock” items?',
+                        answers: [
+                            { text: 'Throw them away', correct: false },
+                            { text: 'Move them to a new location', correct: false },
+                            { text: 'Put more items on the shelves', correct: true },
+                            { text: 'Clean them with water', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which of the following is a place to keep personal belongings at work?',
+                        answers: [
+                            { text: 'Counter', correct: false },
+                            { text: 'Locker', correct: true },
+                            { text: 'Register', correct: false },
+                            { text: 'Warehouse', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'What is a “roster”?',
+                        answers: [
+                            { text: 'A type of uniform', correct: false },
+                            { text: 'A trash bin', correct: false },
+                            { text: 'A list of who works and when', correct: true },
+                            { text: 'A payment receipt', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Which of these describes someone who only works a few hours a week?',
+                        answers: [
+                            { text: 'Full-time worker', correct: false },
+                            { text: 'Manager', correct: false },
+                            { text: 'Part-time worker', correct: true },
+                            { text: 'Employer', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'A large storage area for goods is called a...',
+                        answers: [
+                            { text: 'Register', correct: false },
+                            { text: 'Warehouse', correct: true },
+                            { text: 'Shift', correct: false },
+                            { text: 'Locker', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'The company has a strict ________, which says no jeans or t-shirts.',
+                        answers: [
+                            { text: 'uniform', correct: false },
+                            { text: 'shift', correct: false },
+                            { text: 'dress code', correct: true },
+                            { text: 'schedule', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'If you are “allergic” to something, it means...',
+                        answers: [
+                            { text: 'You like it', correct: false },
+                            { text: 'You can’t afford it', correct: false },
+                            { text: 'You are responsible for it', correct: false },
+                            { text: 'It causes a bad reaction in your body', correct: true }
+                        ]
+                    },
+                    {
+                        question: 'A person who works for a company is called an...',
+                        answers: [
+                            { text: 'Employer', correct: false },
+                            { text: 'Employee', correct: true },
+                            { text: 'Supervisor', correct: false },
+                            { text: 'Interviewer', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'If you “apply for” a job, you...',
+                        answers: [
+                            { text: 'Quit it', correct: false },
+                            { text: 'Refuse it', correct: false },
+                            { text: 'Try to get it', correct: true },
+                            { text: 'Get promoted', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'A good leader has strong ________ skills and works well with others.',
+                        answers: [
+                            { text: 'trash', correct: false },
+                            { text: 'computer', correct: false },
+                            { text: 'communication', correct: true },
+                            { text: 'dress', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'A person in charge of a small team or section is called a...',
+                        answers: [
+                            { text: 'Leader', correct: true },
+                            { text: 'Locker', correct: false },
+                            { text: 'Label', correct: false },
+                            { text: 'Trash', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'You can find bread and cakes in the __________ section of a supermarket.',
+                        answers: [
+                            { text: 'Trash', correct: false },
+                            { text: 'Clothing', correct: false },
+                            { text: 'Bakery', correct: true },
+                            { text: 'Warehouse', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Please take out the ________ before closing the store.',
+                        answers: [
+                            { text: 'warehouse', correct: false },
+                            { text: 'trash', correct: true },
+                            { text: 'shift', correct: false },
+                            { text: 'label', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Be sure to keep your area ________ and clean at all times.',
+                        answers: [
+                            { text: 'allergic', correct: false },
+                            { text: 'neat', correct: true },
+                            { text: 'restocked', correct: false },
+                            { text: 'scheduled', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'There’s been a coffee ________ near the customer counter.',
+                        answers: [
+                            { text: 'shift', correct: false },
+                            { text: 'trash', correct: false },
+                            { text: 'spill', correct: true },
+                            { text: 'schedule', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'All your work ________ are listed on the whiteboard in the back.',
+                        answers: [
+                            { text: 'lockers', correct: false },
+                            { text: 'employers', correct: false },
+                            { text: 'duties', correct: true },
+                            { text: 'bakery', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'You can check the work ________ to see your next shift.',
+                        answers: [
+                            { text: 'dress code', correct: false },
+                            { text: 'label', correct: false },
+                            { text: 'warehouse', correct: false },
+                            { text: 'schedule', correct: true }
+                        ]
+                    },
+                    {
+                        question: 'The salad bar needs to be ________ with more vegetables.',
+                        answers: [
+                            { text: 'applied', correct: false },
+                            { text: 'restocked', correct: true },
+                            { text: 'supervised', correct: false },
+                            { text: 'scheduled', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Don’t forget to put a price ________ on each item before shelving it.',
+                        answers: [
+                            { text: 'shift', correct: false },
+                            { text: 'locker', correct: false },
+                            { text: 'label', correct: true },
+                            { text: 'duty', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'I can’t eat peanuts — I’m ________ to them.',
+                        answers: [
+                            { text: 'neat', correct: false },
+                            { text: 'allergic', correct: true },
+                            { text: 'tidy', correct: false },
+                            { text: 'part-time', correct: false }
+                        ]
+                    },
+                    {
+                        question: 'Keep your ________ space clean and free of any trash.',
+                        answers: [
+                            { text: 'roster', correct: false },
+                            { text: 'bakery', correct: false },
+                            { text: 'work', correct: false },
+                            { text: 'locker', correct: true }
+                        ]
+                    },
+                    {
+                        question: 'I work in the frozen food ________ of the store.',
+                        answers: [
+                            { text: 'section', correct: true },
+                            { text: 'schedule', correct: false },
+                            { text: 'duty', correct: false },
+                            { text: 'warehouse', correct: false }
                         ]
                     }
                 ]
