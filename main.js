@@ -22,6 +22,22 @@ let currentQuestionIndex = 0;
 let score = 0;
 let currentQuizFile = '';
 
+// --- NEW ---
+// This code runs as soon as the page loads
+window.addEventListener('load', () => {
+    // Look for a 'quiz' parameter in the URL
+    const params = new URLSearchParams(window.location.search);
+    const quizToLoad = params.get('quiz');
+
+    // If a quiz file is specified in the URL, start that quiz directly
+    if (quizToLoad) {
+        startQuiz(quizToLoad);
+    }
+    // Otherwise, the homepage will show by default.
+});
+// --- END NEW ---
+
+
 // Function to shuffle an array (Fisher-Yates Shuffle)
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -30,12 +46,18 @@ function shuffleArray(array) {
     }
 }
 
-// UPDATED: Fetches quiz data from a file
+// Fetches quiz data from a file
 function startQuiz(quizFile) {
     currentQuizFile = quizFile;
     
     fetch('quizzes/' + quizFile)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                // If the file is not found or there's an error, throw an error
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             const originalQuiz = data;
             const questionsCopy = [...originalQuiz.questions];
@@ -61,7 +83,9 @@ function startQuiz(quizFile) {
         })
         .catch(error => {
             console.error('Error loading quiz data:', error);
-            alert('Could not load the quiz. Please check the file name and path.');
+            // Show an alert and redirect to the homepage if the quiz file fails to load
+            alert('Could not load the quiz. It might not exist. Returning to the homepage.');
+            window.location.href = 'index.html'; // Go back to the clean homepage
         });
 }
 
@@ -131,10 +155,11 @@ nextBtn.addEventListener('click', () => {
 });
 
 restartBtn.addEventListener('click', () => {
+    // When restarting, just use the file name we already have
     startQuiz(currentQuizFile);
 });
 
 homeBtn.addEventListener('click', () => {
-    quizPage.style.display = 'none';
-    homePage.style.display = 'block';
+    // Go back to the homepage by loading the URL without any parameters
+    window.location.href = 'index.html';
 });
