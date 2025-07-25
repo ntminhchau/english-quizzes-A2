@@ -1,6 +1,6 @@
 {
-title: 'Vocabulary: Workplace',
-                questions: [
+                "title": "Vocabulary: Workplace",
+                "questions": [
                     { question: 'What is a “shift” at work?', answers: [ { text: 'A break', correct: false }, { text: 'A work period during the day or night', correct: true }, { text: 'A uniform style', correct: false }, { text: 'A breakroom schedule', correct: false } ] },
                     { question: 'The person who hires and pays the workers is the...', answers: [ { text: 'Employee', correct: false }, { text: 'Supervisor', correct: false }, { text: 'Employer', correct: true }, { text: 'Applicant', correct: false } ] },
                     { question: 'What is the main duty of a “supervisor”?', answers: [ { text: 'Restock shelves', correct: false }, { text: 'Watch and guide workers', correct: true }, { text: 'Deliver goods', correct: false }, { text: 'Serve customers', correct: false } ] },
