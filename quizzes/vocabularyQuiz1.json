@@ -103,9 +103,9 @@
         {
             "question": "The art class was better than I expected — it was much more ________.",
             "answers": [
-                { "text": "dull", "correct": true },
+                { "text": "interesting", "correct": true },
                 { "text": "expensive", "correct": false },
-                { "text": "interesting", "correct": false },
+                { "text": "dull", "correct": false },
                 { "text": "challenging", "correct": false }
             ]
         },
