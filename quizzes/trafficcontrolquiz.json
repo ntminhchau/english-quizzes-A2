@@ -1,0 +1,419 @@
+{
+    "title": "Traffic Control Quiz",
+    "questions": [
+        {
+            "question": "Unless otherwise posted, what is the basic speed limit outside a city, town or village on a primary highway?",
+            "answers": [
+                { "text": "100 km/h", "correct": true },
+                { "text": "90 km/h", "correct": false },
+                { "text": "110 km/h", "correct": false },
+                { "text": "80 km/h", "correct": false }
+            ]
+        },
+        {
+            "question": "When approaching an intersection and facing a traffic control light that is showing a green right-turn arrow and a red light, a driver:",
+            "answers": [
+                { "text": "Must stop and wait for a green light before turning in the direction of the arrow", "correct": false },
+                { "text": "May go straight through the intersection without stopping", "correct": false },
+                { "text": "May proceed when safe, without stopping, in the direction of the arrow", "correct": true },
+                { "text": "May turn left without stopping", "correct": false }
+            ]
+        },
+        {
+            "question": "Which statement best describes the steps for turning right at a red traffic light?",
+            "answers": [
+                { "text": "Right turns on a red traffic light are never permitted", "correct": false },
+                { "text": "Signal and make sure there is no sign prohibiting the turn, stop, look left and right, yield the right-of-way, then proceed", "correct": true },
+                { "text": "Reduce speed before the turn, look right for cyclists, signal and proceed", "correct": false },
+                { "text": "Signal and reduce speed before the turn, look left, yield to vehicles and proceed", "correct": false }
+            ]
+        },
+        {
+            "question": "A single solid white line between driving lanes in an urban area means:",
+            "answers": [
+                { "text": "It is a line separating traffic travelling in opposite directions", "correct": false },
+                { "text": "Traffic on the right is moving faster than traffic on the left", "correct": false },
+                { "text": "Lane changing is not permitted", "correct": true },
+                { "text": "Lane change is permitted", "correct": false }
+            ]
+        },
+        {
+            "question": "A traffic-lane control light with an illuminated red \"X\" means:",
+            "answers": [
+                { "text": "Prepare for an emergency vehicle travelling in that lane", "correct": false },
+                { "text": "Reduce speed to below 30 km/h", "correct": false },
+                { "text": "Use that lane only for the purpose of making left turns", "correct": false },
+                { "text": "Travel is not permitted in that lane", "correct": true }
+            ]
+        },
+        {
+            "question": "A driver approaching a flashing red traffic light must:",
+            "answers": [
+                { "text": "Stop and wait for the flashing green light", "correct": false },
+                { "text": "Reduce speed and proceed with caution", "correct": false },
+                { "text": "Stop and proceed only when safe to do so", "correct": true },
+                { "text": "Stop until the signal light turns green", "correct": false }
+            ]
+        },
+        {
+            "question": "A \"slow-moving vehicle\" sign must be displayed on the rear of any vehicle that normally travels at speeds less than:",
+            "answers": [
+                { "text": "50 km/h", "correct": false },
+                { "text": "40 km/h", "correct": true },
+                { "text": "70 km/h", "correct": false },
+                { "text": "60 km/h", "correct": false }
+            ]
+        },
+        {
+            "question": "A driver attempting to turn left at a steady green traffic light:",
+            "answers": [
+                { "text": "Has the right-of-way over oncoming traffic", "correct": false },
+                { "text": "Must stop before the pedestrian crosswalk line, then proceed", "correct": false },
+                { "text": "Has the right-of-way over pedestrians", "correct": false },
+                { "text": "Must not cross the path of an approaching vehicle unless it is safe", "correct": true }
+            ]
+        },
+        {
+            "question": "What does a flashing yellow traffic light mean?",
+            "answers": [
+                { "text": "The traffic light will turn green", "correct": false },
+                { "text": "Stop until the light stops flashing", "correct": false },
+                { "text": "The traffic light will turn red", "correct": false },
+                { "text": "Proceed with caution", "correct": true }
+            ]
+        },
+        {
+            "question": "Unless otherwise posted, the school zone speed limits are in effect on school days during the following hours:",
+            "answers": [
+                { "text": "8:30 A.M. to 1 hour after sunset", "correct": false },
+                { "text": "8:00 A.M. to 9:30 A.M., 11:30 A.M. to 1:30 P.M. and 3:00 P.M. to 4:30 P.M.", "correct": true },
+                { "text": "8:30 A.M. to 9:30 A.M., 12:00 P.M. to 1:00 P.M. and 3:30 P.M. to 4:00 P.M.", "correct": false },
+                { "text": "8:00 A.M. to 4:30 P.M.", "correct": false }
+            ]
+        },
+        {
+            "question": "Playground zones are in effect:",
+            "answers": [
+                { "text": "From 8:30 A.M. to 1 hour after sunset", "correct": true },
+                { "text": "From 8:00 A.M. to 8:00 P.M.", "correct": false },
+                { "text": "During daylight hours and until 11:00 P.M.", "correct": false },
+                { "text": "Only when school lets out at noon and after 4:30 P.M.", "correct": false }
+            ]
+        },
+        {
+            "question": "Is a driver allowed to turn right at a red traffic control light?",
+            "answers": [
+                { "text": "Yes, but only when a sign permits such a turn", "correct": false },
+                { "text": "Yes, if the driver reduces speed and there is no traffic or pedestrian in the intersection, and no sign that prohibits such a turn", "correct": false },
+                { "text": "Yes, if the driver stops and there is no traffic, pedestrian or sign that prohibits such a turn", "correct": true },
+                { "text": "No, right turns on a red traffic light are never permitted", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/8Z6Z2Qd.png' alt='Reserved Lane' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Lane is reserved for use by the specified vehicles", "correct": true },
+                { "text": "One-way traffic only", "correct": false },
+                { "text": "Car pool vehicles only", "correct": false },
+                { "text": "Lane can be used for dangerous goods vehicles", "correct": false }
+            ]
+        },
+        {
+            "question": "When approaching an intersection displaying a steady yellow traffic light:",
+            "answers": [
+                { "text": "Proceed since the light is about to turn green", "correct": false },
+                { "text": "Yield to vehicles on the right", "correct": false },
+                { "text": "Stop before the intersection unless the stop cannot be made in safety", "correct": true },
+                { "text": "Increase speed to clear the intersection", "correct": false }
+            ]
+        },
+        {
+            "question": "A solid yellow line together with a broken yellow line marked on the centre of a highway means:",
+            "answers": [
+                { "text": "The road narrows ahead", "correct": false },
+                { "text": "If the solid line is on your side, passing is permitted", "correct": false },
+                { "text": "If the broken line is on your side, passing is not permitted", "correct": false },
+                { "text": "If the broken line is on your side, passing is permitted", "correct": true }
+            ]
+        },
+        {
+            "question": "At 9:00 A.M. on a school day, what is the maximum speed permitted in a school zone in a rural area, unless otherwise posted?",
+            "answers": [
+                { "text": "50 km/h", "correct": false },
+                { "text": "20 km/h", "correct": false },
+                { "text": "40 km/h", "correct": false },
+                { "text": "30 km/h", "correct": true }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/sJ7b3qF.png' alt='Dangerous Goods Route' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Route for vehicles over 4500 kg", "correct": false },
+                { "text": "Route for slow moving vehicles", "correct": false },
+                { "text": "Reserved lane for buses", "correct": false },
+                { "text": "Dangerous goods route", "correct": true }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/2n2k0L5.png' alt='Uneven Pavement' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Off-road facilities ahead", "correct": false },
+                { "text": "Slippery when wet", "correct": false },
+                { "text": "Uneven pavement (lề đường nhấp nhô)", "correct": true },
+                { "text": "Detour ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "When approaching a Yield sign, you must:",
+            "answers": [
+                { "text": "Yield the right-of-way to traffic not facing the sign and all pedestrians in the intersection", "correct": true },
+                { "text": "Always sound the horn to warn other traffic within the intersection", "correct": false },
+                { "text": "Expect all other vehicles to yield the right-of-way to you", "correct": false },
+                { "text": "Come to a stop and proceed after looking to the right and left", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/6g3O4aY.png' alt='Curve Right' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Traffic entering from the right", "correct": false },
+                { "text": "Winding road ahead", "correct": false },
+                { "text": "Curve right (cong bên phải)", "correct": true },
+                { "text": "Concealed intersection on the right", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/n6g5Y7j.png' alt='Yield Sign Ahead' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Do not enter", "correct": false },
+                { "text": "Slow moving vehicles ahead", "correct": false },
+                { "text": "Warning, Yield sign ahead (Cảnh báo)", "correct": true },
+                { "text": "Warning, traffic is approaching", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/5c9Y4Xg.png' alt='Road Narrows Left' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Road narrows, left", "correct": true },
+                { "text": "Two-way traffic", "correct": false },
+                { "text": "Divided highway ends", "correct": false },
+                { "text": "Obstruction – keep left", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/b5Z6f8t.png' alt='Bump' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Rumble strips", "correct": false },
+                { "text": "Construction zone", "correct": false },
+                { "text": "Bump", "correct": true },
+                { "text": "Pavement ends", "correct": false }
+            ]
+        },
+        {
+            "question": "A large \"X\" painted on the pavement indicates:",
+            "answers": [
+                { "text": "Construction ahead", "correct": false },
+                { "text": "The traffic lane is ending", "correct": false },
+                { "text": "Railway crossing ahead", "correct": true },
+                { "text": "Wild animal crossing ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/tY7g8Y9.png' alt='Railway Crossing' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Emergency vehicles entering roadway", "correct": false },
+                { "text": "The designated lane is closed", "correct": false },
+                { "text": "Railway crossing", "correct": true },
+                { "text": "Do not enter", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/m2X0Y6j.png' alt='School Area' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Children playing in residential area", "correct": false },
+                { "text": "Pedestrian crosswalk ahead", "correct": false },
+                { "text": "School area", "correct": true },
+                { "text": "Playground zone", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/k6f7Z8p.png' alt='Pedestrian Crosswalk' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Playground zone", "correct": false },
+                { "text": "Pedestrian crosswalk", "correct": true },
+                { "text": "Designated school bus stop", "correct": false },
+                { "text": "School zone", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/6X5Z4Yj.png' alt='School Crosswalk Ahead' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "A school zone", "correct": false },
+                { "text": "School crosswalk ahead", "correct": true },
+                { "text": "Playground zone", "correct": false },
+                { "text": "Pedestrian activated lights ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "The speed limit in a construction zone must be obeyed:",
+            "answers": [
+                { "text": "Only during daylight hours", "correct": false },
+                { "text": "Only when a flag person is posted nearby", "correct": false },
+                { "text": "At all times", "correct": true },
+                { "text": "Only when construction workers are present", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/e7Z3Z6p.png' alt='Do Not Pass' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Heavy trucks only", "correct": false },
+                { "text": "Do not pass", "correct": true },
+                { "text": "No vehicles allowed", "correct": false },
+                { "text": "Do not enter", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/m3Z3Z6p.png' alt='Lane Ends' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Lane ends, loss of right lane", "correct": true },
+                { "text": "Added lane (free flow)", "correct": false },
+                { "text": "Curve right", "correct": false },
+                { "text": "Dual turn lane ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/b2Z3Z6p.png' alt='T Intersection' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "T intersection", "correct": true },
+                { "text": "Traffic lane ends", "correct": false },
+                { "text": "Concealed intersection", "correct": false },
+                { "text": "Trucks entering highway ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/t1Z3Z6p.png' alt='Winding Road' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Winding road ahead (uốn lượn)", "correct": true },
+                { "text": "Weave zone ahead", "correct": false },
+                { "text": "Slippery when wet", "correct": false },
+                { "text": "Lane changing permitted", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/p0Z3Z6p.png' alt='Merging Traffic' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "“T” intersection", "correct": false },
+                { "text": "Winding road ahead", "correct": false },
+                { "text": "Merging traffic (nhập vào)", "correct": true },
+                { "text": "Road narrows to the right", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/o9Z3Z6p.png' alt='Two-way Traffic' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Through lane only", "correct": false },
+                { "text": "Passing permitted", "correct": false },
+                { "text": "No turns permitted", "correct": false },
+                { "text": "Two-way traffic", "correct": true }
+            ]
+        },
+        {
+            "question": "Speed limit signs indicate:",
+            "answers": [
+                { "text": "The speed you should travel under all driving conditions", "correct": false },
+                { "text": "The minimum speed permitted on all highways", "correct": false },
+                { "text": "The maximum speed permitted when conditions are favourable (thuận lợi)", "correct": true },
+                { "text": "The maximum speed permitted except when passing", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/d8Z3Z6p.png' alt='Double Lane Left Turn' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Sharp left curve in the road ahead", "correct": false },
+                { "text": "Left turns are prohibited", "correct": false },
+                { "text": "Vehicles may turn left or go straight", "correct": false },
+                { "text": "Double lane left turn", "correct": true }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/f7Z3Z6p.png' alt='Straight or Right Turn' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "No through traffic or right turns", "correct": false },
+                { "text": "Turn left or go straight through", "correct": false },
+                { "text": "Turn from a one-way road onto a one-way road", "correct": false },
+                { "text": "Straight through or right turn", "correct": true }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/q6Z3Z6p.png' alt='Traffic Signal Advance Warning' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "School zone ahead", "correct": false },
+                { "text": "Caution log trucks turning", "correct": false },
+                { "text": "Traffic control signal advance warning", "correct": true },
+                { "text": "Pedestrian crosswalk ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/r5Z3Z6p.png' alt='Slow Moving Vehicle' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Yield the right-of-way to pedestrians and traffic", "correct": false },
+                { "text": "Dangerous goods vehicle placard: flammable gas", "correct": false },
+                { "text": "Slow moving vehicle", "correct": true },
+                { "text": "Warning, Yield sign ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/s4Z3Z6p.png' alt='School Bus Stop Ahead' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Playground zone ahead", "correct": false },
+                { "text": "Pedestrian crossing ahead", "correct": false },
+                { "text": "School bus stop ahead", "correct": true },
+                { "text": "School zone ahead", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/u3Z3Z6p.png' alt='Dead End' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Pavement ends", "correct": false },
+                { "text": "Construction zone ahead", "correct": false },
+                { "text": "Dead end (ngõ cụt)", "correct": true },
+                { "text": "Hazard marker", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/v2Z3Z6p.png' alt='Divided Highway Begins' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Divided highway ends", "correct": false },
+                { "text": "Divided highway begins", "correct": true },
+                { "text": "Obstruction – pass on the left", "correct": false },
+                { "text": "Two-way traffic", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/w1Z3Z6p.png' alt='Divided Highway Ends' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Divided highway ends", "correct": true },
+                { "text": "Divided highway begins", "correct": false },
+                { "text": "Obstruction – pass on the left", "correct": false },
+                { "text": "Two-way traffic", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/x0Z3Z6p.png' alt='Hospital Services' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Off-road facilities", "correct": false },
+                { "text": "Hospital services", "correct": true },
+                { "text": "Hotel services", "correct": false },
+                { "text": "Primary highway route marker", "correct": false }
+            ]
+        },
+        {
+            "question": "This sign indicates: <br><img src='https://i.imgur.com/y9Z3Z6p.png' alt='People Working Ahead' style='width:100px; margin-top:10px;'>",
+            "answers": [
+                { "text": "Construction sign, flag person ahead", "correct": false },
+                { "text": "Construction sign, detour ahead", "correct": false },
+                { "text": "Caution, falling rock ahead", "correct": false },
+                { "text": "Construction sign, people working ahead", "correct": true }
+            ]
+        }
+    ]
+}
