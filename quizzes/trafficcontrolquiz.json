@@ -110,7 +110,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/8Z6Z2Qd.png' alt='Reserved Lane' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/38457e50-1d90-4e78-be13-140a63c8e433' alt='Reserved Lane' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Lane is reserved for use by the specified vehicles", "correct": true },
                 { "text": "One-way traffic only", "correct": false },
@@ -146,7 +146,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/sJ7b3qF.png' alt='Dangerous Goods Route' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/c516399a-14a0-4513-810a-f0891d4e138a' alt='Dangerous Goods Route' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Route for vehicles over 4500 kg", "correct": false },
                 { "text": "Route for slow moving vehicles", "correct": false },
@@ -155,7 +155,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/2n2k0L5.png' alt='Uneven Pavement' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/22900a6e-399a-4c2f-b40b-741c8f1c834a' alt='Uneven Pavement' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Off-road facilities ahead", "correct": false },
                 { "text": "Slippery when wet", "correct": false },
@@ -173,7 +173,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/6g3O4aY.png' alt='Curve Right' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/5b8f6233-03b3-4e4b-9721-39a7388031d9' alt='Curve Right' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Traffic entering from the right", "correct": false },
                 { "text": "Winding road ahead", "correct": false },
@@ -182,7 +182,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/n6g5Y7j.png' alt='Yield Sign Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/f3936f49-541e-4f7f-8c38-5188f6f69181' alt='Yield Sign Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Do not enter", "correct": false },
                 { "text": "Slow moving vehicles ahead", "correct": false },
@@ -191,7 +191,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/5c9Y4Xg.png' alt='Road Narrows Left' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/79a32c3f-9154-4c33-8a30-0897095036e4' alt='Road Narrows Left' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Road narrows, left", "correct": true },
                 { "text": "Two-way traffic", "correct": false },
@@ -200,7 +200,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/b5Z6f8t.png' alt='Bump' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/d3731118-2c21-4f05-8e7c-86e5c9a72199' alt='Bump' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Rumble strips", "correct": false },
                 { "text": "Construction zone", "correct": false },
@@ -218,7 +218,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/tY7g8Y9.png' alt='Railway Crossing' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/710606b9-913a-4a6a-9351-7f394c502b6e' alt='Railway Crossing' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Emergency vehicles entering roadway", "correct": false },
                 { "text": "The designated lane is closed", "correct": false },
@@ -227,7 +227,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/m2X0Y6j.png' alt='School Area' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/86369f4b-35b8-494b-91d4-8d407233860b' alt='School Area' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Children playing in residential area", "correct": false },
                 { "text": "Pedestrian crosswalk ahead", "correct": false },
@@ -236,7 +236,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/k6f7Z8p.png' alt='Pedestrian Crosswalk' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/9c336585-1d4d-4e2b-8a8c-8c408332860b' alt='Pedestrian Crosswalk' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Playground zone", "correct": false },
                 { "text": "Pedestrian crosswalk", "correct": true },
@@ -245,7 +245,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/6X5Z4Yj.png' alt='School Crosswalk Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/3d336585-1d4d-4e2b-8a8c-8c408332860b' alt='School Crosswalk Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "A school zone", "correct": false },
                 { "text": "School crosswalk ahead", "correct": true },
@@ -263,7 +263,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/e7Z3Z6p.png' alt='Do Not Pass' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/f9336585-1d4d-4e2b-8a8c-8c408332860b' alt='Do Not Pass' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Heavy trucks only", "correct": false },
                 { "text": "Do not pass", "correct": true },
@@ -272,7 +272,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/m3Z3Z6p.png' alt='Lane Ends' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/0c336585-1d4d-4e2b-8a8c-8c408332860b' alt='Lane Ends' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Lane ends, loss of right lane", "correct": true },
                 { "text": "Added lane (free flow)", "correct": false },
@@ -281,7 +281,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/b2Z3Z6p.png' alt='T Intersection' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/1f336585-1d4d-4e2b-8a8c-8c408332860b' alt='T Intersection' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "T intersection", "correct": true },
                 { "text": "Traffic lane ends", "correct": false },
@@ -290,7 +290,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/t1Z3Z6p.png' alt='Winding Road' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/2c336585-1d4d-4e2b-8a8c-8c408332860b' alt='Winding Road' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Winding road ahead (uốn lượn)", "correct": true },
                 { "text": "Weave zone ahead", "correct": false },
@@ -299,7 +299,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/p0Z3Z6p.png' alt='Merging Traffic' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/3b336585-1d4d-4e2b-8a8c-8c408332860b' alt='Merging Traffic' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "“T” intersection", "correct": false },
                 { "text": "Winding road ahead", "correct": false },
@@ -308,7 +308,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/o9Z3Z6p.png' alt='Two-way Traffic' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/4e336585-1d4d-4e2b-8a8c-8c408332860b' alt='Two-way Traffic' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Through lane only", "correct": false },
                 { "text": "Passing permitted", "correct": false },
@@ -326,7 +326,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/d8Z3Z6p.png' alt='Double Lane Left Turn' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/5d336585-1d4d-4e2b-8a8c-8c408332860b' alt='Double Lane Left Turn' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Sharp left curve in the road ahead", "correct": false },
                 { "text": "Left turns are prohibited", "correct": false },
@@ -335,7 +335,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/f7Z3Z6p.png' alt='Straight or Right Turn' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/6c336585-1d4d-4e2b-8a8c-8c408332860b' alt='Straight or Right Turn' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "No through traffic or right turns", "correct": false },
                 { "text": "Turn left or go straight through", "correct": false },
@@ -344,7 +344,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/q6Z3Z6p.png' alt='Traffic Signal Advance Warning' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/7b336585-1d4d-4e2b-8a8c-8c408332860b' alt='Traffic Signal Advance Warning' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "School zone ahead", "correct": false },
                 { "text": "Caution log trucks turning", "correct": false },
@@ -353,7 +353,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/r5Z3Z6p.png' alt='Slow Moving Vehicle' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/8a336585-1d4d-4e2b-8a8c-8c408332860b' alt='Slow Moving Vehicle' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Yield the right-of-way to pedestrians and traffic", "correct": false },
                 { "text": "Dangerous goods vehicle placard: flammable gas", "correct": false },
@@ -362,7 +362,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/s4Z3Z6p.png' alt='School Bus Stop Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/99336585-1d4d-4e2b-8a8c-8c408332860b' alt='School Bus Stop Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Playground zone ahead", "correct": false },
                 { "text": "Pedestrian crossing ahead", "correct": false },
@@ -371,7 +371,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/u3Z3Z6p.png' alt='Dead End' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/a8336585-1d4d-4e2b-8a8c-8c408332860b' alt='Dead End' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Pavement ends", "correct": false },
                 { "text": "Construction zone ahead", "correct": false },
@@ -380,7 +380,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/v2Z3Z6p.png' alt='Divided Highway Begins' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/b7336585-1d4d-4e2b-8a8c-8c408332860b' alt='Divided Highway Begins' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Divided highway ends", "correct": false },
                 { "text": "Divided highway begins", "correct": true },
@@ -389,7 +389,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/w1Z3Z6p.png' alt='Divided Highway Ends' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/c6336585-1d4d-4e2b-8a8c-8c408332860b' alt='Divided Highway Ends' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Divided highway ends", "correct": true },
                 { "text": "Divided highway begins", "correct": false },
@@ -398,7 +398,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/x0Z3Z6p.png' alt='Hospital Services' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/d5336585-1d4d-4e2b-8a8c-8c408332860b' alt='Hospital Services' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Off-road facilities", "correct": false },
                 { "text": "Hospital services", "correct": true },
@@ -407,7 +407,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://i.imgur.com/y9Z3Z6p.png' alt='People Working Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://storage.googleapis.com/gemini-prod/images/e4336585-1d4d-4e2b-8a8c-8c408332860b' alt='People Working Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Construction sign, flag person ahead", "correct": false },
                 { "text": "Construction sign, detour ahead", "correct": false },
