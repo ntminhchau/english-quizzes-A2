@@ -47,7 +47,21 @@
         #home-page h1 {
             text-align: center;
             color: var(--primary-color);
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+        
+        /* NEW: Styles for section titles */
+        #home-page h2 {
+            font-size: 1.5em;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        #home-page h2:first-of-type {
+            margin-top: 20px;
         }
 
         .game-list {
@@ -205,19 +219,23 @@
         
         <div id="home-page">
             <h1>Game Center</h1>
+
+            <h2>Vocabulary Quizzes</h2>
             <div class="game-list">
-                
                 <div class="game-card" onclick="startQuiz('vocabularyQuiz1')">
                     <h2>Vocabulary Quiz 1</h2>
                     <p>Learn vocabulary related to careers, learning, and personal interests.</p>
                 </div>
-                
                 <div class="game-card" onclick="startQuiz('workplaceVocab')">
                     <h2>Vocabulary Quiz 2: Workplace</h2>
                     <p>Learn essential vocabulary for part-time and entry-level jobs.</p>
                 </div>
-
             </div>
+
+            <h2>Driving Test Knowledge</h2>
+            <div class="game-list">
+                </div>
+
         </div>
 
         <div id="quiz-page">
@@ -239,7 +257,7 @@
 
             <div id="results-container">
                 <h2>Quiz Complete!</h2>
-                <p id="score-text">Your score: 18 out of 20</p>
+                <p id="score-text"></p>
                 <button class="nav-btn" id="restart-btn">Try Again</button>
                 <button class="nav-btn" id="home-btn">Back to Home</button>
             </div>
@@ -307,6 +325,7 @@
                     { question: 'I work in the frozen food ________ of the store.', answers: [ { text: 'section', correct: true }, { text: 'schedule', correct: false }, { text: 'duty', correct: false }, { text: 'warehouse', correct: false } ] }
                 ]
             }
+            // Add new quiz objects for any section here
         };
 
 
