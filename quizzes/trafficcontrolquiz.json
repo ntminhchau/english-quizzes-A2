@@ -146,7 +146,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/gb0psgMQ' alt='Dangerous Goods Route' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/Ps2nBCZJ/dangerous-goods.png' alt='Dangerous Goods Route' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Route for vehicles over 4500 kg", "correct": false },
                 { "text": "Route for slow moving vehicles", "correct": false },
@@ -155,7 +155,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/fY3V0xfS' alt='Uneven Pavement' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/pvH6XLcP/uneven-pavement.png' alt='Uneven Pavement' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Off-road facilities ahead", "correct": false },
                 { "text": "Slippery when wet", "correct": false },
@@ -173,7 +173,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/xtyBps2N' alt='Curve Right' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/W4QMb3HL/curve-right.png' alt='Curve Right' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Traffic entering from the right", "correct": false },
                 { "text": "Winding road ahead", "correct": false },
@@ -182,7 +182,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/3yYzGp4v' alt='Yield Sign Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/0jVt8CmK/yield-sign-ahead.png' alt='Yield Sign Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Do not enter", "correct": false },
                 { "text": "Slow moving vehicles ahead", "correct": false },
@@ -191,7 +191,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/VWhsJ46N' alt='Road Narrows Left' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/JRb9mJZd/road-narrows-left.png' alt='Road Narrows Left' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Road narrows, left", "correct": true },
                 { "text": "Two-way traffic", "correct": false },
@@ -200,7 +200,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/0RFnv8wC' alt='Bump' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/HfxK31Jt/bump.png' alt='Bump' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Rumble strips", "correct": false },
                 { "text": "Construction zone", "correct": false },
@@ -218,7 +218,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/Nk1294n' alt='Railway Crossing' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/D6Gf9qg/railway-crossing.png' alt='Railway Crossing' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Emergency vehicles entering roadway", "correct": false },
                 { "text": "The designated lane is closed", "correct": false },
@@ -227,7 +227,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/VYj60VCw' alt='School Area' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/Mk2dyn1B/school-area.png' alt='School Area' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Children playing in residential area", "correct": false },
                 { "text": "Pedestrian crosswalk ahead", "correct": false },
@@ -236,7 +236,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/9kW2556S' alt='Pedestrian Crosswalk' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/tTDcrrgF/pedestrian-crosswalk.png' alt='Pedestrian Crosswalk' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Playground zone", "correct": false },
                 { "text": "Pedestrian crosswalk", "correct": true },
@@ -245,7 +245,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/bynG46S' alt='School Crosswalk Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/0W3z0ng/school-crosswalk.png' alt='School Crosswalk Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "A school zone", "correct": false },
                 { "text": "School crosswalk ahead", "correct": true },
@@ -263,7 +263,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/vCPbCjXw' alt='Do Not Pass' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/1Yq3Ymzv/do-not-pass.png' alt='Do Not Pass' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Heavy trucks only", "correct": false },
                 { "text": "Do not pass", "correct": true },
@@ -272,7 +272,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/LzMqtzk4' alt='Lane Ends' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/JRNb7RBX/lane-ends-loss-right-lane.png' alt='Lane Ends' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Lane ends, loss of right lane", "correct": true },
                 { "text": "Added lane (free flow)", "correct": false },
@@ -281,7 +281,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/TMRtfyz1' alt='T Intersection' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/8g29CkFb/t-intersection.png' alt='T Intersection' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "T intersection", "correct": true },
                 { "text": "Traffic lane ends", "correct": false },
@@ -290,7 +290,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/TMRtfyz1' alt='Winding Road' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/svMT6nPG/winding-road.png' alt='Winding Road' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Winding road ahead", "correct": true },
                 { "text": "Weave zone ahead", "correct": false },
@@ -299,7 +299,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/mC0xfkBj' alt='Merging Traffic' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/5Wk7bm90/merge-traffic.png' alt='Merging Traffic' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "“T” intersection", "correct": false },
                 { "text": "Winding road ahead", "correct": false },
@@ -308,7 +308,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/bg8vph9W' alt='Two-way Traffic' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/6Rft6hCn/two-way-traffic.png' alt='Two-way Traffic' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Through lane only", "correct": false },
                 { "text": "Passing permitted", "correct": false },
@@ -326,7 +326,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/LzN1CJPv' alt='Double Lane Left Turn' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/C5PQnMtW/double-lane-left-turn.png' alt='Double Lane Left Turn' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Sharp left curve in the road ahead", "correct": false },
                 { "text": "Left turns are prohibited", "correct": false },
@@ -335,7 +335,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/dJXFmgvN' alt='Straight or Right Turn' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/JF8V3QTY/straight-or-right-turn.png' alt='Straight or Right Turn' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "No through traffic or right turns", "correct": false },
                 { "text": "Turn left or go straight through", "correct": false },
@@ -344,7 +344,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/SDnPhqNm' alt='Traffic Signal Advance Warning' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/JW7KfXnp/traffic-control-signal.png' alt='Traffic Signal Advance Warning' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "School zone ahead", "correct": false },
                 { "text": "Caution log trucks turning", "correct": false },
@@ -353,7 +353,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/sc7nhmD' alt='Slow Moving Vehicle' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/tnRgSmN/slow-moving.png' alt='Slow Moving Vehicle' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Yield the right-of-way to pedestrians and traffic", "correct": false },
                 { "text": "Dangerous goods vehicle placard: flammable gas", "correct": false },
@@ -362,7 +362,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/BKvrrSwY' alt='School Bus Stop Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/0V1FFdQz/school-bus-stop.png' alt='School Bus Stop Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Playground zone ahead", "correct": false },
                 { "text": "Pedestrian crossing ahead", "correct": false },
@@ -371,16 +371,16 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/LdLcyZmk' alt='Dead End' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/JjfGTsVB/dead-end.png' alt='Dead End' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Pavement ends", "correct": false },
                 { "text": "Construction zone ahead", "correct": false },
-                { "text": "Dead end (ngõ cụt)", "correct": true },
+                { "text": "Dead end", "correct": true },
                 { "text": "Hazard marker", "correct": false }
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/FkKvqt2T' alt='Divided Highway Begins' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/dsr9JyFY/divided-highway-begin.png' alt='Divided Highway Begins' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Divided highway ends", "correct": false },
                 { "text": "Divided highway begins", "correct": true },
@@ -389,7 +389,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/Dy9V069' alt='Divided Highway Ends' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/J4vBDbv/divided-highway-end.png' alt='Divided Highway Ends' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Divided highway ends", "correct": true },
                 { "text": "Divided highway begins", "correct": false },
@@ -398,7 +398,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/KzsY2D34' alt='Hospital Services' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/Xk597Dv0/hospital.png' alt='Hospital Services' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Off-road facilities", "correct": false },
                 { "text": "Hospital services", "correct": true },
@@ -407,7 +407,7 @@
             ]
         },
         {
-            "question": "This sign indicates: <br><img src='https://ibb.co/21cZtnkM' alt='People Working Ahead' style='width:100px; margin-top:10px;'>",
+            "question": "This sign indicates: <br><img src='https://i.ibb.co/G4CH2x5M/construction-people.png' alt='People Working Ahead' style='width:100px; margin-top:10px;'>",
             "answers": [
                 { "text": "Construction sign, flag person ahead", "correct": false },
                 { "text": "Construction sign, detour ahead", "correct": false },
