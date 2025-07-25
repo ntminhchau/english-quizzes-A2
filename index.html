@@ -211,13 +211,13 @@
                     <h2>Vocabulary Quiz 1</h2>
                     <p>Learn vocabulary related to careers, learning, and personal interests.</p>
                 </div>
-               
+                
                 <div class="game-card" onclick="startQuiz('workplaceVocab')">
                     <h2>Vocabulary Quiz 2: Workplace</h2>
                     <p>Learn essential vocabulary for part-time and entry-level jobs.</p>
                 </div>
 
-                </div>
+            </div>
         </div>
 
         <div id="quiz-page">
@@ -251,435 +251,67 @@
         // ===================================================================
         // ======================= GAME & QUIZ DATA ==========================
         // ===================================================================
-        // To add a new quiz, copy the 'vocabularyQuiz1' object,
-        // paste it below, and give it a new unique ID.
-        // Then, add a new card on the HTML home page with an onclick
-        // that calls startQuiz('yourNewQuizID').
-        // ===================================================================
         const quizzes = {
             'vocabularyQuiz1': {
                 title: 'Vocabulary: Careers & Learning',
                 questions: [
-                    {
-                        question: 'What does “go into” mean? For example: “go into tourism” or “go into politics”?',
-                        answers: [
-                            { text: 'Travel far away', correct: false },
-                            { text: 'Have a conversation', correct: false },
-                            { text: 'Start a career in a field (lĩnh vực)', correct: true },
-                            { text: 'Talk about a topic', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which phrase means the same as “apply what I learn”?',
-                        answers: [
-                            { text: 'Change my study plan', correct: false },
-                            { text: 'Use my knowledge', correct: true },
-                            { text: 'Share answers with others', correct: false },
-                            { text: 'Forget what I studied', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What is the meaning of “keen on” something?',
-                        answers: [
-                            { text: 'Good at it', correct: false },
-                            { text: 'Bored of it', correct: false },
-                            { text: 'Very interested in it', correct: true },
-                            { text: 'Angry about it', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which phrase means the same as “more than expected”?',
-                        answers: [
-                            { text: 'Not as exciting', correct: false },
-                            { text: 'Less interesting', correct: false },
-                            { text: 'Better than I thought', correct: true },
-                            { text: 'Almost the same', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What does “practical learning” include?',
-                        answers: [
-                            { text: 'Memorizing information', correct: false },
-                            { text: 'Listening to lectures', correct: false },
-                            { text: 'Real-world experience', correct: true },
-                            { text: 'Doing homework only', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What does “dull” mean?',
-                        answers: [
-                            { text: 'Exciting', correct: false },
-                            { text: 'Bright', correct: false },
-                            { text: 'Boring', correct: true },
-                            { text: 'Short', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'If something is “entertaining”, it is…',
-                        answers: [
-                            { text: 'Tiring', correct: false },
-                            { text: 'Boring', correct: false },
-                            { text: 'Fun and enjoyable', correct: true },
-                            { text: 'Confusing', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which of the following is closest in meaning to “dream job”?',
-                        answers: [
-                            { text: 'A temporary job', correct: false },
-                            { text: 'A job I hope to have', correct: true },
-                            { text: 'A part-time job', correct: false },
-                            { text: 'A tiring job', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'The phrase “no risk of getting bored” means:',
-                        answers: [
-                            { text: 'You will feel tired', correct: false },
-                            { text: 'You won’t lose interest', correct: true },
-                            { text: 'You should be careful', correct: false },
-                            { text: 'You might fall asleep', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What does “curious” mean?',
-                        answers: [
-                            { text: 'Neat', correct: false },
-                            { text: 'Not interested', correct: false },
-                            { text: 'Wanting to know more', correct: true },
-                            { text: 'Feeling lazy', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which word is closest in meaning to “fascinating”?',
-                        answers: [
-                            { text: 'Difficult', correct: false },
-                            { text: 'Boring', correct: false },
-                            { text: 'Interesting', correct: true },
-                            { text: 'Tidy', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'The art class was better than I expected — it was much more ________.',
-                        answers: [
-                            { text: 'dull', correct: true },
-                            { text: 'expensive', correct: false },
-                            { text: 'interesting', correct: false },
-                            { text: 'challenging', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which word is a synonym of “relevant”?',
-                        answers: [
-                            { text: 'Connected', correct: true },
-                            { text: 'Repeated', correct: false },
-                            { text: 'Forgettable', correct: false },
-                            { text: 'Impossible', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'If a teacher “pushes” a student, it means the teacher…',
-                        answers: [
-                            { text: 'Ignores the student', correct: false },
-                            { text: 'Gives the student easy tasks', correct: false },
-                            { text: 'Encourages and challenges the student', correct: true },
-                            { text: 'Tells the student to stop', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which is a synonym for “appreciate”?',
-                        answers: [
-                            { text: 'Hide', correct: false },
-                            { text: 'Complain', correct: false },
-                            { text: 'Be thankful for', correct: true },
-                            { text: 'Dislike', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which phrase is closest in meaning to “high spot of the week”?',
-                        answers: [
-                            { text: 'The worst time', correct: false },
-                            { text: 'The busiest moment', correct: false },
-                            { text: 'The best or most enjoyable part', correct: true },
-                            { text: 'The longest day', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which word means the same as “use”?',
-                        answers: [
-                            { text: 'Apply', correct: true },
-                            { text: 'Fix', correct: false },
-                            { text: 'Copy', correct: false },
-                            { text: 'Repeat', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'One ________ of the course is that we can learn how to work in a team.',
-                        answers: [
-                            { text: 'problem', correct: false },
-                            { text: 'benefit', correct: true },
-                            { text: 'reason', correct: false },
-                            { text: 'difficulty', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Instead of just listening, I prefer a more ________ learning style.',
-                        answers: [
-                            { text: 'practical', correct: true },
-                            { text: 'risky', correct: false },
-                            { text: 'challenging', correct: false },
-                            { text: 'noisy', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What does “sector” mean? For example: “the tourism sector, the service sector”?',
-                        answers: [
-                            { text: 'A classroom', correct: false },
-                            { text: 'A company office', correct: false },
-                            { text: 'An area of work or industry', correct: true },
-                            { text: 'A student group', correct: false }
-                        ]
-                    }
+                    { question: 'What does “go into” mean? For example: “go into tourism” or “go into politics”?', answers: [ { text: 'Travel far away', correct: false }, { text: 'Have a conversation', correct: false }, { text: 'Start a career in a field (lĩnh vực)', correct: true }, { text: 'Talk about a topic', correct: false } ] },
+                    { question: 'Which phrase means the same as “apply what I learn”?', answers: [ { text: 'Change my study plan', correct: false }, { text: 'Use my knowledge', correct: true }, { text: 'Share answers with others', correct: false }, { text: 'Forget what I studied', correct: false } ] },
+                    { question: 'What is the meaning of “keen on” something?', answers: [ { text: 'Good at it', correct: false }, { text: 'Bored of it', correct: false }, { text: 'Very interested in it', correct: true }, { text: 'Angry about it', correct: false } ] },
+                    { question: 'Which phrase means the same as “more than expected”?', answers: [ { text: 'Not as exciting', correct: false }, { text: 'Less interesting', correct: false }, { text: 'Better than I thought', correct: true }, { text: 'Almost the same', correct: false } ] },
+                    { question: 'What does “practical learning” include?', answers: [ { text: 'Memorizing information', correct: false }, { text: 'Listening to lectures', correct: false }, { text: 'Real-world experience', correct: true }, { text: 'Doing homework only', correct: false } ] },
+                    { question: 'What does “dull” mean?', answers: [ { text: 'Exciting', correct: false }, { text: 'Bright', correct: false }, { text: 'Boring', correct: true }, { text: 'Short', correct: false } ] },
+                    { question: 'If something is “entertaining”, it is…', answers: [ { text: 'Tiring', correct: false }, { text: 'Boring', correct: false }, { text: 'Fun and enjoyable', correct: true }, { text: 'Confusing', correct: false } ] },
+                    { question: 'Which of the following is closest in meaning to “dream job”?', answers: [ { text: 'A temporary job', correct: false }, { text: 'A job I hope to have', correct: true }, { text: 'A part-time job', correct: false }, { text: 'A tiring job', correct: false } ] },
+                    { question: 'The phrase “no risk of getting bored” means:', answers: [ { text: 'You will feel tired', correct: false }, { text: 'You won’t lose interest', correct: true }, { text: 'You should be careful', correct: false }, { text: 'You might fall asleep', correct: false } ] },
+                    { question: 'What does “curious” mean?', answers: [ { text: 'Neat', correct: false }, { text: 'Not interested', correct: false }, { text: 'Wanting to know more', correct: true }, { text: 'Feeling lazy', correct: false } ] },
+                    { question: 'Which word is closest in meaning to “fascinating”?', answers: [ { text: 'Difficult', correct: false }, { text: 'Boring', correct: false }, { text: 'Interesting', correct: true }, { text: 'Tidy', correct: false } ] },
+                    { question: 'The art class was better than I expected — it was much more ________.', answers: [ { text: 'dull', correct: true }, { text: 'expensive', correct: false }, { text: 'interesting', correct: false }, { text: 'challenging', correct: false } ] },
+                    { question: 'Which word is a synonym of “relevant”?', answers: [ { text: 'Connected', correct: true }, { text: 'Repeated', correct: false }, { text: 'Forgettable', correct: false }, { text: 'Impossible', correct: false } ] },
+                    { question: 'If a teacher “pushes” a student, it means the teacher…', answers: [ { text: 'Ignores the student', correct: false }, { text: 'Gives the student easy tasks', correct: false }, { text: 'Encourages and challenges the student', correct: true }, { text: 'Tells the student to stop', correct: false } ] },
+                    { question: 'Which is a synonym for “appreciate”?', answers: [ { text: 'Hide', correct: false }, { text: 'Complain', correct: false }, { text: 'Be thankful for', correct: true }, { text: 'Dislike', correct: false } ] },
+                    { question: 'Which phrase is closest in meaning to “high spot of the week”?', answers: [ { text: 'The worst time', correct: false }, { text: 'The busiest moment', correct: false }, { text: 'The best or most enjoyable part', correct: true }, { text: 'The longest day', correct: false } ] },
+                    { question: 'Which word means the same as “use”?', answers: [ { text: 'Apply', correct: true }, { text: 'Fix', correct: false }, { text: 'Copy', correct: false }, { text: 'Repeat', correct: false } ] },
+                    { question: 'One ________ of the course is that we can learn how to work in a team.', answers: [ { text: 'problem', correct: false }, { text: 'benefit', correct: true }, { text: 'reason', correct: false }, { text: 'difficulty', correct: false } ] },
+                    { question: 'Instead of just listening, I prefer a more ________ learning style.', answers: [ { text: 'practical', correct: true }, { text: 'risky', correct: false }, { text: 'challenging', correct: false }, { text: 'noisy', correct: false } ] },
+                    { question: 'What does “sector” mean? For example: “the tourism sector, the service sector”?', answers: [ { text: 'A classroom', correct: false }, { text: 'A company office', correct: false }, { text: 'An area of work or industry', correct: true }, { text: 'A student group', correct: false } ] }
                 ]
             },
             'workplaceVocab': {
                 title: 'Vocabulary: Workplace',
                 questions: [
-                    {
-                        question: 'What is a “shift” at work?',
-                        answers: [
-                            { text: 'A break', correct: false },
-                            { text: 'A work period during the day or night', correct: true },
-                            { text: 'A uniform style', correct: false },
-                            { text: 'A breakroom schedule', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'The person who hires and pays the workers is the...',
-                        answers: [
-                            { text: 'Employee', correct: false },
-                            { text: 'Supervisor', correct: false },
-                            { text: 'Employer', correct: true },
-                            { text: 'Applicant', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What is the main duty of a “supervisor”?',
-                        answers: [
-                            { text: 'Restock shelves', correct: false },
-                            { text: 'Watch and guide workers', correct: true },
-                            { text: 'Deliver goods', correct: false },
-                            { text: 'Serve customers', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What does it mean to “restock” items?',
-                        answers: [
-                            { text: 'Throw them away', correct: false },
-                            { text: 'Move them to a new location', correct: false },
-                            { text: 'Put more items on the shelves', correct: true },
-                            { text: 'Clean them with water', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which of the following is a place to keep personal belongings (tư trang) at work?',
-                        answers: [
-                            { text: 'Counter', correct: false },
-                            { text: 'Locker', correct: true },
-                            { text: 'Roster', correct: false },
-                            { text: 'Warehouse', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'What is a “roster”?',
-                        answers: [
-                            { text: 'A type of uniform', correct: false },
-                            { text: 'A trash bin', correct: false },
-                            { text: 'A list of who works and when', correct: true },
-                            { text: 'A payment receipt', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Which is someone who only works a few hours a week?',
-                        answers: [
-                            { text: 'Full-time worker', correct: false },
-                            { text: 'Manager', correct: false },
-                            { text: 'Part-time worker', correct: true },
-                            { text: 'Employer', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'A large area to store goods is called a...',
-                        answers: [
-                            { text: 'Section', correct: false },
-                            { text: 'Warehouse', correct: true },
-                            { text: 'Shift', correct: false },
-                            { text: 'Locker', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'The company has a strict ________, which says no jeans or t-shirts.',
-                        answers: [
-                            { text: 'uniform', correct: false },
-                            { text: 'shift', correct: false },
-                            { text: 'dress code', correct: true },
-                            { text: 'schedule', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'If you are “allergic” to something, it means...',
-                        answers: [
-                            { text: 'You like it', correct: false },
-                            { text: 'You can’t buy it', correct: false },
-                            { text: 'You are responsible for it', correct: false },
-                            { text: 'It causes a bad reaction in your body', correct: true }
-                        ]
-                    },
-                    {
-                        question: 'A person who works for a company is called ...',
-                        answers: [
-                            { text: 'An employer', correct: false },
-                            { text: 'An employee', correct: true },
-                            { text: 'A supervisor', correct: false },
-                            { text: 'An interviewer', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'If you “apply for” a job, you...',
-                        answers: [
-                            { text: 'Quit it', correct: false },
-                            { text: 'Refuse it', correct: false },
-                            { text: 'Try to get it', correct: true },
-                            { text: 'Get promoted', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'A good leader has strong ________ skills and works well with others.',
-                        answers: [
-                            { text: 'trash', correct: false },
-                            { text: 'computer', correct: false },
-                            { text: 'communication', correct: true },
-                            { text: 'dress', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'A person responsible for a small team or section is called a...',
-                        answers: [
-                            { text: 'Leader', correct: true },
-                            { text: 'Locker', correct: false },
-                            { text: 'Employee', correct: false },
-                            { text: 'Employer', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'You can find bread and cakes in the __________ section of a supermarket.',
-                        answers: [
-                            { text: 'Vegetables', correct: false },
-                            { text: 'Clothing', correct: false },
-                            { text: 'Bakery', correct: true },
-                            { text: 'Warehouse', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Please take out the ________ before closing the store.',
-                        answers: [
-                            { text: 'spill', correct: false },
-                            { text: 'trash', correct: true },
-                            { text: 'shift', correct: false },
-                            { text: 'label', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Be sure to keep your area ________ and clean at all times.',
-                        answers: [
-                            { text: 'allergic', correct: false },
-                            { text: 'neat', correct: true },
-                            { text: 'restocked', correct: false },
-                            { text: 'scheduled', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'There’s a coffee ________ near the customer counter.',
-                        answers: [
-                            { text: 'shift', correct: false },
-                            { text: 'trash', correct: false },
-                            { text: 'spill', correct: true },
-                            { text: 'mop', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'All your work ________ are listed on the whiteboard in the back.',
-                        answers: [
-                            { text: 'lockers', correct: false },
-                            { text: 'employers', correct: false },
-                            { text: 'duties', correct: true },
-                            { text: 'bakery', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'You can check the work ________ to see your next shift.',
-                        answers: [
-                            { text: 'dress code', correct: false },
-                            { text: 'challenge', correct: false },
-                            { text: 'warehouse', correct: false },
-                            { text: 'schedule', correct: true }
-                        ]
-                    },
-                    {
-                        question: 'The salad bar section needs to be ________ with more vegetables.',
-                        answers: [
-                            { text: 'applied', correct: false },
-                            { text: 'restocked', correct: true },
-                            { text: 'supervised', correct: false },
-                            { text: 'scheduled', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Don’t forget to put a price ________ on each item before shelving it.',
-                        answers: [
-                            { text: 'shift', correct: false },
-                            { text: 'locker', correct: false },
-                            { text: 'label', correct: true },
-                            { text: 'duty', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'I can’t eat peanuts — I’m ________ to them.',
-                        answers: [
-                            { text: 'neat', correct: false },
-                            { text: 'allergic', correct: true },
-                            { text: 'tidy', correct: false },
-                            { text: 'part-time', correct: false }
-                        ]
-                    },
-                    {
-                        question: 'Keep your ________ clean and free of any trash.',
-                        answers: [
-                            { text: 'roster', correct: false },
-                            { text: 'bakery', correct: false },
-                            { text: 'work', correct: false },
-                            { text: 'locker', correct: true }
-                        ]
-                    },
-                    {
-                        question: 'I work in the frozen food ________ of the store.',
-                        answers: [
-                            { text: 'section', correct: true },
-                            { text: 'schedule', correct: false },
-                            { text: 'duty', correct: false },
-                            { text: 'warehouse', correct: false }
-                        ]
-                    }
+                    { question: 'What is a “shift” at work?', answers: [ { text: 'A break', correct: false }, { text: 'A work period during the day or night', correct: true }, { text: 'A uniform style', correct: false }, { text: 'A breakroom schedule', correct: false } ] },
+                    { question: 'The person who hires and pays the workers is the...', answers: [ { text: 'Employee', correct: false }, { text: 'Supervisor', correct: false }, { text: 'Employer', correct: true }, { text: 'Applicant', correct: false } ] },
+                    { question: 'What is the main duty of a “supervisor”?', answers: [ { text: 'Restock shelves', correct: false }, { text: 'Watch and guide workers', correct: true }, { text: 'Deliver goods', correct: false }, { text: 'Serve customers', correct: false } ] },
+                    { question: 'What does it mean to “restock” items?', answers: [ { text: 'Throw them away', correct: false }, { text: 'Move them to a new location', correct: false }, { text: 'Put more items on the shelves', correct: true }, { text: 'Clean them with water', correct: false } ] },
+                    { question: 'Which of the following is a place to keep personal belongings (tư trang) at work?', answers: [ { text: 'Counter', correct: false }, { text: 'Locker', correct: true }, { text: 'Roster', correct: false }, { text: 'Warehouse', correct: false } ] },
+                    { question: 'What is a “roster”?', answers: [ { text: 'A type of uniform', correct: false }, { text: 'A trash bin', correct: false }, { text: 'A list of who works and when', correct: true }, { text: 'A payment receipt', correct: false } ] },
+                    { question: 'Which is someone who only works a few hours a week?', answers: [ { text: 'Full-time worker', correct: false }, { text: 'Manager', correct: false }, { text: 'Part-time worker', correct: true }, { text: 'Employer', correct: false } ] },
+                    { question: 'A large area to store goods is called a...', answers: [ { text: 'Section', correct: false }, { text: 'Warehouse', correct: true }, { text: 'Shift', correct: false }, { text: 'Locker', correct: false } ] },
+                    { question: 'The company has a strict ________, which says no jeans or t-shirts.', answers: [ { text: 'uniform', correct: false }, { text: 'shift', correct: false }, { text: 'dress code', correct: true }, { text: 'schedule', correct: false } ] },
+                    { question: 'If you are “allergic” to something, it means...', answers: [ { text: 'You like it', correct: false }, { text: 'You can’t buy it', correct: false }, { text: 'You are responsible for it', correct: false }, { text: 'It causes a bad reaction in your body', correct: true } ] },
+                    { question: 'A person who works for a company is called ...', answers: [ { text: 'An employer', correct: false }, { text: 'An employee', correct: true }, { text: 'A supervisor', correct: false }, { text: 'An interviewer', correct: false } ] },
+                    { question: 'If you “apply for” a job, you...', answers: [ { text: 'Quit it', correct: false }, { text: 'Refuse it', correct: false }, { text: 'Try to get it', correct: true }, { text: 'Get promoted', correct: false } ] },
+                    { question: 'A good leader has strong ________ skills and works well with others.', answers: [ { text: 'trash', correct: false }, { text: 'computer', correct: false }, { text: 'communication', correct: true }, { text: 'dress', correct: false } ] },
+                    { question: 'A person responsible for a small team or section is called a...', answers: [ { text: 'Leader', correct: true }, { text: 'Locker', correct: false }, { text: 'Employee', correct: false }, { text: 'Employer', correct: false } ] },
+                    { question: 'You can find bread and cakes in the __________ section of a supermarket.', answers: [ { text: 'Vegetables', correct: false }, { text: 'Clothing', correct: false }, { text: 'Bakery', correct: true }, { text: 'Warehouse', correct: false } ] },
+                    { question: 'Please take out the ________ before closing the store.', answers: [ { text: 'spill', correct: false }, { text: 'trash', correct: true }, { text: 'shift', correct: false }, { text: 'label', correct: false } ] },
+                    { question: 'Be sure to keep your area ________ and clean at all times.', answers: [ { text: 'allergic', correct: false }, { text: 'neat', correct: true }, { text: 'restocked', correct: false }, { text: 'scheduled', correct: false } ] },
+                    { question: 'There’s a coffee ________ near the customer counter.', answers: [ { text: 'shift', correct: false }, { text: 'trash', correct: false }, { text: 'spill', correct: true }, { text: 'mop', correct: false } ] },
+                    { question: 'All your work ________ are listed on the whiteboard in the back.', answers: [ { text: 'lockers', correct: false }, { text: 'employers', correct: false }, { text: 'duties', correct: true }, { text: 'bakery', correct: false } ] },
+                    { question: 'You can check the work ________ to see your next shift.', answers: [ { text: 'dress code', correct: false }, { text: 'challenge', correct: false }, { text: 'warehouse', correct: false }, { text: 'schedule', correct: true } ] },
+                    { question: 'The salad bar section needs to be ________ with more vegetables.', answers: [ { text: 'applied', correct: false }, { text: 'restocked', correct: true }, { text: 'supervised', correct: false }, { text: 'scheduled', correct: false } ] },
+                    { question: 'Don’t forget to put a price ________ on each item before shelving it.', answers: [ { text: 'shift', correct: false }, { text: 'locker', correct: false }, { text: 'label', correct: true }, { text: 'duty', correct: false } ] },
+                    { question: 'I can’t eat peanuts — I’m ________ to them.', answers: [ { text: 'neat', correct: false }, { text: 'allergic', correct: true }, { text: 'tidy', correct: false }, { text: 'part-time', correct: false } ] },
+                    { question: 'Keep your ________ clean and free of any trash.', answers: [ { text: 'roster', correct: false }, { text: 'bakery', correct: false }, { text: 'work', correct: false }, { text: 'locker', correct: true } ] },
+                    { question: 'I work in the frozen food ________ of the store.', answers: [ { text: 'section', correct: true }, { text: 'schedule', correct: false }, { text: 'duty', correct: false }, { text: 'warehouse', correct: false } ] }
                 ]
             }
-            // Add new quiz objects here
         };
 
 
         // ===================================================================
         // ======================= QUIZ ENGINE LOGIC =========================
-        // ===================================================================
-        // You don't need to edit this part to add new quizzes.
         // ===================================================================
 
         // Page Elements
@@ -702,9 +334,29 @@
         let currentQuestionIndex = 0;
         let score = 0;
 
+        // Function to shuffle an array (Fisher-Yates Shuffle)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Shuffles the questions when the quiz starts
         function startQuiz(quizId) {
             currentQuizId = quizId;
-            currentQuizData = quizzes[quizId];
+            const originalQuiz = quizzes[quizId];
+            
+            // Create a copy of the questions and shuffle them
+            const questionsCopy = [...originalQuiz.questions];
+            shuffleArray(questionsCopy);
+            
+            // Store the shuffled questions for the current session
+            currentQuizData = {
+                title: originalQuiz.title,
+                questions: questionsCopy
+            };
+
             currentQuestionIndex = 0;
             score = 0;
 
@@ -720,14 +372,19 @@
             showNextQuestion();
         }
 
+        // Shuffles the answers for each question
         function showNextQuestion() {
             resetState();
             if (currentQuestionIndex < currentQuizData.questions.length) {
                 const questionData = currentQuizData.questions[currentQuestionIndex];
                 questionTextEl.innerText = questionData.question;
                 questionCounterEl.innerText = `Question ${currentQuestionIndex + 1}/${currentQuizData.questions.length}`;
+                
+                // Create a copy of the answers and shuffle them
+                const shuffledAnswers = [...questionData.answers];
+                shuffleArray(shuffledAnswers);
 
-                questionData.answers.forEach(answer => {
+                shuffledAnswers.forEach(answer => {
                     const button = document.createElement('button');
                     button.innerText = answer.text;
                     button.classList.add('btn');
