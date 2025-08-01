@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games for Students</title>
+    <title>English Quizzes Center</title>
     <style>
         :root {
             --primary-color: #4a90e2;
@@ -36,37 +36,85 @@
             overflow: hidden;
         }
         #home-page { padding: 30px; }
-        #home-page h1 { text-align: center; color: var(--primary-color); margin-bottom: 10px; }
-        #home-page h2 { font-size: 1.5em; color: var(--text-color); border-bottom: 2px solid var(--secondary-color); padding-bottom: 10px; margin-top: 40px; margin-bottom: 20px; }
-        #home-page h2:first-of-type { margin-top: 20px; }
+        #home-page > h1 { text-align: center; color: var(--primary-color); margin-bottom: 30px; margin-top: 0;}
         
-        /* --- THAY ĐỔI Ở ĐÂY --- */
+        /* --- CSS MỚI CHO GIAO DIỆN THU GỌN --- */
+        .collapsible {
+            background-color: #fff;
+            color: var(--text-color);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid var(--secondary-color);
+            text-align: left;
+            outline: none;
+            font-size: 1.5em;
+            font-weight: normal;
+            font-family: inherit;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+        .collapsible:hover, .collapsible.active {
+            background-color: #f1f1f1;
+        }
+        .collapsible:after {
+            content: '\02795'; /* Dấu cộng (+) */
+            font-size: 0.8em;
+            color: var(--primary-color);
+            margin-left: 15px;
+        }
+        .collapsible.active:after {
+            content: "\2796"; /* Dấu trừ (-) */
+        }
+        .section-content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        .section-content .game-list {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        /* --- KẾT THÚC CSS MỚI --- */
+
         .game-list { 
             display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Thu nhỏ kích thước tối thiểu của card */
-            gap: 15px; /* Giảm khoảng cách giữa các card */
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Thu nhỏ card hơn nữa */
+            gap: 15px;
         }
         .game-card { 
             background-color: #fff; 
             border: 1px solid #ddd; 
             border-radius: var(--border-radius); 
-            padding: 15px; /* Giảm padding */
+            padding: 20px 15px; /* Điều chỉnh padding */
             text-align: center; 
             cursor: pointer; 
             transition: transform 0.2s, box-shadow 0.2s; 
-            height: 100%; /* Đảm bảo các card có chiều cao bằng nhau */
+            height: 100%;
             box-sizing: border-box;
+            display: flex; /* Căn giữa tiêu đề */
+            align-items: center;
+            justify-content: center;
+            min-height: 60px; /* Chiều cao tối thiểu */
         }
-        /* CSS mới để xử lý thẻ <a> */
         .game-list a {
             text-decoration: none;
             color: inherit;
         }
-        /* --- KẾT THÚC THAY ĐỔI --- */
-
         .game-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); }
-        .game-card h2 { margin-top: 0; font-size: 1.2em; color: var(--primary-color); }
-        .game-card p { font-size: 0.9em; color: #666; }
+        .game-card h2 { 
+            margin: 0; 
+            font-size: 1.1em; /* Giảm cỡ chữ tiêu đề card */
+            color: var(--primary-color); 
+        }
+
+        /* --- CSS CHO TRANG QUIZ (KHÔNG ĐỔI) --- */
         #quiz-page { padding: 30px; display: none; }
         .quiz-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
         #quiz-title { font-size: 1.5em; font-weight: bold; color: var(--primary-color); }
@@ -91,70 +139,42 @@
 <body>
 
     <div class="container">
-        
         <div id="home-page">
             <h1>English Quizzes Center</h1>
 
-            <h2>IELTS Speaking Part 1</h2>
-            <div class="game-list">
-                <a href="speaking/work.html">
-                    <div class="game-card">
-                        <h2>Work</h2>
-                        <p>Common questions about your job or studies.</p>
-                    </div>
-                </a>
-                <a href="speaking/name.html">
-                    <div class="game-card">
-                        <h2>Name</h2>
-                        <p>Questions related to your name and its meaning.</p>
-                    </div>
-                </a>
-                 <a href="speaking/hometown.html">
-                    <div class="game-card">
-                        <h2>Hometown</h2>
-                        <p>Talk about the place where you grew up.</p>
-                    </div>
-                </a>
-                 <a href="speaking/home.html">
-                    <div class="game-card">
-                        <h2>Home</h2>
-                        <p>Describe your accommodation and living space.</p>
-                    </div>
-                </a>
-                 <a href="speaking/neighbourhood.html">
-                    <div class="game-card">
-                        <h2>Neighbourhood</h2>
-                        <p>Questions about the area you live in now.</p>
-                    </div>
-                </a>
-                 <a href="speaking/daily-routine.html">
-                    <div class="game-card">
-                        <h2>Daily Routine</h2>
-                        <p>Describe your typical day and activities.</p>
-                    </div>
-                </a>
-            </div>
-            <h2>Vocabulary Quizzes</h2>
-            <div class="game-list">
-                <div class="game-card" onclick="startQuiz('vocabularyquiz1.json')">
-                    <h2>Vocabulary Quiz 1: Careers & Learning</h2>
-                    <p>Learn vocabulary related to careers, learning, and personal interests.</p>
-                </div>
-                <div class="game-card" onclick="startQuiz('vocabularyquiz2.json')">
-                    <h2>Vocabulary Quiz 2: Workplace</h2>
-                    <p>Learn essential vocabulary for part-time and entry-level jobs.</p>
+            <h2 class="collapsible">IELTS Speaking Part 1</h2>
+            <div class="section-content">
+                <div class="game-list">
+                    <a href="speaking/work.html"><div class="game-card"><h2>Work</h2></div></a>
+                    <a href="speaking/name.html"><div class="game-card"><h2>Name</h2></div></a>
+                    <a href="speaking/hometown.html"><div class="game-card"><h2>Hometown</h2></div></a>
+                    <a href="speaking/home.html"><div class="game-card"><h2>Home</h2></div></a>
+                    <a href="speaking/neighbourhood.html"><div class="game-card"><h2>Neighbourhood</h2></div></a>
+                    <a href="speaking/daily-routine.html"><div class="game-card"><h2>Daily Routine</h2></div></a>
                 </div>
             </div>
 
-            <h2>Driving Test Knowledge</h2>
-            <div class="game-list">
-                <div class="game-card" onclick="startQuiz('trafficcontrolquiz.json')">
-                    <h2>Traffic Control Quiz</h2>
-                    <p>Test your knowledge of traffic lights, road rules, and common signs.</p>
+            <h2 class="collapsible">Vocabulary Quizzes</h2>
+            <div class="section-content">
+                <div class="game-list">
+                    <div class="game-card" onclick="startQuiz('vocabularyquiz1.json')">
+                        <h2>Careers & Learning</h2>
+                    </div>
+                    <div class="game-card" onclick="startQuiz('vocabularyquiz2.json')">
+                        <h2>Workplace</h2>
+                    </div>
                 </div>
-                <div class="game-card" onclick="startQuiz('basicsofdriving.json')">
-                    <h2>Basics of Driving</h2>
-                    <p>Learn the fundamental rules for parking, braking, and reversing.</p>
+            </div>
+
+            <h2 class="collapsible">Driving Test Knowledge</h2>
+            <div class="section-content">
+                <div class="game-list">
+                    <div class="game-card" onclick="startQuiz('trafficcontrolquiz.json')">
+                        <h2>Traffic Control</h2>
+                    </div>
+                    <div class="game-card" onclick="startQuiz('basicsofdriving.json')">
+                        <h2>Basics of Driving</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,5 +203,21 @@
     </div>
 
     <script src="main.js" defer></script>
+    
+    <script>
+        var collapsibles = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < collapsibles.length; i++) {
+            collapsibles[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+
 </body>
 </html>
