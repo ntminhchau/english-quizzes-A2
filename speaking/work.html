@@ -192,13 +192,23 @@
             }
 
             // Hàm tìm giọng nói tiếng Anh chất lượng cao
+            // Hàm tìm giọng nói NỮ tiếng Anh chất lượng cao
             function getPreferredVoice() {
-                // Ưu tiên giọng nói "Google US English" hoặc các giọng tự nhiên khác
-                let preferredVoice = voices.find(voice => voice.name === 'Google US English');
+                // Danh sách các từ khóa thường có trong tên của giọng nữ
+                const femaleVoiceKeywords = ['female', 'zira', 'susan', 'samantha', 'eva', 'serena'];
+
+                // Tìm giọng nói tiếng Anh có chứa một trong các từ khóa trên
+                let preferredVoice = voices.find(voice => {
+                    const langCheck = voice.lang.startsWith('en-'); // Kiểm tra có phải tiếng Anh không
+                    const nameCheck = femaleVoiceKeywords.some(keyword => voice.name.toLowerCase().includes(keyword));
+                    return langCheck && nameCheck;
+                });
+
+                // Nếu không tìm thấy giọng nữ cụ thể, dùng tạm giọng tiếng Anh đầu tiên tìm được
                 if (!preferredVoice) {
-                    // Nếu không có, tìm một giọng US hoặc UK bất kỳ
-                    preferredVoice = voices.find(voice => voice.lang === 'en-US' || voice.lang === 'en-GB');
+                    preferredVoice = voices.find(voice => voice.lang.startsWith('en-'));
                 }
+
                 return preferredVoice;
             }
 
