@@ -174,6 +174,85 @@
         </div>
 
     </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Kiểm tra xem trình duyệt có hỗ trợ Web Speech API không
+        if ('speechSynthesis' in window) {
+            const synth = window.speechSynthesis;
+            let voices = [];
 
+            // Hàm lấy danh sách giọng nói (được tải không đồng bộ)
+            function populateVoiceList() {
+                voices = synth.getVoices();
+            }
+
+            populateVoiceList();
+            if (synth.onvoiceschanged !== undefined) {
+                synth.onvoiceschanged = populateVoiceList;
+            }
+
+            // Hàm tìm giọng nói tiếng Anh chất lượng cao
+            function getPreferredVoice() {
+                // Ưu tiên giọng nói "Google US English" hoặc các giọng tự nhiên khác
+                let preferredVoice = voices.find(voice => voice.name === 'Google US English');
+                if (!preferredVoice) {
+                    // Nếu không có, tìm một giọng US hoặc UK bất kỳ
+                    preferredVoice = voices.find(voice => voice.lang === 'en-US' || voice.lang === 'en-GB');
+                }
+                return preferredVoice;
+            }
+
+            // Hàm chính để đọc văn bản
+            function speakText(text) {
+                if (synth.speaking) {
+                    synth.cancel(); // Dừng việc đọc nếu đang đọc dở
+                }
+
+                const utterance = new SpeechSynthesisUtterance(text);
+                
+                utterance.onerror = function(event) {
+                    console.error('SpeechSynthesisUtterance.onerror', event);
+                };
+
+                // Chọn giọng nói ưa thích
+                const voice = getPreferredVoice();
+                if (voice) {
+                    utterance.voice = voice;
+                }
+                
+                utterance.pitch = 1; // Cao độ
+                utterance.rate = 0.9; // Tốc độ đọc (0.9 là hơi chậm, rõ ràng)
+
+                synth.speak(utterance);
+            }
+
+            // Hàm tự động thêm nút bấm vào trang
+            function addSpeakButtons() {
+                const elementsToEquip = document.querySelectorAll('.question-title, .example-answer');
+
+                elementsToEquip.forEach(element => {
+                    const button = document.createElement('button');
+                    button.innerHTML = '🔊';
+                    button.className = 'speak-btn';
+                    button.setAttribute('aria-label', 'Play audio');
+
+                    button.addEventListener('click', function() {
+                        const textToSpeak = element.textContent;
+                        speakText(textToSpeak);
+                    });
+                    
+                    // Chèn nút bấm ngay sau phần tử văn bản
+                    element.parentNode.insertBefore(button, element.nextSibling);
+                });
+            }
+
+            // Chạy hàm để thêm nút
+            addSpeakButtons();
+
+        } else {
+            console.log('Sorry, your browser does not support text-to-speech.');
+        }
+    });
+</script>
 </body>
 </html>
