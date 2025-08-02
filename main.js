@@ -15,6 +15,7 @@ const resultsContainer = document.getElementById('results-container');
 const scoreTextEl = document.getElementById('score-text');
 const restartBtn = document.getElementById('restart-btn');
 const homeBtn = document.getElementById('home-btn');
+const quizHomeBtn = document.getElementById('quiz-home-btn');
 
 // State
 let currentQuizData = {};
@@ -164,5 +165,10 @@ restartBtn.addEventListener('click', () => {
 
 homeBtn.addEventListener('click', () => {
     // Go back to the homepage by loading the URL without any parameters
+    window.location.href = 'index.html';
+});
+
+quizHomeBtn.addEventListener('click', () => {
+    // Quay về trang chủ
     window.location.href = 'index.html';
 });
