@@ -106,56 +106,56 @@
         <div class="question-block">
             <h3 class="question-title">Do you often read books or magazines?</h3>
             <p class="example-answer">
-                Yes, I do. [cite_start]When I have free time, I usually read books, especially cookbooks because it helps me learn new <span class="speak-word">recipes</span>. [cite: 41] [cite_start]Moreover, I also read <span class="speak-word">magazines</span> when I want to <span class="speak-word">discover</span> something new. [cite: 42]
+                Yes, I do. When I have free time, I usually read books, especially cookbooks because it helps me learn new <span class="speak-word">recipes</span>. Moreover, I also read <span class="speak-word">magazines</span> when I want to <span class="speak-word">discover</span> something new.
             </p>
         </div>
         
         <div class="question-block">
             <h3 class="question-title">What kinds of books do you read for pleasure?</h3>
             <p class="example-answer">
-                [cite_start]I often read cookbooks because it helps me learn new <span class="speak-word">recipes</span>. [cite: 44] [cite_start]Sometimes I read <span class="speak-word">poems</span> when I want to relax and think about life. [cite: 45]
+                I often read cookbooks because it helps me learn new <span class="speak-word">recipes</span>. Sometimes I read <span class="speak-word">poems</span> when I want to relax and think about life.
             </p>
         </div>
 
         <div class="question-block">
             <h3 class="question-title">Do you often read newspapers?</h3>
             <p class="example-answer">
-                [cite_start]No, nowadays I don’t read newspapers. [cite: 47] [cite_start]I check the news online because it’s more <span class="speak-word">convenient</span> and I can get <span class="speak-word">up-to-date</span> information. [cite: 47]
+                No, nowadays I don’t read newspapers. I check the news online because it’s more <span class="speak-word">convenient</span> and I can get <span class="speak-word">up-to-date</span> information.
             </p>
         </div>
 
         <div class="question-block">
             <h3 class="question-title">Do you have any e-books?</h3>
             <p class="example-answer">
-                Yes, I do. [cite_start]I have a few e-books on my phone, especially about cooking <span class="speak-word">recipes</span> and life skills. [cite: 49] [cite_start]I like them because I can read them anytime, anywhere and they have lively and colourful pictures. [cite: 50]
+                Yes, I do. I have a few e-books on my phone, especially about cooking <span class="speak-word">recipes</span> and life skills. I like them because I can read them anytime, anywhere and they have lively and colourful pictures.
             </p>
         </div>
 
         <div class="question-block">
             <h3 class="question-title">What books did you read as a child?</h3>
             <p class="example-answer">
-                [cite_start]When I was a child, I often read <span class="speak-word">comic</span> books and <span class="speak-word">fairy tales</span>. [cite: 52] [cite_start]I especially liked fairy tales because they have a lot of interesting <span class="speak-word">characters</span>. [cite: 53] [cite_start]Now I can still remember the dark queen in Snow White. [cite: 54]
+                When I was a child, I often read <span class="speak-word">comic</span> books and <span class="speak-word">fairy tales</span>. I especially liked fairy tales because they have a lot of interesting <span class="speak-word">characters</span>. Now I can still remember the dark queen in Snow White.
             </p>
         </div>
         
         <div class="question-block">
             <h3 class="question-title">Did you have a favourite book when you were a child?</h3>
             <p class="example-answer">
-                [cite_start]My favourite book was Snow White because I loved the beautiful <span class="speak-word">princess</span> with white skin, red lips and black eyes. [cite: 56] [cite_start]Moreover, she sang very well and the animals enjoyed listening to her. [cite: 57] [cite_start]So when I was a child, I always <span class="speak-word">pretended</span> to be like her. [cite: 58]
+                My favourite book was Snow White because I loved the beautiful <span class="speak-word">princess</span> with white skin, red lips and black eyes. Moreover, she sang very well and the animals enjoyed listening to her. So when I was a child, I always <span class="speak-word">pretended</span> to be like her.
             </p>
         </div>
         
         <div class="question-block">
             <h3 class="question-title">Do you think it is important to encourage children to read?</h3>
             <p class="example-answer">
-                Yes, I do. [cite_start]I think it’s very important to <span class="speak-word">encourage</span> children to read because it helps them learn right from wrong. [cite: 60] [cite_start]Moreover, it teaches them how to take care of themselves. [cite: 61] [cite_start]It also helps them learn new things and improve their language. [cite: 62]
+                Yes, I do. I think it’s very important to <span class="speak-word">encourage</span> children to read because it helps them learn right from wrong. Moreover, it teaches them how to take care of themselves. It also helps them learn new things and improve their language.
             </p>
         </div>
 
         <div class="question-block">
             <h3 class="question-title">Do you prefer to read a newspaper or a magazine online, or to buy a copy?</h3>
             <p class="example-answer">
-                [cite_start]Nowadays, I prefer reading online because it’s more <span class="speak-word">convenient</span> and the information updates every hour, every day. [cite: 64] [cite_start]I can read it anytime anywhere. [cite: 65]
+                Nowadays, I prefer reading online because it’s more <span class="speak-word">convenient</span> and the information updates every hour, every day. I can read it anytime anywhere.
             </p>
         </div>
 
@@ -179,7 +179,6 @@
                     synth.onvoiceschanged = populateVoiceList;
                 }
 
-                // Hàm tìm giọng nữ tiếng Anh
                 function getPreferredVoice() {
                     const femaleVoiceKeywords = ['female', 'zira', 'susan', 'samantha', 'eva', 'serena'];
                     let preferredVoice = voices.find(voice => {
@@ -193,7 +192,6 @@
                     return preferredVoice;
                 }
 
-                // Hàm chính để đọc văn bản
                 function speakText(text) {
                     if (synth.speaking) {
                         synth.cancel();
@@ -211,7 +209,6 @@
                     synth.speak(utterance);
                 }
 
-                // 1. Thêm nút loa 🔊 cho cả câu
                 const elementsToEquip = document.querySelectorAll('.question-title, .example-answer');
                 elementsToEquip.forEach(element => {
                     const button = document.createElement('button');
@@ -226,7 +223,6 @@
                     element.parentNode.insertBefore(button, element.nextSibling);
                 });
 
-                // 2. Thêm sự kiện click cho từng từ được đánh dấu
                 const speakableWords = document.querySelectorAll('.speak-word');
                 speakableWords.forEach(word => {
                     word.addEventListener('click', function(event) {
