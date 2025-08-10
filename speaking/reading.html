@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Part 1: Reading</title>
+    <style>
+        /* CSS CƠ BẢN */
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f5f5;
+            --text-color: #333;
+            --light-text: #fff;
+            --border-radius: 8px;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--light-text);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .question-block {
+            margin-bottom: 35px;
+        }
+        .question-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+        .example-answer {
+            background-color: #f9f9f9;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 5px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .controls {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-btn {
+            padding: 12px 25px;
+            font-size: 1em;
+            border: none;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .nav-btn:hover {
+            background-color: #357abd;
+        }
+
+        /* CSS CHO TÍNH NĂNG TTS */
+        .speak-btn {
+            background: none; border: none; cursor: pointer;
+            font-size: 1.2em; color: var(--primary-color);
+            margin-left: 8px; padding: 0 5px; vertical-align: middle;
+            opacity: 0.7; transition: opacity 0.2s;
+        }
+        .speak-btn:hover { opacity: 1; }
+
+        .speak-word {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .speak-word:hover {
+            color: #2a68aa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Speaking Part 1: Reading</h1>
+
+        <div class="question-block">
+            <h3 class="question-title">Do you often read books or magazines?</h3>
+            <p class="example-answer">
+                Yes, I do. [cite_start]When I have free time, I usually read books, especially cookbooks because it helps me learn new <span class="speak-word">recipes</span>. [cite: 41] [cite_start]Moreover, I also read <span class="speak-word">magazines</span> when I want to <span class="speak-word">discover</span> something new. [cite: 42]
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">What kinds of books do you read for pleasure?</h3>
+            <p class="example-answer">
+                [cite_start]I often read cookbooks because it helps me learn new <span class="speak-word">recipes</span>. [cite: 44] [cite_start]Sometimes I read <span class="speak-word">poems</span> when I want to relax and think about life. [cite: 45]
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">Do you often read newspapers?</h3>
+            <p class="example-answer">
+                [cite_start]No, nowadays I don’t read newspapers. [cite: 47] [cite_start]I check the news online because it’s more <span class="speak-word">convenient</span> and I can get <span class="speak-word">up-to-date</span> information. [cite: 47]
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">Do you have any e-books?</h3>
+            <p class="example-answer">
+                Yes, I do. [cite_start]I have a few e-books on my phone, especially about cooking <span class="speak-word">recipes</span> and life skills. [cite: 49] [cite_start]I like them because I can read them anytime, anywhere and they have lively and colourful pictures. [cite: 50]
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">What books did you read as a child?</h3>
+            <p class="example-answer">
+                [cite_start]When I was a child, I often read <span class="speak-word">comic</span> books and <span class="speak-word">fairy tales</span>. [cite: 52] [cite_start]I especially liked fairy tales because they have a lot of interesting <span class="speak-word">characters</span>. [cite: 53] [cite_start]Now I can still remember the dark queen in Snow White. [cite: 54]
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">Did you have a favourite book when you were a child?</h3>
+            <p class="example-answer">
+                [cite_start]My favourite book was Snow White because I loved the beautiful <span class="speak-word">princess</span> with white skin, red lips and black eyes. [cite: 56] [cite_start]Moreover, she sang very well and the animals enjoyed listening to her. [cite: 57] [cite_start]So when I was a child, I always <span class="speak-word">pretended</span> to be like her. [cite: 58]
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">Do you think it is important to encourage children to read?</h3>
+            <p class="example-answer">
+                Yes, I do. [cite_start]I think it’s very important to <span class="speak-word">encourage</span> children to read because it helps them learn right from wrong. [cite: 60] [cite_start]Moreover, it teaches them how to take care of themselves. [cite: 61] [cite_start]It also helps them learn new things and improve their language. [cite: 62]
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">Do you prefer to read a newspaper or a magazine online, or to buy a copy?</h3>
+            <p class="example-answer">
+                [cite_start]Nowadays, I prefer reading online because it’s more <span class="speak-word">convenient</span> and the information updates every hour, every day. [cite: 64] [cite_start]I can read it anytime anywhere. [cite: 65]
+            </p>
+        </div>
+
+        <div class="controls">
+            <a href="../index.html" class="nav-btn">Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if ('speechSynthesis' in window) {
+                const synth = window.speechSynthesis;
+                let voices = [];
+
+                function populateVoiceList() {
+                    voices = synth.getVoices();
+                }
+
+                populateVoiceList();
+                if (synth.onvoiceschanged !== undefined) {
+                    synth.onvoiceschanged = populateVoiceList;
+                }
+
+                // Hàm tìm giọng nữ tiếng Anh
+                function getPreferredVoice() {
+                    const femaleVoiceKeywords = ['female', 'zira', 'susan', 'samantha', 'eva', 'serena'];
+                    let preferredVoice = voices.find(voice => {
+                        const langCheck = voice.lang.startsWith('en-');
+                        const nameCheck = femaleVoiceKeywords.some(keyword => voice.name.toLowerCase().includes(keyword));
+                        return langCheck && nameCheck;
+                    });
+                    if (!preferredVoice) {
+                        preferredVoice = voices.find(voice => voice.lang.startsWith('en-'));
+                    }
+                    return preferredVoice;
+                }
+
+                // Hàm chính để đọc văn bản
+                function speakText(text) {
+                    if (synth.speaking) {
+                        synth.cancel();
+                    }
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.onerror = function(event) {
+                        console.error('SpeechSynthesisUtterance.onerror', event);
+                    };
+                    const voice = getPreferredVoice();
+                    if (voice) {
+                        utterance.voice = voice;
+                    }
+                    utterance.pitch = 1;
+                    utterance.rate = 0.9;
+                    synth.speak(utterance);
+                }
+
+                // 1. Thêm nút loa 🔊 cho cả câu
+                const elementsToEquip = document.querySelectorAll('.question-title, .example-answer');
+                elementsToEquip.forEach(element => {
+                    const button = document.createElement('button');
+                    button.innerHTML = '🔊';
+                    button.className = 'speak-btn';
+                    button.setAttribute('aria-label', 'Play audio for the sentence');
+                    button.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        const textToSpeak = element.textContent;
+                        speakText(textToSpeak);
+                    });
+                    element.parentNode.insertBefore(button, element.nextSibling);
+                });
+
+                // 2. Thêm sự kiện click cho từng từ được đánh dấu
+                const speakableWords = document.querySelectorAll('.speak-word');
+                speakableWords.forEach(word => {
+                    word.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        const textToSpeak = event.target.textContent;
+                        speakText(textToSpeak);
+                    });
+                });
+
+            } else {
+                console.log('Sorry, your browser does not support text-to-speech.');
+            }
+        });
+    </script>
+</body>
+</html>
