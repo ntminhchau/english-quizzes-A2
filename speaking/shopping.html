@@ -42,6 +42,26 @@
             margin-top: 0;
             margin-bottom: 30px;
         }
+
+        /* --- CSS MỚI CHO VIDEO --- */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* Tỷ lệ 16:9 (height/width) */
+            margin-bottom: 35px;
+            border-radius: var(--border-radius);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* --- KẾT THÚC CSS MỚI --- */
+
         .question-block {
             margin-bottom: 35px;
         }
@@ -78,7 +98,6 @@
             background-color: #357abd;
         }
 
-        /* CSS CHO TÍNH NĂNG TTS (CHỈ GIỮ LẠI PHẦN CẦN THIẾT) */
         .speak-word {
             color: var(--primary-color);
             font-weight: bold;
@@ -95,6 +114,9 @@
     <div class="container">
         <h1>Speaking Part 1: Shopping</h1>
 
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/8a8g9jk-kbk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <div class="question-block">
             <h3 class="question-title">Do you like shopping?</h3>
             <p class="example-answer">
@@ -115,49 +137,7 @@
                 It depends on who I go with. If the person has the same <span class="speak-word">taste</span> as me, I prefer going shopping together. <span class="speak-word">Otherwise</span>, I’d rather go alone because I can <span class="speak-word">take my time</span> and choose what I want.
             </p>
         </div>
-
-        <div class="question-block">
-            <h3 class="question-title">What kinds of shops are there where you live?</h3>
-            <p class="example-answer">
-                In my area, there are supermarkets, fashion stores, <span class="speak-word">eyewear</span> shops, coffee shops, <span class="speak-word">beauty salons</span>, <span class="speak-word">boba tea</span> shops and takeaway food stalls. Everything is nearby.
-            </p>
-        </div>
         
-        <div class="question-block">
-            <h3 class="question-title">Have you ever bought anything online?</h3>
-            <p class="example-answer">
-                Yes, of course. I usually buy clothes, candies and <span class="speak-word">cosmetics</span> online. When I have free time, I always enjoy checking out products on my phone. It’s so convenient nowadays - I can stay at home and still get everything I need.
-            </p>
-        </div>
-
-        <div class="question-block">
-            <h3 class="question-title">How often do you buy things online?</h3>
-            <p class="example-answer">
-                Maybe once a week. When I’m busy or can’t go out, I will buy things online. It’s convenient but because I can only see the products in pictures, I still like going to real stores when I have time.
-            </p>
-        </div>
-
-        <div class="question-block">
-            <h3 class="question-title">What was the last thing you bought online?</h3>
-            <p class="example-answer">
-                The last thing I bought online was a dress. While I was surfing Facebook, I <span class="speak-word">came across</span> a Cambodian store with a dress I liked, so I bought it. It was blue and made of <span class="speak-word">linen</span>. It’s comfortable to wear in the summer. It was very nice and I was quite <span class="speak-word">satisfied</span> with it.
-            </p>
-        </div>
-        
-        <div class="question-block">
-            <h3 class="question-title">Do you ever see things in shops and then buy them online?</h3>
-            <p class="example-answer">
-                Yes, sometimes I see something in shops and then buy them online if it’s cheaper. I usually <span class="speak-word">compare</span> prices before I decide to buy something. This way, I feel very happy because I can get good-quality items at a lower price.
-            </p>
-        </div>
-
-        <div class="question-block">
-            <h3 class="question-title">Do you think men and women have different opinions about shopping?</h3>
-            <p class="example-answer">
-                Yes, I think men and women have different <span class="speak-word">opinions</span> about shopping. In my experience, men usually prefer quick shopping, but women often like to <span class="speak-word">take more time</span> to <span class="speak-word">compare</span> items.
-            </p>
-        </div>
-
         <div class="controls">
             <a href="../index.html" class="nav-btn">Back to Home</a>
         </div>
@@ -208,9 +188,6 @@
                     synth.speak(utterance);
                 }
 
-                // --- PHẦN TẠO NÚT LOA 🔊 CHO CẢ CÂU ĐÃ ĐƯỢC XÓA ĐI ---
-
-                // Chỉ giữ lại sự kiện click cho từng từ được đánh dấu
                 const speakableWords = document.querySelectorAll('.speak-word');
                 speakableWords.forEach(word => {
                     word.addEventListener('click', function(event) {
