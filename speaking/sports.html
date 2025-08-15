@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Part 1: Sports</title>
+    <style>
+        /* CSS CƠ BẢN */
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f5f5;
+            --text-color: #333;
+            --light-text: #fff;
+            --border-radius: 8px;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--light-text);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .question-block {
+            margin-bottom: 35px;
+        }
+        .question-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+        .example-answer {
+            background-color: #f9f9f9;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 5px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .controls {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-btn {
+            padding: 12px 25px;
+            font-size: 1em;
+            border: none;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .nav-btn:hover {
+            background-color: #357abd;
+        }
+
+        /* CSS CHO TÍNH NĂNG TTS */
+        .speak-word {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .speak-word:hover {
+            color: #2a68aa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Speaking Part 1: Sports</h1>
+
+        <div class="question-block">
+            <h3 class="question-title">Do you like sport?</h3>
+            <p class="example-answer">
+                Yes, I like sports because I think they make me feel relaxed. I always spend 30 minutes a day walking and playing badminton. It helps me stay fit and healthy.
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">What's your favourite sport?</h3>
+            <p class="example-answer">
+                My favourite sport is badminton. I usually play it in the park on the weekends with my family. I like it because it’s fun and also a good way to spend time with them.
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">Do you often watch sport on TV?</h3>
+            <p class="example-answer">
+                Yes, sometimes I watch artistic swimming on TV because it’s very beautiful. I usually watch it with my family. We can relax and enjoy the show together.
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">Did you play sport as a child?</h3>
+            <p class="example-answer">
+                When I was a child, I did aerobics every day. My older sister took me to an aerobics club and we did it together. I really enjoyed it.
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">What is the most popular sport in your country?</h3>
+            <p class="example-answer">
+                I think the most popular sport in my country is football. Most men play it to relax and stay fit. You can see many kids playing football in schoolyards or parks. Besides, I think everybody in Vietnam likes watching football.
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">How do most people in your country keep fit?</h3>
+            <p class="example-answer">
+                I think most people in my country keep fit by walking. I always see many people walking early in the morning and in the evening. We often walk in parks and sometimes we bring our children or family along.
+            </p>
+        </div>
+
+        <div class="controls">
+            <a href="../index.html" class="nav-btn">Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if ('speechSynthesis' in window) {
+                const synth = window.speechSynthesis;
+                let voices = [];
+
+                function populateVoiceList() {
+                    voices = synth.getVoices();
+                }
+
+                populateVoiceList();
+                if (synth.onvoiceschanged !== undefined) {
+                    synth.onvoiceschanged = populateVoiceList;
+                }
+
+                function getPreferredVoice() {
+                    const femaleVoiceKeywords = ['female', 'zira', 'susan', 'samantha', 'eva', 'serena'];
+                    let preferredVoice = voices.find(voice => {
+                        const langCheck = voice.lang.startsWith('en-');
+                        const nameCheck = femaleVoiceKeywords.some(keyword => voice.name.toLowerCase().includes(keyword));
+                        return langCheck && nameCheck;
+                    });
+                    if (!preferredVoice) {
+                        preferredVoice = voices.find(voice => voice.lang.startsWith('en-'));
+                    }
+                    return preferredVoice;
+                }
+
+                function speakText(text) {
+                    if (synth.speaking) {
+                        synth.cancel();
+                    }
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.onerror = function(event) {
+                        console.error('SpeechSynthesisUtterance.onerror', event);
+                    };
+                    const voice = getPreferredVoice();
+                    if (voice) {
+                        utterance.voice = voice;
+                    }
+                    utterance.pitch = 1;
+                    utterance.rate = 0.9;
+                    synth.speak(utterance);
+                }
+                
+                const speakableWords = document.querySelectorAll('.speak-word');
+                speakableWords.forEach(word => {
+                    word.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        const textToSpeak = event.target.textContent;
+                        speakText(textToSpeak);
+                    });
+                });
+
+            } else {
+                console.log('Sorry, your browser does not support text-to-speech.');
+            }
+        });
+    </script>
+</body>
+</html>
