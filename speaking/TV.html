@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Part 1: TV</title>
+    <style>
+        /* CSS CƠ BẢN */
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f5f5;
+            --text-color: #333;
+            --light-text: #fff;
+            --border-radius: 8px;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--light-text);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .question-block {
+            margin-bottom: 35px;
+        }
+        .question-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+        .example-answer {
+            background-color: #f9f9f9;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 5px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .controls {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-btn {
+            padding: 12px 25px;
+            font-size: 1em;
+            border: none;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .nav-btn:hover {
+            background-color: #357abd;
+        }
+
+        /* CSS CHO TÍNH NĂNG TTS */
+        .speak-word {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .speak-word:hover {
+            color: #2a68aa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Speaking Part 1: TV</h1>
+
+        <div class="question-block">
+            <h3 class="question-title">Do you often watch TV?</h3>
+            <p class="example-answer">
+                Yes, I often watch TV when I have free time or when I want to relax after dinner with my family. I especially enjoy watching horror movies on TV on the weekends.
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">Where do you usually watch TV programmes/shows?</h3>
+            <p class="example-answer">
+                I usually watch TV programmes in the living room at home because it’s comfortable. I often watch TV with my family after we finish dinner to relax together.
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">What sorts of things do you watch on TV?</h3>
+            <p class="example-answer">
+                I usually watch news on TV because I want to get <span class="speak-word">up-to-date</span> information. Moreover, I enjoy fashion programmes because I love fashion. Sometimes I also like watching music shows to relax.
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">What is your favourite TV program?</h3>
+            <p class="example-answer">
+                My favourite TV program is Fashion TV because I love fashion and I want to learn new designs and get fresh ideas. I hope to become a fashion designer one day. That is my dream.
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">Are there any programmes/shows you don't like watching?</h3>
+            <p class="example-answer">
+                I think I don’t like watching political programs because I find them very boring and not relaxing at all. People usually talk too much in them and I don’t have time to listen.
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">Will you watch more or fewer TV programmes/shows in the future?</h3>
+            <p class="example-answer">
+                I think I will watch fewer TV programmes in the future, because nowadays I use the Internet to watch what I want. There are many interesting things online and it’s also more convenient.
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">Do you ever watch foreign programs or films?</h3>
+            <p class="example-answer">
+                Yes, of course. I really like watching Animal <span class="speak-word">Planet</span>, especially shows about helping animals. Moreover, I love American action and horror films because they look very <span class="speak-word">realistic</span> and make me feel very excited and <span class="speak-word">satisfied</span>.
+            </p>
+        </div>
+
+        <div class="question-block">
+            <h3 class="question-title">What did you watch on TV when you were a child?</h3>
+            <p class="example-answer">
+                When I was a child, I usually watched cartoons and fairy tales on TV. I especially enjoyed Tom and Jerry and Snow White. They were very fun and I was always happy when I watched them.
+            </p>
+        </div>
+        
+        <div class="question-block">
+            <h3 class="question-title">Do you think children should watch TV?</h3>
+            <p class="example-answer">
+                Yes, I do. I think children should watch TV because it teaches them many <span class="speak-word">life skills</span> and help them learn right from wrong. Besides, parents can control what they watch on TV. But they shouldn’t watch too much because it’s not good for their eyes.
+            </p>
+        </div>
+
+        <div class="controls">
+            <a href="../index.html" class="nav-btn">Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if ('speechSynthesis' in window) {
+                const synth = window.speechSynthesis;
+                let voices = [];
+
+                function populateVoiceList() {
+                    voices = synth.getVoices();
+                }
+
+                populateVoiceList();
+                if (synth.onvoiceschanged !== undefined) {
+                    synth.onvoiceschanged = populateVoiceList;
+                }
+
+                function getPreferredVoice() {
+                    const femaleVoiceKeywords = ['female', 'zira', 'susan', 'samantha', 'eva', 'serena'];
+                    let preferredVoice = voices.find(voice => {
+                        const langCheck = voice.lang.startsWith('en-');
+                        const nameCheck = femaleVoiceKeywords.some(keyword => voice.name.toLowerCase().includes(keyword));
+                        return langCheck && nameCheck;
+                    });
+                    if (!preferredVoice) {
+                        preferredVoice = voices.find(voice => voice.lang.startsWith('en-'));
+                    }
+                    return preferredVoice;
+                }
+
+                function speakText(text) {
+                    if (synth.speaking) {
+                        synth.cancel();
+                    }
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.onerror = function(event) {
+                        console.error('SpeechSynthesisUtterance.onerror', event);
+                    };
+                    const voice = getPreferredVoice();
+                    if (voice) {
+                        utterance.voice = voice;
+                    }
+                    utterance.pitch = 1;
+                    utterance.rate = 0.9;
+                    synth.speak(utterance);
+                }
+                
+                const speakableWords = document.querySelectorAll('.speak-word');
+                speakableWords.forEach(word => {
+                    word.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        const textToSpeak = event.target.textContent;
+                        speakText(textToSpeak);
+                    });
+                });
+
+            } else {
+                console.log('Sorry, your browser does not support text-to-speech.');
+            }
+        });
+    </script>
+</body>
+</html>
