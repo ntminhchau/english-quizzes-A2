@@ -1,0 +1,248 @@
+{
+    "title": "Intersections, Turns & Highways",
+    "questions": [
+        {
+            "question": "A 'parking lane' as defined in the Basic Licence Driver's Handbook is:",
+            "answers": [
+                { "text": "A lane closest to the curb, where parking is permitted but there are no meters", "correct": false },
+                { "text": "All of these responses are correct", "correct": false },
+                { "text": "That portion of a primary highway between the edge of the roadway to the right of the direction of traffic and the nearest solid white line, not being the centre line, marked on the roadway", "correct": true },
+                { "text": "A lane immediately beside a row of parking meters in an urban area", "correct": false }
+            ]
+        },
+        {
+            "question": "The emergency stopping lane (or the shoulder) on the side of the highway is there for:",
+            "answers": [
+                { "text": "slow-moving vehicles", "correct": false },
+                { "text": "drivers who have problems with their vehicle", "correct": true },
+                { "text": "to drive in so another vehicle can pass you more easily", "correct": false },
+                { "text": "for wide-load vehicles only", "correct": false }
+            ]
+        },
+        {
+            "question": "When recovering from a skid, a driver should:",
+            "answers": [
+                { "text": "Accelerate and steer in the opposite direction of the skid", "correct": false },
+                { "text": "Brake and counter-steer", "correct": false },
+                { "text": "Steer in the direction the driver wants the front of the vehicle to go", "correct": true },
+                { "text": "Brake and hold firmly on the steering wheel", "correct": false }
+            ]
+        },
+        {
+            "question": "A 'Weave Zone' is best described as:",
+            "answers": [
+                { "text": "A place on a highway where the entrance and exit lanes are close together, and vehicles that are slowing to exit the highway must drive between vehicles that are accelerating to enter the highway", "correct": true },
+                { "text": "An area on the highway that is used for emergency parking", "correct": false },
+                { "text": "A place where the highway has a series of curves that require the driver to slow down", "correct": false },
+                { "text": "A limited access area on a highway where a driver can legally back their vehicle when they miss their exit", "correct": false }
+            ]
+        },
+        {
+            "question": "A driver entering a traffic circle:",
+            "answers": [
+                { "text": "Must yield to traffic on the right", "correct": false },
+                { "text": "Must yield to vehicles in the traffic circle", "correct": true },
+                { "text": "Has the right-of-way", "correct": false },
+                { "text": "Must use the courtesy rule and yield to the vehicle that arrived first", "correct": false }
+            ]
+        },
+        {
+            "question": "When you arrive at a traffic circle, you should:",
+            "answers": [
+                { "text": "Slow down as you approach the circle", "correct": false },
+                { "text": "yield to traffic already in the circle", "correct": false },
+                { "text": "yield to pedestrians", "correct": false },
+                { "text": "all of the above", "correct": true }
+            ]
+        },
+        {
+            "question": "A deceleration lane is:",
+            "answers": [
+                { "text": "A lane where vehicles reduce speed when exiting a highway", "correct": true },
+                { "text": "The right lane of a four-lane highway for use by slower moving vehicles", "correct": false },
+                { "text": "The lane immediately to the right of a solid yellow line on a highway", "correct": false },
+                { "text": "A lane on hills for use by slower moving vehicles", "correct": false }
+            ]
+        },
+        {
+            "question": "When you’re exiting from a highway, when should you start to slow down?",
+            "answers": [
+                { "text": "before reaching the deceleration lane", "correct": false },
+                { "text": "after entering the deceleration lane", "correct": true },
+                { "text": "when there’s traffic behind you", "correct": false },
+                { "text": "before turning on your turn signal", "correct": false }
+            ]
+        },
+        {
+            "question": "When turning left from a two-way road onto a one-way road, what lane should the vehicle enter?",
+            "answers": [
+                { "text": "The lane immediately to the right of centre", "correct": false },
+                { "text": "The lane nearest the curb on the left side of the one-way road", "correct": true },
+                { "text": "The centre lane of the one-way road", "correct": false },
+                { "text": "The right lane of the one-way road", "correct": false }
+            ]
+        },
+        {
+            "question": "When two vehicles approach an uncontrolled 'T' intersection at right angles to each other at approximately the same time:",
+            "answers": [
+                { "text": "The vehicle on the left must yield the right-of-way", "correct": true },
+                { "text": "The vehicle on the left has the right-of-way", "correct": false },
+                { "text": "The vehicle going straight through always has the right-of-way", "correct": false },
+                { "text": "Both vehicles must stop", "correct": false }
+            ]
+        },
+        {
+            "question": "Unless otherwise permitted, what lane must a driver be in to turn left from a one-way road?",
+            "answers": [
+                { "text": "The lane to the right of centre", "correct": false },
+                { "text": "The left lane nearest the left curb", "correct": true },
+                { "text": "The lane closest to the right curb", "correct": false },
+                { "text": "The centre lane", "correct": false }
+            ]
+        },
+        {
+            "question": "An acceleration lane is:",
+            "answers": [
+                { "text": "A lane with broken line markings", "correct": false },
+                { "text": "A lane on hills, designated for faster moving vehicles", "correct": false },
+                { "text": "The left lane of a four-lane highway, for use when passing slow moving vehicles", "correct": false },
+                { "text": "A lane in a merge area for use by vehicles entering the highway", "correct": true }
+            ]
+        },
+        {
+            "question": "When driving in the right lane on a highway, what should a driver do if another vehicle attempts to merge from an acceleration lane on the right?",
+            "answers": [
+                { "text": "Stop to allow the other vehicle in", "correct": false },
+                { "text": "Accelerate to close any gap in the traffic flow", "correct": false },
+                { "text": "Move into the left lane if it is safe to do so, or be prepared to adjust speed", "correct": true },
+                { "text": "Insist that the other vehicle yield the right-of-way", "correct": false }
+            ]
+        },
+        {
+            "question": "When approaching the top of a hill on a two-lane highway:",
+            "answers": [
+                { "text": "Exceeding the speed limit is permitted", "correct": false },
+                { "text": "Flash the headlights to warn oncoming vehicles", "correct": false },
+                { "text": "Stay to the right portion of the lane", "correct": true },
+                { "text": "Keep close to the centre line to prevent others from passing", "correct": false }
+            ]
+        },
+        {
+            "question": "At what minimum distance must headlights be dimmed at night when approaching another vehicle from behind?",
+            "answers": [
+                { "text": "60 metres", "correct": false },
+                { "text": "300 metres", "correct": false },
+                { "text": "150 metres", "correct": true },
+                { "text": "100 metres", "correct": false }
+            ]
+        },
+        {
+            "question": "When are dual turns permitted at an intersection?",
+            "answers": [
+                { "text": "Only when turning from a one-way road onto a one-way road", "correct": false },
+                { "text": "Only when indicated by pavement markings or traffic control signs", "correct": true },
+                { "text": "Any time there are at least 2 lanes on the road being entered", "correct": false },
+                { "text": "Only when the road has 6 or more lanes", "correct": false }
+            ]
+        },
+        {
+            "question": "An 'uncontrolled intersection':",
+            "answers": [
+                { "text": "Has a flashing yellow light for one direction of traffic and a flashing red light for the other direction of traffic", "correct": false },
+                { "text": "Has traffic signs but no traffic control signal lights", "correct": false },
+                { "text": "Has no traffic control signal lights or traffic signs", "correct": true },
+                { "text": "Has Yield signs but no Stop signs", "correct": false }
+            ]
+        },
+        {
+            "question": "When facing a Merge sign a driver should:",
+            "answers": [
+                { "text": "Stop at the entrance to the other highway and wait until a gap in traffic occurs before proceeding", "correct": false },
+                { "text": "Watch for a gap in traffic on the highway they are entering, adjust to highway speed in the acceleration lane and blend in smoothly", "correct": true },
+                { "text": "Stop and yield the right-of-way to traffic already on the highway", "correct": false },
+                { "text": "Reduce speed and proceed with caution", "correct": false }
+            ]
+        },
+        {
+            "question": "The recommended method for travelling through a curve on a highway is:",
+            "answers": [
+                { "text": "Reduce speed before the curve, stay in the lane and gently accelerate after entering the curve", "correct": true },
+                { "text": "Maintain speed before the curve, brake in the curve, look ahead and accelerate out of the curve", "correct": false },
+                { "text": "Cover the brake pedal before the curve, counter-steer toward the outside of the lane and accelerate when exiting", "correct": false },
+                { "text": "Accelerate before the curve, cover the brake pedal in the curve and accelerate after leaving the curve", "correct": false }
+            ]
+        },
+        {
+            "question": "When should you never pass in the oncoming lane?",
+            "answers": [
+                { "text": "on a curve", "correct": false },
+                { "text": "near or at the crest of a hill", "correct": false },
+                { "text": "in an intersection", "correct": false },
+                { "text": "all of the above", "correct": true }
+            ]
+        },
+        {
+            "question": "What’s the first thing you should do when you want to change lanes?",
+            "answers": [
+                { "text": "complete both shoulder and mirror checks", "correct": true },
+                { "text": "slow down", "correct": false },
+                { "text": "check the speed signs", "correct": false },
+                { "text": "accelerate", "correct": false }
+            ]
+        },
+        {
+            "question": "U-turns in urban areas are not permitted at:",
+            "answers": [
+                { "text": "An intersection with marked traffic lanes", "correct": false },
+                { "text": "Roads with a landscaped median", "correct": false },
+                { "text": "An intersection controlled by a traffic control signal", "correct": true },
+                { "text": "An intersection controlled by Stop signs", "correct": false }
+            ]
+        },
+        {
+            "question": "A U-turn isn’t allowed:",
+            "answers": [
+                { "text": "on a curve", "correct": false },
+                { "text": "near or at the crest of a hill", "correct": false },
+                { "text": "where you see a sign that prohibits a U-turn", "correct": false },
+                { "text": "All of the above", "correct": true }
+            ]
+        },
+        {
+            "question": "On a multi-lane highway, which lane should you drive in if you’re moving slow:",
+            "answers": [
+                { "text": "the middle traffic lane", "correct": false },
+                { "text": "the far-right lane", "correct": true },
+                { "text": "the left traffic lane", "correct": false },
+                { "text": "the shoulder of the road", "correct": false }
+            ]
+        },
+        {
+            "question": "You should be in the proper lane at least ____ before turning at an intersection.",
+            "answers": [
+                { "text": "15 metres", "correct": true },
+                { "text": "20 metres", "correct": false },
+                { "text": "10 metres", "correct": false },
+                { "text": "25 metres", "correct": false }
+            ]
+        },
+        {
+            "question": "What kind of line on the road means you’re allowed to change lanes?",
+            "answers": [
+                { "text": "a solid yellow line", "correct": false },
+                { "text": "a broken white line", "correct": true },
+                { "text": "a double-solid yellow line", "correct": false },
+                { "text": "a double-solid white line", "correct": false }
+            ]
+        },
+        {
+            "question": "What you can’t see in your vehicle’s rear and side-view mirrors is your:",
+            "answers": [
+                { "text": "dark area", "correct": false },
+                { "text": "danger zone", "correct": false },
+                { "text": "blind spot", "correct": true },
+                { "text": "all of the above", "correct": false }
+            ]
+        }
+    ]
+}
