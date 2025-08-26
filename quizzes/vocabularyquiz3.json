@@ -1,0 +1,248 @@
+{
+    "title": "Vocabulary: Events & Community",
+    "questions": [
+        {
+            "question": "A group of people chosen to make decisions or organize an event is called a _____.",
+            "answers": [
+                { "text": "spectator", "correct": false },
+                { "text": "committee", "correct": true },
+                { "text": "consumer", "correct": false },
+                { "text": "mayor", "correct": false }
+            ]
+        },
+        {
+            "question": "The weekly farmers' market will _____ in the main square every Saturday morning.",
+            "answers": [
+                { "text": "be held", "correct": true },
+                { "text": "be presented with", "correct": false },
+                { "text": "sell out", "correct": false },
+                { "text": "cheer", "correct": false }
+            ]
+        },
+        {
+            "question": "She has a lot of experience and can help us _____ the charity concert effectively.",
+            "answers": [
+                { "text": "develop", "correct": false },
+                { "text": "avoid", "correct": false },
+                { "text": "organize", "correct": true },
+                { "text": "pretend", "correct": false }
+            ]
+        },
+        {
+            "question": "We bought some beautiful handmade crafts at the local craft _____.",
+            "answers": [
+                { "text": "fair", "correct": true },
+                { "text": "race", "correct": false },
+                { "text": "town hall", "correct": false },
+                { "text": "trophy", "correct": false }
+            ]
+        },
+        {
+            "question": "The public meeting about the new park will take place at the _____.",
+            "answers": [
+                { "text": "factory", "correct": false },
+                { "text": "workshop", "correct": false },
+                { "text": "town hall", "correct": true },
+                { "text": "field", "correct": false }
+            ]
+        },
+        {
+            "question": "If you want to get good seats, you should book your tickets _____.",
+            "answers": [
+                { "text": "as usual", "correct": false },
+                { "text": "in advance", "correct": true },
+                { "text": "on a large scale", "correct": false },
+                { "text": "wisely", "correct": false }
+            ]
+        },
+        {
+            "question": "The tickets were so popular that the show managed to _____ in just one hour.",
+            "answers": [
+                { "text": "raise money", "correct": false },
+                { "text": "stay fit", "correct": false },
+                { "text": "sell out", "correct": true },
+                { "text": "connect with", "correct": false }
+            ]
+        },
+        {
+            "question": "Let me _____ our guest speaker for this evening, Mr. John Smith.",
+            "answers": [
+                { "text": "prove", "correct": false },
+                { "text": "assess", "correct": false },
+                { "text": "achieve", "correct": false },
+                { "text": "introduce", "correct": true }
+            ]
+        },
+        {
+            "question": "Thousands of people gathered by the river to watch the annual boat _____.",
+            "answers": [
+                { "text": "function", "correct": false },
+                { "text": "award", "correct": false },
+                { "text": "race", "correct": true },
+                { "text": "policy", "correct": false }
+            ]
+        },
+        {
+            "question": "Could you please help me _____ a meeting with the potential investors?",
+            "answers": [
+                { "text": "arrange", "correct": true },
+                { "text": "cheer", "correct": false },
+                { "text": "construct", "correct": false },
+                { "text": "protect", "correct": false }
+            ]
+        },
+        {
+            "question": "Every _____ in the stadium was excited when the home team scored a goal.",
+            "answers": [
+                { "text": "staff member", "correct": false },
+                { "text": "artisan", "correct": false },
+                { "text": "spectator", "correct": true },
+                { "text": "amateur", "correct": false }
+            ]
+        },
+        {
+            "question": "Don't worry about food; there will be _____ snacks and drinks for everyone.",
+            "answers": [
+                { "text": "key", "correct": false },
+                { "text": "a number of", "correct": false },
+                { "text": "plenty of", "correct": true },
+                { "text": "major", "correct": false }
+            ]
+        },
+        {
+            "question": "The crowd began to _____ loudly for the runners as they approached the finish line.",
+            "answers": [
+                { "text": "state", "correct": false },
+                { "text": "cheer", "correct": true },
+                { "text": "withdraw from", "correct": false },
+                { "text": "treat", "correct": false }
+            ]
+        },
+        {
+            "question": "_____ a welcome speech, the mayor will present the awards to the winners.",
+            "answers": [
+                { "text": "Unlike", "correct": false },
+                { "text": "As usual", "correct": false },
+                { "text": "In addition to", "correct": true },
+                { "text": "Thoroughly", "correct": false }
+            ]
+        },
+        {
+            "question": "The police reported that _____ people had attended the peaceful protest.",
+            "answers": [
+                { "text": "plenty of", "correct": false },
+                { "text": "a number of", "correct": true },
+                { "text": "essential", "correct": false },
+                { "text": "regular", "correct": false }
+            ]
+        },
+        {
+            "question": "The best employee of the year will _____ an excellence award at the ceremony.",
+            "answers": [
+                { "text": "establish", "correct": false },
+                { "text": "be presented with", "correct": true },
+                { "text": "comply with", "correct": false },
+                { "text": "sign", "correct": false }
+            ]
+        },
+        {
+            "question": "The winning team proudly held up the championship _____ for everyone to see.",
+            "answers": [
+                { "text": "contract", "correct": false },
+                { "text": "budget", "correct": false },
+                { "text": "trophy", "correct": true },
+                { "text": "licence", "correct": false }
+            ]
+        },
+        {
+            "question": "The _____, the official leader of the city, gave a speech to open the festival.",
+            "answers": [
+                { "text": "mayor", "correct": true },
+                { "text": "qualified staff", "correct": false },
+                { "text": "consumer", "correct": false },
+                { "text": "professional", "correct": false }
+            ]
+        },
+        {
+            "question": "The main goal of the event is to _____ for children in need.",
+            "answers": [
+                { "text": "raise money", "correct": true },
+                { "text": "pay a fee", "correct": false },
+                { "text": "achieve recognition", "correct": false },
+                { "text": "avoid a penalty", "correct": false }
+            ]
+        },
+        {
+            "question": "We encourage everyone to _____ our campaign to clean up the local parks.",
+            "answers": [
+                { "text": "recognise", "correct": false },
+                { "text": "support", "correct": true },
+                { "text": "ensure", "correct": false },
+                { "text": "prove", "correct": false }
+            ]
+        },
+        {
+            "question": "The parade will start at 10 AM, _____.",
+            "answers": [
+                { "text": "in advance", "correct": false },
+                { "text": "as usual", "correct": true },
+                { "text": "unlike", "correct": false },
+                { "text": "on a small scale", "correct": false }
+            ]
+        },
+        {
+            "question": "This competition is open to both professional and _____ photographers.",
+            "answers": [
+                { "text": "amateur", "correct": true },
+                { "text": "major", "correct": false },
+                { "text": "key", "correct": false },
+                { "text": "qualified", "correct": false }
+            ]
+        },
+        {
+            "question": "Which word is a synonym for \"very happy\" or \"pleased\"?",
+            "answers": [
+                { "text": "responsible", "correct": false },
+                { "text": "potential", "correct": false },
+                { "text": "delighted", "correct": true },
+                { "text": "significant", "correct": false }
+            ]
+        },
+        {
+            "question": "The _____ of the party was \"Hollywood Stars,\" so everyone dressed up as famous actors.",
+            "answers": [
+                { "text": "reputation", "correct": false },
+                { "text": "association", "correct": false },
+                { "text": "theme", "correct": true },
+                { "text": "process", "correct": false }
+            ]
+        },
+        {
+            "question": "We should buy our vegetables from _____ farmers to support our community.",
+            "answers": [
+                { "text": "local", "correct": true },
+                { "text": "global", "correct": false },
+                { "text": "comprehensive", "correct": false },
+                { "text": "unique", "correct": false }
+            ]
+        },
+        {
+            "question": "Climate change is a _____ problem that requires cooperation from all countries.",
+            "answers": [
+                { "text": "local", "correct": false },
+                { "text": "global", "correct": true },
+                { "text": "major", "correct": false },
+                { "text": "regular", "correct": false }
+            ]
+        },
+        {
+            "question": "The association holds _____ meetings on the first Monday of every month.",
+            "answers": [
+                { "text": "amateur", "correct": false },
+                { "text": "essential", "correct": false },
+                { "text": "regular", "correct": true },
+                { "text": "appropriate", "correct": false }
+            ]
+        }
+    ]
+}
