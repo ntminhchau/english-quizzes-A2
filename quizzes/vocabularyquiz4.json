@@ -1,0 +1,185 @@
+{
+    "title": "Vocabulary: Business & Work",
+    "questions": [
+        {
+            "question": "Our company needs to _____ a new strategy to attract more customers.",
+            "answers": [
+                { "text": "arrange", "correct": false },
+                { "text": "develop", "correct": true },
+                { "text": "cheer", "correct": false },
+                { "text": "recognise", "correct": false }
+            ]
+        },
+        {
+            "question": "It is important to keep your computer's antivirus software _____.",
+            "answers": [
+                { "text": "responsible", "correct": false },
+                { "text": "up-to-date", "correct": true },
+                { "text": "essential", "correct": false },
+                { "text": "major", "correct": false }
+            ]
+        },
+        {
+            "question": "Even though they disagreed, the discussion remained calm and _____.",
+            "answers": [
+                { "text": "amateur", "correct": false },
+                { "text": "delighted", "correct": false },
+                { "text": "professional", "correct": true },
+                { "text": "local", "correct": false }
+            ]
+        },
+        {
+            "question": "The business partners plan to _____ a new branch in the city center next year.",
+            "answers": [
+                { "text": "withdraw from", "correct": false },
+                { "text": "establish", "correct": true },
+                { "text": "support", "correct": false },
+                { "text": "sell out", "correct": false }
+            ]
+        },
+        {
+            "question": "We truly _____ all the hard work you have put into this project.",
+            "answers": [
+                { "text": "pretend", "correct": false },
+                { "text": "appreciate", "correct": true },
+                { "text": "assess", "correct": false },
+                { "text": "avoid", "correct": false }
+            ]
+        },
+        {
+            "question": "There has been a _____ increase in sales since we launched the new marketing campaign.",
+            "answers": [
+                { "text": "regular", "correct": false },
+                { "text": "significant", "correct": true },
+                { "text": "potential", "correct": false },
+                { "text": "appropriate", "correct": false }
+            ]
+        },
+        {
+            "question": "Buying new machinery is a big _____ for a small company like ours.",
+            "answers": [
+                { "text": "investment", "correct": true },
+                { "text": "trophy", "correct": false },
+                { "text": "policy", "correct": false },
+                { "text": "penalty", "correct": false }
+            ]
+        },
+        {
+            "question": "Good communication is _____ for a successful team.",
+            "answers": [
+                { "text": "essential", "correct": true },
+                { "text": "global", "correct": false },
+                { "text": "unique", "correct": false },
+                { "text": "major", "correct": false }
+            ]
+        },
+        {
+            "question": "The manager requested a _____ report that covers all aspects of the issue.",
+            "answers": [
+                { "text": "key", "correct": false },
+                { "text": "local", "correct": false },
+                { "text": "comprehensive", "correct": true },
+                { "text": "qualified", "correct": false }
+            ]
+        },
+        {
+            "question": "We need to plan the event carefully to make sure we don't go over the _____.",
+            "answers": [
+                { "text": "reputation", "correct": false },
+                { "text": "budget", "correct": true },
+                { "text": "industry", "correct": false },
+                { "text": "function", "correct": false }
+            ]
+        },
+        {
+            "question": "Before making a final decision, we must _____ the potential risks involved.",
+            "answers": [
+                { "text": "assess", "correct": true },
+                { "text": "ensure", "correct": false },
+                { "text": "introduce", "correct": false },
+                { "text": "achieve", "correct": false }
+            ]
+        },
+        {
+            "question": "Every _____ is expected to comply with the company's code of conduct.",
+            "answers": [
+                { "text": "consumer", "correct": false },
+                { "text": "spectator", "correct": false },
+                { "text": "staff member", "correct": true },
+                { "text": "mayor", "correct": false }
+            ]
+        },
+        {
+            "question": "The sales team has identified several _____ customers in the new market.",
+            "answers": [
+                { "text": "potential", "correct": true },
+                { "text": "professional", "correct": false },
+                { "text": "regular", "correct": false },
+                { "text": "delighted", "correct": false }
+            ]
+        },
+        {
+            "question": "The cost of materials is a deciding _____ in the final price of the product.",
+            "answers": [
+                { "text": "award", "correct": false },
+                { "text": "theme", "correct": false },
+                { "text": "factor", "correct": true },
+                { "text": "process", "correct": false }
+            ]
+        },
+        {
+            "question": "The company had to fix a _____ problem with its main server, which affected all users.",
+            "answers": [
+                { "text": "major", "correct": true },
+                { "text": "amateur", "correct": false },
+                { "text": "small scale", "correct": false },
+                { "text": "local", "correct": false }
+            ]
+        },
+        {
+            "question": "Teamwork is the _____ element in the success of our department.",
+            "answers": [
+                { "text": "comprehensive", "correct": false },
+                { "text": "key", "correct": true },
+                { "text": "significant", "correct": false },
+                { "text": "appropriate", "correct": false }
+            ]
+        },
+        {
+            "question": "What is the main _____ of the Human Resources department?",
+            "answers": [
+                { "text": "investment", "correct": false },
+                { "text": "function", "correct": true },
+                { "text": "factor", "correct": false },
+                { "text": "budget", "correct": false }
+            ]
+        },
+        {
+            "question": "Please double-check the figures to _____ that they are correct.",
+            "answers": [
+                { "text": "establish", "correct": false },
+                { "text": "ensure", "correct": true },
+                { "text": "prove", "correct": false },
+                { "text": "assess", "correct": false }
+            ]
+        },
+        {
+            "question": "You should wear business attire to the meeting to make an _____ impression.",
+            "answers": [
+                { "text": "up-to-date", "correct": false },
+                { "text": "appropriate", "correct": true },
+                { "text": "essential", "correct": false },
+                { "text": "amateur", "correct": false }
+            ]
+        },
+        {
+            "question": "Who is _____ for booking the venue for the annual conference?",
+            "answers": [
+                { "text": "qualified", "correct": false },
+                { "text": "delighted", "correct": false },
+                { "text": "responsible", "correct": true },
+                { "text": "comprehensive", "correct": false }
+            ]
+        }
+    ]
+}
