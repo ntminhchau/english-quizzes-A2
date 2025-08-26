@@ -1,0 +1,176 @@
+{
+    "title": "Vocabulary: Rules & Regulations",
+    "questions": [
+        {
+            "question": "You must have a valid driver's _____ to operate a car legally.",
+            "answers": [
+                { "text": "licence", "correct": true },
+                { "text": "contract", "correct": false },
+                { "text": "policy", "correct": false },
+                { "text": "award", "correct": false }
+            ]
+        },
+        {
+            "question": "The local _____ has decided to build a new public library.",
+            "answers": [
+                { "text": "industry", "correct": false },
+                { "text": "authority", "correct": true },
+                { "text": "association", "correct": false },
+                { "text": "artisan", "correct": false }
+            ]
+        },
+        {
+            "question": "Our manager tries to _____ staff members to share their ideas for improvement.",
+            "answers": [
+                { "text": "encourage", "correct": true },
+                { "text": "avoid", "correct": false },
+                { "text": "pretend", "correct": false },
+                { "text": "withdraw from", "correct": false }
+            ]
+        },
+        {
+            "question": "He tried to _____ that he knew the answer, but it was clear he had no idea.",
+            "answers": [
+                { "text": "ensure", "correct": false },
+                { "text": "prove", "correct": false },
+                { "text": "pretend", "correct": true },
+                { "text": "state", "correct": false }
+            ]
+        },
+        {
+            "question": "Our company has a new program that helps employees _____ by offering free gym memberships.",
+            "answers": [
+                { "text": "raise money", "correct": false },
+                { "text": "sell out", "correct": false },
+                { "text": "stay fit", "correct": true },
+                { "text": "connect with", "correct": false }
+            ]
+        },
+        {
+            "question": "You should spend your money _____ and save a little bit each month.",
+            "answers": [
+                { "text": "thoroughly", "correct": false },
+                { "text": "regularly", "correct": false },
+                { "text": "wisely", "correct": true },
+                { "text": "globally", "correct": false }
+            ]
+        },
+        {
+            "question": "Before you start the new job, you will need to _____ an employment contract.",
+            "answers": [
+                { "text": "develop", "correct": false },
+                { "text": "sign", "correct": true },
+                { "text": "assess", "correct": false },
+                { "text": "achieve", "correct": false }
+            ]
+        },
+        {
+            "question": "A _____ is a legally binding agreement between two or more parties.",
+            "answers": [
+                { "text": "contract", "correct": true },
+                { "text": "trophy", "correct": false },
+                { "text": "budget", "correct": false },
+                { "text": "theme", "correct": false }
+            ]
+        },
+        {
+            "question": "Please read the document _____ before you sign it.",
+            "answers": [
+                { "text": "wisely", "correct": false },
+                { "text": "thoroughly", "correct": true },
+                { "text": "unlike", "correct": false },
+                { "text": "as usual", "correct": false }
+            ]
+        },
+        {
+            "question": "To _____ getting a fine, you should always pay for parking.",
+            "answers": [
+                { "text": "support", "correct": false },
+                { "text": "avoid", "correct": true },
+                { "text": "encourage", "correct": false },
+                { "text": "establish", "correct": false }
+            ]
+        },
+        {
+            "question": "All businesses must _____ health and safety regulations.",
+            "answers": [
+                { "text": "withdraw from", "correct": false },
+                { "text": "comply with", "correct": true },
+                { "text": "connect with", "correct": false },
+                { "text": "be presented with", "correct": false }
+            ]
+        },
+        {
+            "question": "A _____ is a person who buys goods or uses services.",
+            "answers": [
+                { "text": "spectator", "correct": false },
+                { "text": "consumer", "correct": true },
+                { "text": "mayor", "correct": false },
+                { "text": "staff member", "correct": false }
+            ]
+        },
+        {
+            "question": "If you are not satisfied with the course, you can _____ it within the first week.",
+            "answers": [
+                { "text": "withdraw from", "correct": true },
+                { "text": "sign", "correct": false },
+                { "text": "arrange", "correct": false },
+                { "text": "support", "correct": false }
+            ]
+        },
+        {
+            "question": "The new law is designed to _____ the environment from pollution.",
+            "answers": [
+                { "text": "construct", "correct": false },
+                { "text": "display", "correct": false },
+                { "text": "protect", "correct": true },
+                { "text": "organise", "correct": false }
+            ]
+        },
+        {
+            "question": "It is part of the company's policy to _____ all customers with respect.",
+            "answers": [
+                { "text": "treat", "correct": true },
+                { "text": "cheer", "correct": false },
+                { "text": "introduce", "correct": false },
+                { "text": "sell out", "correct": false }
+            ]
+        },
+        {
+            "question": "The contract clearly _____(s) that the work must be completed by December.",
+            "answers": [
+                { "text": "achieve(s)", "correct": false },
+                { "text": "state(s)", "correct": true },
+                { "text": "prove(s)", "correct": false },
+                { "text": "appreciate(s)", "correct": false }
+            ]
+        },
+        {
+            "question": "There is a small entrance _____ to enter the museum.",
+            "answers": [
+                { "text": "fee", "correct": true },
+                { "text": "value", "correct": false },
+                { "text": "scale", "correct": false },
+                { "text": "craft", "correct": false }
+            ]
+        },
+        {
+            "question": "What is the company's _____ on working from home?",
+            "answers": [
+                { "text": "workmanship", "correct": false },
+                { "text": "policy", "correct": true },
+                { "text": "recognition", "correct": false },
+                { "text": "function", "correct": false }
+            ]
+        },
+        {
+            "question": "If you return the library book late, you will have to pay a small _____.",
+            "answers": [
+                { "text": "investment", "correct": false },
+                { "text": "penalty", "correct": true },
+                { "text": "fee", "correct": false },
+                { "text": "budget", "correct": false }
+            ]
+        }
+    ]
+}
