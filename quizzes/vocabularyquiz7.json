@@ -1,0 +1,131 @@
+{
+    "title": "Vocabulary: Professional development",
+    "questions": [
+        {
+            "question": "Dr. Evans is a leading expert in her _____ of neuroscience.",
+            "answers": [
+                { "text": "field", "correct": true },
+                { "text": "process", "correct": false },
+                { "text": "scale", "correct": false },
+                { "text": "craft", "correct": false }
+            ]
+        },
+        {
+            "question": "The tourism _____ is a major part of the country's economy.",
+            "answers": [
+                { "text": "industry", "correct": true },
+                { "text": "committee", "correct": false },
+                { "text": "authority", "correct": false },
+                { "text": "contract", "correct": false }
+            ]
+        },
+        {
+            "question": "She is a member of the National _____ for Professional Engineers.",
+            "answers": [
+                { "text": "association", "correct": true },
+                { "text": "workmanship", "correct": false },
+                { "text": "factory", "correct": false },
+                { "text": "penalty", "correct": false }
+            ]
+        },
+        {
+            "question": "Young artists need more financial _____ from the government to continue their work.",
+            "answers": [
+                { "text": "support", "correct": true },
+                { "text": "factor", "correct": false },
+                { "text": "value", "correct": false },
+                { "text": "fee", "correct": false }
+            ]
+        },
+        {
+            "question": "It is important to _____ the hard work and dedication of our employees.",
+            "answers": [
+                { "text": "pretend", "correct": false },
+                { "text": "recognise", "correct": true },
+                { "text": "avoid", "correct": false },
+                { "text": "construct", "correct": false }
+            ]
+        },
+        {
+            "question": "The company is known for its commitment to _____ in customer service.",
+            "answers": [
+                { "text": "excellence", "correct": true },
+                { "text": "penalty", "correct": false },
+                { "text": "investment", "correct": false },
+                { "text": "policy", "correct": false }
+            ]
+        },
+        {
+            "question": "She received an _____ for being the best salesperson of the year.",
+            "answers": [
+                { "text": "award", "correct": true },
+                { "text": "industry", "correct": false },
+                { "text": "budget", "correct": false },
+                { "text": "licence", "correct": false }
+            ]
+        },
+        {
+            "question": "With hard work, I am sure you can _____ your goal of becoming a doctor.",
+            "answers": [
+                { "text": "achieve", "correct": true },
+                { "text": "arrange", "correct": false },
+                { "text": "introduce", "correct": false },
+                { "text": "treat", "correct": false }
+            ]
+        },
+        {
+            "question": "After years of research, the scientist finally received the _____ she deserved.",
+            "answers": [
+                { "text": "reputation", "correct": false },
+                { "text": "recognition", "correct": true },
+                { "text": "networking", "correct": false },
+                { "text": "function", "correct": false }
+            ]
+        },
+        {
+            "question": "The restaurant has a _____ for serving the best seafood in town.",
+            "answers": [
+                { "text": "reputation", "correct": true },
+                { "text": "policy", "correct": false },
+                { "text": "trophy", "correct": false },
+                { "text": "potential", "correct": false }
+            ]
+        },
+        {
+            "question": "Professional conferences are excellent opportunities for _____ with others in your field.",
+            "answers": [
+                { "text": "networking", "correct": true },
+                { "text": "workmanship", "correct": false },
+                { "text": "attention to detail", "correct": false },
+                { "text": "penalty", "correct": false }
+            ]
+        },
+        {
+            "question": "The event allows young entrepreneurs to _____ experienced business leaders.",
+            "answers": [
+                { "text": "comply with", "correct": false },
+                { "text": "connect with", "correct": true },
+                { "text": "withdraw from", "correct": false },
+                { "text": "be held", "correct": false }
+            ]
+        },
+        {
+            "question": "You don't just have to say you are good at your job; you have to _____ it through your actions.",
+            "answers": [
+                { "text": "develop", "correct": false },
+                { "text": "prove", "correct": true },
+                { "text": "encourage", "correct": false },
+                { "text": "support", "correct": false }
+            ]
+        },
+        {
+            "question": "We are looking to hire a highly _____ teacher with at least five years of experience.",
+            "answers": [
+                { "text": "qualified", "correct": true },
+                { "text": "amateur", "correct": false },
+                { "text": "delighted", "correct": false },
+                { "text": "regular", "correct": false }
+            ]
+        }
+    ]
+}
