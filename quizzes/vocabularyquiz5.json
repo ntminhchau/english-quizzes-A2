@@ -1,0 +1,149 @@
+{
+    "title": "Vocabulary: Arts, Crafts & Production",
+    "questions": [
+        {
+            "question": "The art gallery will _____ the works of young local artists next month.",
+            "answers": [
+                { "text": "display", "correct": true },
+                { "text": "construct", "correct": false },
+                { "text": "ensure", "correct": false },
+                { "text": "support", "correct": false }
+            ]
+        },
+        {
+            "question": "She received a beautiful piece of _____, a silver necklace, for her birthday.",
+            "answers": [
+                { "text": "trophy", "correct": false },
+                { "text": "jewellery", "correct": true },
+                { "text": "material", "correct": false },
+                { "text": "workmanship", "correct": false }
+            ]
+        },
+        {
+            "question": "At the weekend market, you can find various types of handmade _____, such as pottery and woven baskets.",
+            "answers": [
+                { "text": "investment", "correct": false },
+                { "text": "factor", "correct": false },
+                { "text": "craft", "correct": true },
+                { "text": "industry", "correct": false }
+            ]
+        },
+        {
+            "question": "The antique furniture is known for its excellent _____, showing the skill of the person who made it.",
+            "answers": [
+                { "text": "process", "correct": false },
+                { "text": "workmanship", "correct": true },
+                { "text": "value", "correct": false },
+                { "text": "reputation", "correct": false }
+            ]
+        },
+        {
+            "question": "The city plans to _____ a new bridge to reduce traffic jams.",
+            "answers": [
+                { "text": "appreciate", "correct": false },
+                { "text": "assess", "correct": false },
+                { "text": "construct", "correct": true },
+                { "text": "develop", "correct": false }
+            ]
+        },
+        {
+            "question": "_____ mass-produced goods, each of these handmade items is slightly different.",
+            "answers": [
+                { "text": "In addition to", "correct": false },
+                { "text": "Unlike", "correct": true },
+                { "text": "As usual", "correct": false },
+                { "text": "Thoroughly", "correct": false }
+            ]
+        },
+        {
+            "question": "A _____ is a large building where goods are produced in large quantities, usually by machine.",
+            "answers": [
+                { "text": "town hall", "correct": false },
+                { "text": "workshop", "correct": false },
+                { "text": "factory", "correct": true },
+                { "text": "display home", "correct": false }
+            ]
+        },
+        {
+            "question": "Every piece of her handmade pottery is _____, so you won't find another one exactly like it.",
+            "answers": [
+                { "text": "comprehensive", "correct": false },
+                { "text": "professional", "correct": false },
+                { "text": "unique", "correct": true },
+                { "text": "regular", "correct": false }
+            ]
+        },
+        {
+            "question": "The carpenter spends most of his day making furniture in his _____.",
+            "answers": [
+                { "text": "workshop", "correct": true },
+                { "text": "industry", "correct": false },
+                { "text": "factory", "correct": false },
+                { "text": "association", "correct": false }
+            ]
+        },
+        {
+            "question": "People buy art not just for its beauty but also for its financial _____.",
+            "answers": [
+                { "text": "penalty", "correct": false },
+                { "text": "policy", "correct": false },
+                { "text": "value", "correct": true },
+                { "text": "fee", "correct": false }
+            ]
+        },
+        {
+            "question": "Before buying the house, we visited the _____ to see exactly what it would look like when finished.",
+            "answers": [
+                { "text": "display home", "correct": true },
+                { "text": "town hall", "correct": false },
+                { "text": "workshop", "correct": false },
+                { "text": "factory", "correct": false }
+            ]
+        },
+        {
+            "question": "The local bakery started as a small business but now produces cakes on a large _____.",
+            "answers": [
+                { "text": "process", "correct": false },
+                { "text": "budget", "correct": false },
+                { "text": "function", "correct": false },
+                { "text": "scale", "correct": true }
+            ]
+        },
+        {
+            "question": "The artist is famous for her incredible _____ detail in all her miniature paintings.",
+            "answers": [
+                { "text": "attention to", "correct": true },
+                { "text": "recognition for", "correct": false },
+                { "text": "investment in", "correct": false },
+                { "text": "contract with", "correct": false }
+            ]
+        },
+        {
+            "question": "A skilled _____ can take years to perfect their craft, like glass blowing or leather working.",
+            "answers": [
+                { "text": "spectator", "correct": false },
+                { "text": "consumer", "correct": false },
+                { "text": "artisan", "correct": true },
+                { "text": "mayor", "correct": false }
+            ]
+        },
+        {
+            "question": "To build the model airplane, you will need the following _____: wood, glue, and paint.",
+            "answers": [
+                { "text": "policies", "correct": false },
+                { "text": "awards", "correct": false },
+                { "text": "materials", "correct": true },
+                { "text": "factors", "correct": false }
+            ]
+        },
+        {
+            "question": "The _____ of making traditional silk involves many steps, from raising silkworms to weaving the fabric.",
+            "answers": [
+                { "text": "process", "correct": true },
+                { "text": "value", "correct": false },
+                { "text": "theme", "correct": false },
+                { "text": "scale", "correct": false }
+            ]
+        }
+    ]
+}
