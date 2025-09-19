@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-2xl">
+        <div id="quiz-container" class="bg-white rounded-lg shadow-lg p-6">
+            <h1 id="quiz-title" class="text-3xl font-bold mb-4 text-center text-blue-600"></h1>
+            <div id="question-container" class="mb-6">
+                <p id="question-text" class="text-xl font-semibold mb-4"></p>
+                <div id="answers-container" class="space-y-3">
+                    <!-- Answer buttons will be dynamically inserted here -->
+                </div>
+            </div>
+            <div id="navigation-container" class="flex justify-between items-center border-t pt-4">
+                <p id="progress-text" class="text-sm text-gray-600"></p>
+                <button id="next-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300 disabled:bg-gray-400">Next</button>
+            </div>
+            <div id="result-container" class="hidden text-center">
+                <h2 class="text-2xl font-bold mb-4">Quiz Complete!</h2>
+                <p id="score-text" class="text-lg mb-4"></p>
+                <button id="restart-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script id="quiz-data" type="application/json">
+    {
+      "title": "Emergencies & Sharing the Road",
+      "questions": [
+        {
+          "question": "When passing a large truck on a two-way highway, a driver should:",
+          "answers": [
+            { "text": "Leave extra room before returning to their lane", "correct": true },
+            { "text": "Return to their lane when signalled by the truck's headlights", "correct": false },
+            { "text": "Return to their lane when the truck is no longer visible in any of their rear-view mirrors", "correct": false },
+            { "text": "Return to their lane once they have cleared the truck's front bumper", "correct": false }
+          ]
+        },
+        {
+          "question": "You should be careful driving near large vehicles because:",
+          "answers": [
+            { "text": "If you are too close behind them, they may not be able to see you in their rear-view mirrors", "correct": true },
+            { "text": "Large vehicles sound a horn before backing up", "correct": false },
+            { "text": "Air brakes take a longer time to work", "correct": false },
+            { "text": "Large vehicles may create turbulence", "correct": false }
+          ]
+        },
+        {
+          "question": "The term \"over-driving\" your headlights at night means:",
+          "answers": [
+            { "text": "The driver cannot see clearly for 1000 metres", "correct": false },
+            { "text": "The low beam headlights are not set properly", "correct": false },
+            { "text": "The driver is travelling at a speed which would not permit them to see an object in time to stop", "correct": true },
+            { "text": "The driver has had the headlights on for too long a time", "correct": false }
+          ]
+        },
+        {
+          "question": "Using the 2-second rule to judge a safe following distance when driving:",
+          "answers": [
+            { "text": "Is more accurate on rural highways than in urban centres", "correct": false },
+            { "text": "Is not accurate at speeds greater than 100 km/h", "correct": false },
+            { "text": "Is accurate at any speed", "correct": true },
+            { "text": "Is not accurate at speeds lower than 30 km/h", "correct": false }
+          ]
+        },
+        {
+          "question": "A driver is required to report all collisions to the police when persons have been injured or killed, or when combined damage to all vehicles or property is more than:",
+          "answers": [
+            { "text": "$750", "correct": false },
+            { "text": "$2000", "correct": true },
+            { "text": "$250", "correct": false },
+            { "text": "$500", "correct": false }
+          ]
+        },
+        {
+          "question": "When a driver is stopping behind another vehicle in traffic:",
+          "answers": [
+            { "text": "Remain a minimum of 10 metres from the vehicle ahead", "correct": false },
+            { "text": "Allow sufficient space to move into another lane without reversing", "correct": true },
+            { "text": "Maintain sufficient space as determined by the 2-second rule", "correct": false },
+            { "text": "Keep back approximately 1 metre from the rear bumper of the vehicle ahead", "correct": false }
+          ]
+        },
+        {
+          "question": "If another vehicle is following too close, what should a driver do?",
+          "answers": [
+            { "text": "Slow down gradually and encourage the other vehicle to pass", "correct": true },
+            { "text": "Press hard on the brake pedal", "correct": false },
+            { "text": "Increase speed to 10 km/h above the posted speed limit", "correct": false },
+            { "text": "Activate the four-way flashers", "correct": false }
+          ]
+        },
+        {
+          "question": "Is a driver allowed to exceed the speed limit when passing another vehicle?",
+          "answers": [
+            { "text": "Only when passing more than one vehicle at a time", "correct": false },
+            { "text": "Yes, but not more than 10 km/h over the speed limit", "correct": false },
+            { "text": "Yes, on primary highways only", "correct": false },
+            { "text": "No, it is never permitted", "correct": true }
+          ]
+        },
+        {
+          "question": "When a driver's vehicle is approached by an emergency vehicle sounding a siren, from any direction on a two-way road, the driver must:",
+          "answers": [
+            { "text": "Continue at a reduced speed and allow sufficient space for the emergency vehicle to pass", "correct": false },
+            { "text": "Turn on their four-way hazard lights", "correct": false },
+            { "text": "Stop only when the emergency vehicle has difficulty in passing", "correct": false },
+            { "text": "Drive as close as possible to the right curb or edge of the road and stop", "correct": true }
+          ]
+        },
+        {
+          "question": "When approaching the rear of a stopped school bus that has its alternately flashing red lights activated, a driver must:",
+          "answers": [
+            { "text": "Sound the horn to alert any pedestrians and pass at a slow rate of speed", "correct": false },
+            { "text": "Stop behind the bus and wait until the alternating red lights stop flashing", "correct": true },
+            { "text": "Move to the left lane, reduce speed to 30 km/h and pass cautiously", "correct": false },
+            { "text": "Stop behind the bus, look carefully for pedestrians and, if clear, drive past the bus slowly", "correct": false }
+          ]
+        },
+        {
+          "question": "When approaching the rear of a school bus that is displaying alternating flashing amber lights, a driver should:",
+          "answers": [
+            { "text": "Be prepared to stop as this is a warning that the alternating flashing red lights will come on once the bus has stopped", "correct": true },
+            { "text": "Be prepared to stop as this could be a warning that there is a collision ahead and the traffic flow has stopped", "correct": false },
+            { "text": "Stop immediately because the school bus is loading or unloading students", "correct": false },
+            { "text": "Use caution as the school bus is approaching a railroad crossing and is about to stop", "correct": false }
+          ]
+        },
+        {
+          "question": "When travelling in urban areas, drivers should scan the road approximately:",
+          "answers": [
+            { "text": "25 to 30 seconds ahead", "correct": false },
+            { "text": "12 to 15 seconds ahead", "correct": true },
+            { "text": "20 to 30 seconds ahead", "correct": false },
+            { "text": "1 to 6 seconds ahead", "correct": false }
+          ]
+        },
+        {
+          "question": "According to the Basic Licence Driver's Handbook, most skids are the result of:",
+          "answers": [
+            { "text": "Bad brakes", "correct": false },
+            { "text": "Icy roads", "correct": false },
+            { "text": "Bad tires", "correct": false },
+            { "text": "Driver error", "correct": true }
+          ]
+        },
+        {
+          "question": "How close can a driver legally park a vehicle to a Stop sign?",
+          "answers": [
+            { "text": "10 metres", "correct": false },
+            { "text": "5 metres", "correct": true },
+            { "text": "3 metres", "correct": false },
+            { "text": "1.5 metres", "correct": false }
+          ]
+        },
+        {
+          "question": "In reduced visibility due to fog, smoke or snow, use the:",
+          "answers": [
+            { "text": "Park lights", "correct": false },
+            { "text": "Headlights on high beam", "correct": false },
+            { "text": "Headlights on low beam", "correct": true },
+            { "text": "Daytime running lights", "correct": false }
+          ]
+        },
+        {
+          "question": "A vehicle exiting a parking lot onto a roadway:",
+          "answers": [
+            { "text": "Must stop only if there is a Stop sign", "correct": false },
+            { "text": "Must come to a complete stop", "correct": true },
+            { "text": "Must stop before crossing the sidewalk only if there are pedestrians present", "correct": false },
+            { "text": "Is not required to stop", "correct": false }
+          ]
+        },
+        {
+          "question": "When a vehicle is stopped to allow a pedestrian to cross the road, other vehicles that are approaching from the rear:",
+          "answers": [
+            { "text": "May pass the stopped vehicle if there is no oncoming traffic that may impede passing safely", "correct": false },
+            { "text": "Must not pass the stopped vehicle. It is illegal", "correct": true },
+            { "text": "May pass the stopped vehicle when eye contact is made with the pedestrian and the pedestrian stops", "correct": false },
+            { "text": "May pass the stopped vehicle when the pedestrian crossing signal has changed to “Don't Walk”", "correct": false }
+          ]
+        },
+        {
+          "question": "When encountering a funeral procession that is crossing an intersection:",
+          "answers": [
+            { "text": "Sound the horn before proceeding", "correct": false },
+            { "text": "Proceed through the funeral procession only when there is sufficient space between vehicles", "correct": false },
+            { "text": "Yield the right-of-way and do not break through the procession", "correct": true },
+            { "text": "Flash the high beam headlights before proceeding", "correct": false }
+          ]
+        },
+        {
+          "question": "Hydroplaning can cause you to lose control of your vehicle. What does “hydroplaning” mean:",
+          "answers": [
+            { "text": "Your tires may lose contact with the road surface on wet roads", "correct": true },
+            { "text": "The tire pressure is too high", "correct": false },
+            { "text": "Brake fluid is leaking on the tire", "correct": false },
+            { "text": "There is black ice on the road surface", "correct": false }
+          ]
+        },
+        {
+          "question": "What does a \"space cushion\" mean?",
+          "answers": [
+            { "text": "It's the space between your vehicle and the curb", "correct": false },
+            { "text": "The space between your vehicle and vehicles around you (ahead, behind or on either side)", "correct": true },
+            { "text": "It's the space between the driver and the steering wheel", "correct": false },
+            { "text": "The distance between the driver and passenger front air bags", "correct": false }
+          ]
+        },
+        {
+          "question": "What kind of driving are you doing if you are scanning the roadway, leaving a space cushion and anticipating potential hazards?",
+          "answers": [
+            { "text": "Advanced driving", "correct": false },
+            { "text": "Proactive driving", "correct": true },
+            { "text": "Positive driving", "correct": false },
+            { "text": "Attitude driving", "correct": false }
+          ]
+        },
+        {
+          "question": "If you're in a collision you should:",
+          "answers": [
+            { "text": "Stop to give assistance, and provide your name and insurance information to others involved in the collision", "correct": true },
+            { "text": "Stop only if the collision is serious", "correct": false },
+            { "text": "Stop only to check whether damage has occurred", "correct": false },
+            { "text": "Stop to give assistance, and provide your name and insurance information to others involved in the collision only if someone is injured", "correct": false }
+          ]
+        },
+        {
+          "question": "If you pull out just slightly into another lane to pass a cyclist, you are:",
+          "answers": [
+            { "text": "Doing something illegal; you must change lanes completely", "correct": false },
+            { "text": "Doing something unnecessary; there is plenty of room in one lane for a car to pass a cyclist", "correct": false },
+            { "text": "Actually changing lanes and should check your mirror, shoulder check and then signal", "correct": true },
+            { "text": "A hazard to other drivers", "correct": false }
+          ]
+        },
+        {
+          "question": "Motorcycle drivers often travel in the:",
+          "answers": [
+            { "text": "Right portion of the lane", "correct": false },
+            { "text": "Centre portion of the lane", "correct": false },
+            { "text": "Left portion of the lane", "correct": true },
+            { "text": "None of the above", "correct": false }
+          ]
+        },
+        {
+          "question": "When you're driving behind another vehicle under normal conditions, you should maintain a minimum following distance of:",
+          "answers": [
+            { "text": "5 seconds", "correct": false },
+            { "text": "2 seconds", "correct": true },
+            { "text": "1 second", "correct": false },
+            { "text": "4 seconds", "correct": false }
+          ]
+        },
+        {
+          "question": "You shouldn't follow cyclists too closely because they:",
+          "answers": [
+            { "text": "Don't have rear-view mirrors", "correct": false },
+            { "text": "Don't have brake lights to let you know when they're stopping", "correct": true },
+            { "text": "Don't have to follow the rules of the road", "correct": false },
+            { "text": "Use their left arm to let you know they're turning", "correct": false }
+          ]
+        },
+        {
+          "question": "To help avoid a collision with an animal, you should:",
+          "answers": [
+            { "text": "Look ahead and scan the side of the road for animals", "correct": false },
+            { "text": "Be extra careful at dusk and dawn since it is harder to see animals", "correct": false },
+            { "text": "Look for sudden, unusual spots of light on or near the road at night", "correct": false },
+            { "text": "All of the above", "correct": true }
+          ]
+        },
+        {
+          "question": "When a school bus displays flashing red lights, you:",
+          "answers": [
+            { "text": "Can pass on the left, as long as the bus is parked", "correct": false },
+            { "text": "Must stop if you are behind the bus, but you can continue if you are approaching from the opposite direction", "correct": false },
+            { "text": "Cannot pass the bus in either direction until the lights stop flashing", "correct": true },
+            { "text": "Should slow down to the school zone speed limit", "correct": false }
+          ]
+        },
+        {
+          "question": "When following a motorcycle, you should give extra space between your vehicle and the motorcycle rider because:",
+          "answers": [
+            { "text": "Motorcycles are smaller than cars", "correct": false },
+            { "text": "Motorcycle riders have a larger blind spot", "correct": false },
+            { "text": "Motorcycles can stop very quickly", "correct": true },
+            { "text": "Motorcycles have more control than cars in poor conditions", "correct": false }
+          ]
+        },
+        {
+          "question": "You should be cautious of large vehicles backing-up because:",
+          "answers": [
+            { "text": "Large vehicles do not have efficient brakes", "correct": false },
+            { "text": "Large vehicles have large blind spots", "correct": true },
+            { "text": "Large vehicles may create turbulence", "correct": false },
+            { "text": "All of the above", "correct": false }
+          ]
+        }
+      ]
+    }
+    </script>
+    <script>
+        // --- Get DOM Elements ---
+        const quizTitleEl = document.getElementById('quiz-title');
+        const questionContainer = document.getElementById('question-container');
+        const questionTextEl = document.getElementById('question-text');
+        const answersContainerEl = document.getElementById('answers-container');
+        const nextBtn = document.getElementById('next-btn');
+        const progressTextEl = document.getElementById('progress-text');
+        const quizContainer = document.getElementById('quiz-container');
+        const resultContainer = document.getElementById('result-container');
+        const scoreTextEl = document.getElementById('score-text');
+        const restartBtn = document.getElementById('restart-btn');
+        const navigationContainer = document.getElementById('navigation-container');
+
+
+        // --- Load Quiz Data ---
+        const quizData = JSON.parse(document.getElementById('quiz-data').textContent);
+        const questions = quizData.questions;
+        quizTitleEl.textContent = quizData.title;
+
+        // --- State Variables ---
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let answerSelected = false;
+
+        // --- Functions ---
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            answerSelected = false;
+            resultContainer.classList.add('hidden');
+            quizContainer.classList.remove('hidden');
+            navigationContainer.classList.remove('hidden');
+            questionContainer.classList.remove('hidden');
+            showQuestion();
+        }
+        
+        function showQuestion() {
+            // Reset for the new question
+            answerSelected = false;
+            nextBtn.disabled = true;
+            answersContainerEl.innerHTML = '';
+            
+            // Get current question data
+            const question = questions[currentQuestionIndex];
+            questionTextEl.textContent = question.question;
+
+            // Update progress text
+            progressTextEl.textContent = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+            
+            // Create and append answer buttons
+            question.answers.forEach(answer => {
+                const button = document.createElement('button');
+                button.textContent = answer.text;
+                button.classList.add('w-full', 'text-left', 'p-4', 'rounded-lg', 'border', 'border-gray-300', 'hover:bg-gray-100', 'transition', 'duration-200');
+                button.dataset.correct = answer.correct;
+                button.addEventListener('click', selectAnswer);
+                answersContainerEl.appendChild(button);
+            });
+        }
+
+        function selectAnswer(e) {
+            if (answerSelected) return; // Prevent changing answer
+            answerSelected = true;
+            
+            const selectedBtn = e.target;
+            const isCorrect = selectedBtn.dataset.correct === 'true';
+
+            if (isCorrect) {
+                score++;
+                selectedBtn.classList.remove('border-gray-300', 'hover:bg-gray-100');
+                selectedBtn.classList.add('bg-green-100', 'border-green-500', 'text-green-800', 'font-semibold');
+            } else {
+                selectedBtn.classList.remove('border-gray-300', 'hover:bg-gray-100');
+                selectedBtn.classList.add('bg-red-100', 'border-red-500', 'text-red-800', 'font-semibold');
+            }
+            
+            // Highlight the correct answer if the wrong one was chosen
+            Array.from(answersContainerEl.children).forEach(button => {
+                if (button.dataset.correct === 'true') {
+                     button.classList.remove('border-gray-300', 'hover:bg-gray-100');
+                     button.classList.add('bg-green-100', 'border-green-500');
+                }
+                button.disabled = true; // Disable all buttons after selection
+            });
+
+            nextBtn.disabled = false;
+        }
+
+        function showNextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }
+        
+        function showResults() {
+             questionContainer.classList.add('hidden');
+             navigationContainer.classList.add('hidden');
+             resultContainer.classList.remove('hidden');
+             scoreTextEl.textContent = `You scored ${score} out of ${questions.length}!`;
+        }
+
+        // --- Event Listeners ---
+        nextBtn.addEventListener('click', showNextQuestion);
+        restartBtn.addEventListener('click', startQuiz);
+
+        // --- Initial Call ---
+        startQuiz();
+    </script>
+</body>
+</html>
+
